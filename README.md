@@ -1,223 +1,113 @@
-# 🇧🇷 Socioeconomic Drivers of Crime in Brazil
+# Analise e Predicao de Criminalidade no Brasil
 
-## 📊 Overview
+## Visao Geral
 
-This project aims to analyze and predict public safety incidents in Brazil by combining socioeconomic indicators such as **Human Development Index (HDI)**, **population growth**, and **education levels**.
+Este projeto tem como objetivo analisar e prever tendencias de criminalidade no Brasil a partir da integracao de dados de seguranca publica com variaveis socioeconomicas, como:
 
-The goal is to understand how these variables influence crime rates and support **data-driven decision-making** for governments and organizations.
+- IDH
+- populacao
+- educacao
 
----
+O fluxo principal do projeto sera:
 
-## 🎯 Objectives
-
-* Analyze the relationship between **crime rates and socioeconomic factors**
-* Evaluate the impact of **education (INEP/IBGE)** on public safety
-* Build a **predictive model** for crime trends over time
-* Provide insights to support **resource allocation and prevention strategies**
-
----
-
-## 🧠 Key Questions
-
-* Do regions with lower education levels have higher crime rates?
-* How does population growth impact public safety?
-* Is education more correlated with crime reduction than HDI?
-* Which regions are at higher risk over time?
-
----
-
-## 🏗️ Architecture
-
-```mermaid
-flowchart LR
-    A[Raw Data Sources] --> B[Jupyter - Data Cleaning & EDA]
-    B --> C[Feature Engineering]
-    C --> D[Machine Learning Model]
-    D --> E[MongoDB]
-    E --> F[Metabase Dashboard]
+```text
+Jupyter
+-> limpeza
+-> tratamento de nulos
+-> remocao de duplicatas
+-> feature engineering
+-> regressao linear / ML
+-> MongoDB
+-> Metabase
 ```
 
----
+## Stack
 
-## 🧰 Tech Stack
+- Python
+- Jupyter Notebook
+- MongoDB
+- Mongo Express
+- Metabase
+- Docker Compose
 
-* **Python** (Pandas, NumPy, Scikit-learn)
-* **Jupyter Notebook** (EDA & Data Cleaning)
-* **MongoDB** (Data storage)
-* **Metabase** (Data visualization)
-* **Docker & Docker Compose** (Environment setup)
-* **Git & GitHub** (Collaboration)
+## Estrutura do Projeto
 
----
-
-## 📂 Project Structure
-
+```text
+project/
+├── docker-compose.yml
+├── datasets/
+├── notebooks/
+├── db-seed/
+├── metabase-data/
+└── README.md
 ```
+
+## Estrutura Atual
+
+```text
 .
 ├── docker-compose.yml
-├── README.md
-├── .env.example
-│
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── external/
-│
+├── datasets/
+│   └── README.md
 ├── notebooks/
-│   ├── 01_exploration.ipynb
-│   ├── 02_cleaning.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   └── 04_modeling.ipynb
-│
-├── src/
-│   ├── etl/
-│   ├── models/
-│   ├── database/
-│   └── utils/
-│
-├── mongo-init/
-│   └── init.js
-│
-└── docs/
-    ├── architecture.md
-    └── action-plan.md
+│   ├── 01_exploracao_dados.ipynb
+│   ├── 02_limpeza_tratamento.ipynb
+│   ├── 03_integracao_feature_engineering.ipynb
+│   ├── 04_modelagem_regressao_linear.ipynb
+│   ├── 05_exportacao_mongodb.ipynb
+│   └── README.md
+├── db-seed/
+│   └── README.md
+├── metabase-data/
+│   └── README.md
+└── README.md
 ```
 
----
+## Responsabilidade de Cada Ferramenta
 
-## 📊 Data Sources
+### Jupyter
 
-* Public Safety Data (Criminality datasets)
-* HDI Data
-* Population Data
-* Education Data from Ministério da Educação / INEP / IBGE
+Usado para:
 
----
+- leitura dos arquivos
+- exploracao dos dados
+- limpeza e tratamento
+- integracao das bases
+- criacao de features
+- treino inicial do modelo de regressao linear
 
-## ⚙️ Setup (Docker)
+### MongoDB
 
-### 1. Clone the repository
+Usado para:
+
+- armazenar dados tratados
+- salvar colecoes finais
+- guardar resultados e previsoes
+
+### Metabase
+
+Usado para:
+
+- conectar no MongoDB
+- criar dashboards
+- visualizar KPIs e analises
+
+## Como Subir o Ambiente
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+docker compose up -d
 ```
 
-### 2. Configure environment
+Servicos esperados:
 
-```bash
-cp .env.example .env
-```
+- Jupyter: `http://localhost:8888`
+- MongoDB: `localhost:27017`
+- Mongo Express: `http://localhost:8081`
+- Metabase: `http://localhost:3000`
 
-### 3. Start containers
+## Proximo Passo
 
-```bash
-docker-compose up -d
-```
-
----
-
-## 🔗 Services
-
-| Service             | URL                   |
-| ------------------- | --------------------- |
-| Jupyter Notebook    | http://localhost:8888 |
-| MongoDB             | localhost:27017       |
-| Mongo Express       | http://localhost:8081 |
-| Metabase (optional) | http://localhost:3000 |
-
----
-
-## 🔬 Methodology
-
-### 1. Data Cleaning
-
-* Handle missing values
-* Remove duplicates
-* Normalize formats
-* Align datasets (state + year)
-
----
-
-### 2. Feature Engineering
-
-* Crime rate per 100k inhabitants
-* Population growth rate
-* Education indicators
-* Time-based features
-
----
-
-### 3. Modeling
-
-We use a **Linear Regression model** to predict crime rates:
-
-$$
-crime_rate = f(IDH, Population, Education, Time)
-$$
-
----
-
-### 4. Evaluation
-
-* Mean Absolute Error (MAE)
-* Root Mean Squared Error (RMSE)
-* Model interpretation
-
----
-
-### 5. Visualization
-
-Dashboards built in **Metabase**:
-
-* Regional crime distribution
-* Correlation analysis
-* Risk ranking
-* Trends over time
-
----
-
-## 🤝 Collaboration
-
-Each team member is responsible for a specific area:
-
-* Data Engineering (ETL & Cleaning)
-* Machine Learning
-* Database Modeling
-* Dashboard & Visualization
-* Documentation
-
-### Workflow
-
-* Feature branches
-* Pull Requests
-* Code reviews
-
----
-
-## ⚠️ Limitations
-
-* Limited socioeconomic variables
-* Possible data inconsistencies across sources
-* Linear model assumptions
-* Correlation ≠ causation
-
----
-
-## 🚀 Future Improvements
-
-* Add more variables (income, unemployment)
-* Use advanced models (ARIMA, Prophet)
-* Deploy API for predictions
-* Real-time data pipeline
-
----
-
-## 💡 Business Impact
-
-This project enables:
-
-* Better **resource allocation**
+O proximo passo recomendado e implementar o primeiro notebook de exploracao e limpeza do dataset de crime, definindo a chave unificada `estado + ano` para todas as bases.
 * **Preventive actions** in high-risk areas
 * Data-driven **public policy decisions**
 

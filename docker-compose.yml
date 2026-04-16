@@ -1,0 +1,56 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: crime-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - ./db-seed:/docker-entrypoint-initdb.d
+
+  mongo-express:
+    image: mongo-express:1.0.2-20
+    container_name: crime-mongo-express
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongodb
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: admin
+
+  jupyter:
+    image: jupyter/scipy-notebook:python-3.11
+    container_name: crime-jupyter
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+    ports:
+      - "8888:8888"
+    environment:
+      JUPYTER_TOKEN: crime123
+    volumes:
+      - ./datasets:/home/jovyan/work/datasets
+      - ./notebooks:/home/jovyan/work/notebooks
+      - ./db-seed:/home/jovyan/work/db-seed
+      - ./README.md:/home/jovyan/work/README.md:ro
+    working_dir: /home/jovyan/work
+
+  metabase:
+    image: metabase/metabase:latest
+    container_name: crime-metabase
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./metabase-data:/metabase-data
+    environment:
+      MB_DB_FILE: /metabase-data/metabase.db
+
+volumes:
+  mongodb_data:

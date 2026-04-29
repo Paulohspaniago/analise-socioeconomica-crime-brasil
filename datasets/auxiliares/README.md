@@ -2,7 +2,7 @@
 
 Pasta para tabelas auxiliares usadas em cruzamentos e enriquecimento.
 
-Uso recomendado neste projeto:
+Uso recomendado:
 
 - tabela de municipios do IBGE com `codigo_municipio` de 7 digitos
 - equivalencias de nomes de municipios

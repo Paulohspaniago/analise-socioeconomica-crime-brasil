@@ -12,7 +12,20 @@ Objetivo:
 
 - explorar os arquivos brutos
 - limpar e padronizar as bases
-- integrar os datasets por `estado + ano`
+- integrar os datasets por `codigo_municipio + ano`
 - gerar features
 - treinar o baseline de regressao linear
 - salvar os resultados no MongoDB
+
+Organizacao dos notebooks:
+
+- cada notebook e organizado por fonte de dados
+- cada fonte deve gerar um dataframe tratado proprio
+- a integracao entre fontes acontece apenas no notebook 03
+
+Fontes previstas:
+
+- IDH
+- crimes
+- populacao
+- educacao

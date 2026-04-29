@@ -125,7 +125,7 @@ Docker Compose service names:
 * Handle missing values
 * Remove duplicates
 * Normalize formats
-* Align datasets by `state + year`
+* Align datasets by `municipality code + year`
 
 ---
 

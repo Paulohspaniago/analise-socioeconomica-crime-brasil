@@ -6,7 +6,7 @@ Fluxo sugerido para o projeto:
 2. `02_limpeza_tratamento.ipynb`
 3. `03_integracao_feature_engineering.ipynb`
 4. `04_modelagem_regressao_linear.ipynb`
-5. `05_exportacao_mongodb.ipynb`
+5. `05_exportacao_dw_postgresql.ipynb`
 
 Objetivo:
 
@@ -15,7 +15,8 @@ Objetivo:
 - integrar os datasets por `codigo_municipio + ano`
 - gerar features
 - treinar o baseline de regressao linear
-- salvar os resultados no MongoDB
+- salvar os resultados no PostgreSQL
+- criar dados preparados para o Data Warehouse e Data Mart
 
 Organizacao dos notebooks:
 

@@ -1,41 +1,51 @@
 services:
-  mongo-service:
-    image: mongo:7
-    container_name: mongo-service
+  postgres-service:
+    image: postgres:16
+    container_name: postgres-service
     restart: unless-stopped
     ports:
-      - "27017:27017"
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: seguranca_publica
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     volumes:
-      - mongodb_data:/data/db
-      - ./db-seed:/docker-entrypoint-initdb.d
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres-init:/docker-entrypoint-initdb.d
 
-  mongo-express-service:
-    image: mongo-express:1.0.2-20
-    container_name: mongo-express-service
+  pgadmin-service:
+    image: dpage/pgadmin4:8
+    container_name: pgadmin-service
     restart: unless-stopped
     depends_on:
-      - mongo-service
+      - postgres-service
     ports:
-      - "8081:8081"
+      - "8081:80"
     environment:
-      ME_CONFIG_MONGODB_SERVER: mongo-service
-      ME_CONFIG_BASICAUTH_USERNAME: admin
-      ME_CONFIG_BASICAUTH_PASSWORD: admin
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
 
   jupyter-service:
-    image: jupyter/scipy-notebook:python-3.11
+    build:
+      context: .
+      dockerfile: docker/jupyter/Dockerfile
     container_name: jupyter-service
     restart: unless-stopped
     depends_on:
-      - mongo-service
+      - postgres-service
     ports:
       - "8888:8888"
     environment:
       JUPYTER_TOKEN: crime123
+      POSTGRES_HOST: postgres-service
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: seguranca_publica
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     volumes:
       - ./datasets:/home/jovyan/work/datasets
       - ./notebooks:/home/jovyan/work/notebooks
-      - ./db-seed:/home/jovyan/work/db-seed
+      - ./postgres-init:/home/jovyan/work/postgres-init
       - ./README.md:/home/jovyan/work/README.md:ro
     working_dir: /home/jovyan/work
 
@@ -44,7 +54,7 @@ services:
     container_name: metabase-service
     restart: unless-stopped
     depends_on:
-      - mongo-service
+      - postgres-service
     ports:
       - "3000:3000"
     volumes:
@@ -53,4 +63,4 @@ services:
       MB_DB_FILE: /metabase-data/metabase.db
 
 volumes:
-  mongodb_data:
+  postgres_data:

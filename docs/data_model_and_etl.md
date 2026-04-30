@@ -1,5 +1,9 @@
 # Data Model and ETL Design
 
+> Legacy note: this document reflects an earlier MongoDB-oriented design.
+> The current project direction is PostgreSQL with `raw`, `staging`, `dw`, and `datamart_seguranca_publica` schemas.
+> Use `docs/modelagem_dw_postgresql.md` as the main data modeling reference.
+
 ## 1. Analytical Grain
 
 The canonical grain for this project should be:

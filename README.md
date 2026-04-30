@@ -34,8 +34,10 @@ flowchart LR
     B --> C[Null Handling and Deduplication]
     C --> D[Feature Engineering]
     D --> E[Linear Regression / ML]
-    E --> F[MongoDB - Final Collections]
-    F --> G[Metabase Dashboard]
+    D --> F[PostgreSQL - Raw, Staging, DW]
+    F --> G[Data Mart Views]
+    G --> H[Metabase Dashboard]
+    E --> G
 ```
 
 ---
@@ -44,8 +46,8 @@ flowchart LR
 
 * **Python** (Pandas, NumPy, Scikit-learn)
 * **Jupyter Notebook** (EDA, cleaning, feature engineering, modeling)
-* **MongoDB** (Storage for treated data, final collections, and predictions)
-* **Mongo Express** (Database visualization)
+* **PostgreSQL** (Raw data, staging, data warehouse, and data marts)
+* **pgAdmin** (Database administration)
 * **Metabase** (Dashboards and KPI analysis)
 * **Docker & Docker Compose** (Environment setup)
 * **Git & GitHub** (Collaboration)
@@ -57,6 +59,7 @@ flowchart LR
 ```text
 .
 ├── docker-compose.yml
+├── docker/
 ├── README.md
 ├── datasets/
 ├── notebooks/
@@ -64,8 +67,8 @@ flowchart LR
 │   ├── 02_limpeza_tratamento.ipynb
 │   ├── 03_integracao_feature_engineering.ipynb
 │   ├── 04_modelagem_regressao_linear.ipynb
-│   └── 05_exportacao_mongodb.ipynb
-├── db-seed/
+│   └── 05_exportacao_dw_postgresql.ipynb
+├── postgres-init/
 ├── metabase-data/
 ├── docs/
 └── src/
@@ -94,7 +97,7 @@ cd your-repo
 ### 2. Start containers
 
 ```bash
-docker compose up -d
+docker compose up -d --build
 ```
 
 ---
@@ -104,14 +107,14 @@ docker compose up -d
 | Service             | URL                   |
 | ------------------- | --------------------- |
 | Jupyter Notebook    | http://localhost:8888 |
-| MongoDB             | localhost:27017       |
-| Mongo Express       | http://localhost:8081 |
+| PostgreSQL          | localhost:5432        |
+| pgAdmin             | http://localhost:8081 |
 | Metabase            | http://localhost:3000 |
 
 Docker Compose service names:
 
-* `mongo-service`
-* `mongo-express-service`
+* `postgres-service`
+* `pgadmin-service`
 * `jupyter-service`
 * `metabase-service`
 
@@ -148,13 +151,14 @@ $$
 
 ---
 
-### 4. Data Storage
+### 4. Data Warehouse
 
-MongoDB is used to:
+PostgreSQL is used to organize the analytical pipeline into schemas:
 
-* Store treated datasets
-* Save final collections
-* Keep model outputs and predictions
+* `raw`: raw or nearly raw datasets
+* `staging`: cleaned and standardized datasets
+* `dw`: dimensional model with facts and dimensions
+* `datamart_seguranca_publica`: analytical views for BI
 
 ---
 
@@ -174,7 +178,7 @@ Dashboards built in **Metabase**:
 
 Each team member is responsible for a specific area:
 
-* Data Engineering (ETL, cleaning, MongoDB publishing)
+* Data Engineering (ETL, cleaning, PostgreSQL and DW publishing)
 * Machine Learning
 * Database Modeling
 * Dashboard & Visualization

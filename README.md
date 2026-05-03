@@ -1,60 +1,59 @@
-# 🇧🇷 Socioeconomic Drivers of Crime in Brazil
+# 🇧🇷 Fatores Socioeconômicos da Criminalidade no Brasil
 
-## 📊 Overview
+## 📊 Visão Geral
 
-This project aims to analyze and predict public safety incidents in Brazil by combining socioeconomic indicators such as **Human Development Index (HDI)**, **population growth**, and **education levels**.
+Este projeto tem como objetivo analisar e prever incidentes de segurança pública no Brasil combinando indicadores socioeconômicos como **Índice de Desenvolvimento Humano Municipal (IDHM)**, **crescimento populacional** e **níveis de educação**.
 
-The goal is to understand how these variables influence crime rates and support **data-driven decision-making** for governments and organizations.
-
----
-
-## 🎯 Objectives
-
-* Analyze the relationship between **crime rates and socioeconomic factors**
-* Evaluate the impact of **education (INEP/IBGE)** on public safety
-* Build a **predictive model** for crime trends over time
-* Provide insights to support **resource allocation and prevention strategies**
+O objetivo é entender como essas variáveis influenciam as taxas de criminalidade e apoiar a **tomada de decisão orientada por dados** para governos e organizações.
 
 ---
 
-## 🧠 Key Questions
+## 🎯 Objetivos
 
-* Do regions with lower education levels have higher crime rates?
-* How does population growth impact public safety?
-* Is education more correlated with crime reduction than HDI?
-* Which regions are at higher risk over time?
+* Analisar a relação entre **taxas de criminalidade e fatores socioeconômicos**
+* Avaliar o impacto da **educação (INEP/IBGE)** na segurança pública
+* Construir um **modelo preditivo** para tendências de criminalidade ao longo do tempo
+* Gerar insights para apoiar **alocação de recursos e estratégias de prevenção**
 
 ---
 
-## 🏗️ Architecture
+## 🧠 Perguntas-Chave
+
+* Regiões com menores níveis de educação apresentam maiores taxas de criminalidade?
+* Como o crescimento populacional impacta a segurança pública?
+* A educação tem maior correlação com a redução da criminalidade do que o IDHM?
+* Quais regiões apresentam maior risco ao longo do tempo?
+
+---
+
+## 🏗️ Arquitetura
 
 ```mermaid
 flowchart LR
-    A[Raw Data Sources] --> B[Jupyter - Cleaning and EDA]
-    B --> C[Null Handling and Deduplication]
-    C --> D[Feature Engineering]
-    D --> E[Linear Regression / ML]
-    D --> F[PostgreSQL - Raw, DW, Data Mart]
-    F --> G[Data Mart Views]
-    G --> H[Metabase Dashboard]
-    E --> G
+    A[Fontes de Dados Brutos] --> B[PostgreSQL - Schema Raw]
+    B --> C[PostgreSQL - Data Warehouse]
+    C --> D[Data Mart / Views Analíticas]
+    D --> E[Metabase Dashboard]
+    C --> F[Jupyter - Machine Learning]
+    F --> G[Regressão Linear / Previsões]
+    G --> D
 ```
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Stack Tecnológica
 
 * **Python** (Pandas, NumPy, Scikit-learn)
-* **Jupyter Notebook** (EDA, cleaning, feature engineering, modeling)
-* **PostgreSQL** (Raw data, dimensional data warehouse, and data marts)
-* **pgAdmin** (Database administration)
-* **Metabase** (Dashboards and KPI analysis)
-* **Docker & Docker Compose** (Environment setup)
-* **Git & GitHub** (Collaboration)
+* **Jupyter Notebook** (modelagem, experimentos e Machine Learning)
+* **PostgreSQL** (dados brutos, Data Warehouse dimensional e Data Marts)
+* **pgAdmin** (administração do banco de dados)
+* **Metabase** (dashboards e análise de KPIs)
+* **Docker & Docker Compose** (ambiente local)
+* **Git & GitHub** (colaboração)
 
 ---
 
-## 📂 Project Structure
+## 📂 Estrutura do Projeto
 
 ```text
 .
@@ -66,7 +65,8 @@ flowchart LR
 │   └── 01_machine_learning_baseline.ipynb
 ├── postgres-init/
 │   ├── 01-create_and_populate_raw.sql
-│   └── 02-create_and_populate_dw.sql
+│   ├── 02-create_and_populate_dw.sql
+│   └── README.md
 ├── metabase-data/
 ├── docs/
 └── src/
@@ -74,25 +74,25 @@ flowchart LR
 
 ---
 
-## 📊 Data Sources
+## 📊 Fontes de Dados
 
-* Public Safety Data (criminality datasets)
-* HDI Data
-* Population Data
-* Education Data from Ministério da Educação / INEP / IBGE
+* Dados de Segurança Pública (criminalidade)
+* Dados de IDH/IDHM
+* Dados populacionais
+* Dados educacionais do Ministério da Educação / INEP / IBGE
 
 ---
 
-## ⚙️ Setup (Docker)
+## ⚙️ Configuração (Docker)
 
-### 1. Clone the repository
+### 1. Clonar o repositório
 
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 ```
 
-### 2. Start containers
+### 2. Subir os containers
 
 ```bash
 docker compose up -d --build
@@ -100,16 +100,16 @@ docker compose up -d --build
 
 ---
 
-## 🔗 Services
+## 🔗 Serviços
 
-| Service             | URL                   |
-| ------------------- | --------------------- |
-| Jupyter Notebook    | http://localhost:8888 |
-| PostgreSQL          | localhost:5432        |
-| pgAdmin             | http://localhost:8081 |
-| Metabase            | http://localhost:3000 |
+| Serviço          | URL                   |
+| ---------------- | --------------------- |
+| Jupyter Notebook | http://localhost:8888 |
+| PostgreSQL       | localhost:5432        |
+| pgAdmin          | http://localhost:8081 |
+| Metabase         | http://localhost:3000 |
 
-Docker Compose service names:
+Nomes dos serviços no Docker Compose:
 
 * `postgres-service`
 * `pgadmin-service`
@@ -118,111 +118,120 @@ Docker Compose service names:
 
 ---
 
-## 🔬 Methodology
+## 🔬 Metodologia
 
-### 1. Data Cleaning
+### 1. Carga dos Dados Brutos
 
-* Read raw files from `datasets/`
-* Handle missing values
-* Remove duplicates
-* Normalize formats
-* Align datasets by `municipality code + year`
-
----
-
-### 2. Feature Engineering
-
-* Crime rate per 100k inhabitants
-* Population growth rate
-* Education indicators
-* Time-based features
+* Ler arquivos originais da pasta `datasets/`
+* Criar o schema `raw` no PostgreSQL
+* Carregar os CSVs em tabelas brutas
+* Preservar a estrutura original das fontes sempre que possível
 
 ---
 
-### 3. Modeling
+### 2. Tratamento e Modelagem Dimensional
 
-We use a **Linear Regression model** as the first baseline to predict crime rates:
+* Padronizar formatos e nomes de municípios
+* Integrar bases por `código do município + ano`
+* Criar dimensões e tabela fato no schema `dw`
+* Aplicar boas práticas de modelagem dimensional
+
+---
+
+### 3. Engenharia de Features
+
+* Taxa de crimes por 100 mil habitantes
+* Taxa de crescimento populacional
+* Indicadores educacionais
+* Indicadores de IDHM
+* Índice de risco
+
+---
+
+### 4. Modelagem
+
+Usamos um modelo de **Regressão Linear** como primeiro baseline para prever taxas de criminalidade:
 
 $$
-crime\_rate = f(HDI, Population, Education, Time)
+crime\_rate = f(IDHM, População, Educação, Tempo)
 $$
 
 ---
 
-### 4. Data Warehouse
+### 5. Data Warehouse
 
-PostgreSQL is used to organize the analytical pipeline into schemas:
+O PostgreSQL organiza o pipeline analítico em schemas:
 
-* `raw`: raw or nearly raw datasets
-* `dw`: cleaned, standardized, and integrated dimensional model with facts and dimensions
-* `datamart_seguranca_publica`: analytical views for BI
-
----
-
-### 5. Visualization
-
-Dashboards built in **Metabase**:
-
-* Regional crime distribution
-* Correlation analysis
-* Risk ranking
-* Trends over time
-* KPI monitoring
+* `raw`: dados brutos ou quase brutos
+* `dw`: modelo dimensional limpo, padronizado e integrado com fatos e dimensões
+* `datamart_seguranca_publica`: views analíticas preparadas para BI
 
 ---
 
-## 🤝 Collaboration
+### 6. Visualização
 
-Each team member is responsible for a specific area:
+Dashboards construídos no **Metabase**:
 
-* Data Engineering (ETL, cleaning, PostgreSQL and DW publishing)
+* Distribuição regional da criminalidade
+* Análise de correlação
+* Ranking de risco
+* Tendências ao longo do tempo
+* Monitoramento de KPIs
+
+---
+
+## 🤝 Colaboração
+
+Cada integrante do grupo é responsável por uma área específica:
+
+* Engenharia de Dados (ETL SQL, PostgreSQL e publicação no DW)
 * Machine Learning
-* Database Modeling
-* Dashboard & Visualization
-* Documentation
+* Modelagem de Banco de Dados
+* Dashboards & Visualização
+* Documentação
 
-### Workflow
+### Fluxo de Trabalho
 
-* Feature branches
+* Branches por funcionalidade
 * Pull Requests
-* Code reviews
+* Revisões de código
 
 ---
 
-## ⚠️ Limitations
+## ⚠️ Limitações
 
-* Limited socioeconomic variables
-* Possible data inconsistencies across sources
-* Linear model assumptions
-* Correlation ≠ causation
-
----
-
-## 🚀 Future Improvements
-
-* Add more variables (income, unemployment)
-* Use advanced models (ARIMA, Prophet)
-* Move reusable transformations from notebooks into production code
-* Deploy API for predictions
+* Variáveis socioeconômicas ainda limitadas
+* Possíveis inconsistências entre fontes de dados
+* Premissas do modelo linear
+* Correlação ≠ causalidade
 
 ---
 
-## 💡 Business Impact
+## 🚀 Melhorias Futuras
 
-This project enables:
-
-* Better **resource allocation**
-* **Preventive actions** in high-risk areas
-* Data-driven **public policy decisions**
-
----
-
-## 📄 License
-
-This project is for educational and research purposes.
+* Adicionar novas variáveis, como renda e desemprego
+* Testar modelos avançados, como ARIMA, Prophet ou modelos baseados em árvores
+* Criar scripts de produção para treinamento e versionamento de modelos
+* Criar uma API para disponibilizar previsões
 
 ---
 
-## 👤 Author
+## 💡 Impacto Esperado
 
-Paulo Paniago & Team
+Este projeto permite:
+
+* Melhor **alocação de recursos**
+* **Ações preventivas** em regiões de maior risco
+* Decisões de **política pública orientadas por dados**
+
+---
+
+## 📄 Licença
+
+Este projeto é destinado a fins educacionais e de pesquisa.
+
+---
+
+## 👤 Autor
+
+Paulo Paniago & Time

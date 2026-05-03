@@ -8,6 +8,7 @@ O pipeline atual é:
 datasets/
 -> raw
 -> dw
+-> datamart
 -> Metabase / Machine Learning
 ```
 
@@ -17,6 +18,7 @@ Execute os scripts nesta ordem:
 
 1. `01-create_and_populate_raw.sql`
 2. `02-create_and_populate_dw.sql`
+3. `03-create_datamart.sql`
 
 O prefixo numérico é intencional. Ele facilita o entendimento do pipeline e deixa a ordem de execução explícita.
 
@@ -80,6 +82,21 @@ O script também realiza transformações como:
 - cálculo das taxas de criminalidade por 100 mil habitantes;
 - cálculo do índice de risco.
 
+### `03-create_datamart.sql`
+
+Cria o schema `datamart` e publica views analíticas prontas para consumo no Metabase e em análises futuras.
+
+View criada:
+
+- `datamart.vw_indicadores_municipio_ano`
+
+Finalidade:
+
+- centralizar os principais indicadores por capital e ano;
+- juntar dados da fato com município, UF, região, tempo e educação;
+- facilitar a construção de dashboards no Metabase;
+- expor rankings e classificação de risco por ano.
+
 ## Como Executar
 
 ### Opção 1: Inicialização pelo Docker
@@ -94,6 +111,7 @@ Abra o pgAdmin e execute:
 
 1. todo o conteúdo de `01-create_and_populate_raw.sql`;
 2. todo o conteúdo de `02-create_and_populate_dw.sql`.
+3. todo o conteúdo de `03-create_datamart.sql`.
 
 Esta é a opção mais simples durante o desenvolvimento.
 
@@ -104,13 +122,14 @@ De dentro do container do PostgreSQL:
 ```bash
 psql -U postgres -d seguranca_publica -f /docker-entrypoint-initdb.d/01-create_and_populate_raw.sql
 psql -U postgres -d seguranca_publica -f /docker-entrypoint-initdb.d/02-create_and_populate_dw.sql
+psql -U postgres -d seguranca_publica -f /docker-entrypoint-initdb.d/03-create_datamart.sql
 ```
 
 ## Observações Importantes
 
 - Estes scripts recriam as tabelas de destino usando `DROP TABLE IF EXISTS`.
 - Ao executar novamente, as tabelas atuais dos schemas `raw` e `dw` serão substituídas.
+- A view do schema `datamart` é recriada com `DROP VIEW IF EXISTS`.
 - Os comandos `COPY` dependem do volume de datasets montado no Docker como `/datasets`.
 - Não coloque CSVs tratados em `datasets/`; a camada oficial de dados tratados é o schema `dw`.
 - A documentação oficial do DW está em `docs/modelagem_dw_dimensional.md`.
-

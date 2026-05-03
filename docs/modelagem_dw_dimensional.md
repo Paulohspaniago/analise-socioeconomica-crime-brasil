@@ -388,6 +388,7 @@ Os scripts versionados sao:
 ```text
 postgres-init/01-create_and_populate_raw.sql
 postgres-init/02-create_and_populate_dw.sql
+postgres-init/03-create_datamart.sql
 ```
 
 Ordem de execucao:
@@ -396,6 +397,6 @@ Ordem de execucao:
 1. Executar raw
 2. Executar dw
 3. Validar contagens
-4. Seguir para Data Mart
+4. Executar datamart
+5. Conectar Metabase / ML
 ```
-

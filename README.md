@@ -66,6 +66,7 @@ flowchart LR
 ├── postgres-init/
 │   ├── 01-create_and_populate_raw.sql
 │   ├── 02-create_and_populate_dw.sql
+│   ├── 03-create_datamart.sql
 │   └── README.md
 ├── metabase-data/
 ├── docs/
@@ -164,7 +165,7 @@ O PostgreSQL organiza o pipeline analítico em schemas:
 
 * `raw`: dados brutos ou quase brutos
 * `dw`: modelo dimensional limpo, padronizado e integrado com fatos e dimensões
-* `datamart_seguranca_publica`: views analíticas preparadas para BI
+* `datamart`: views analíticas preparadas para BI e Machine Learning
 
 ---
 
@@ -234,4 +235,6 @@ Este projeto é destinado a fins educacionais e de pesquisa.
 
 ## 👤 Autor
 
-Paulo Paniago & Time
+Paulo Paniago 
+Marcelo Kobayashi
+Dimitri Cinnanti

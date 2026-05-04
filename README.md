@@ -17,12 +17,95 @@ O objetivo é entender como essas variáveis influenciam as taxas de criminalida
 
 ---
 
-## 🧠 Perguntas-Chave
+## 📌 KPIs do Projeto
 
-* Regiões com menores níveis de educação apresentam maiores taxas de criminalidade?
-* Como o crescimento populacional impacta a segurança pública?
-* A educação tem maior correlação com a redução da criminalidade do que o IDHM?
-* Quais regiões apresentam maior risco ao longo do tempo?
+Os KPIs estão organizados por área analítica para facilitar o uso em dashboards, Data Mart e Machine Learning.
+
+<details>
+<summary><strong>1. População</strong></summary>
+
+| KPI | Indicador | Explicação | Uso |
+| --- | --- | --- | --- |
+| KPI 1 | População total | Soma a população por município e ano. | Mostra o total médio de habitantes por município/ano e identifica o maior valor observado. |
+| KPI 2 | Crescimento populacional | Calcula a variação percentual da população em relação ao ano anterior para cada município. | Mede a tendência de aumento ou queda populacional ao longo do tempo. |
+
+</details>
+
+<details>
+<summary><strong>2. IDHM</strong></summary>
+
+| KPI | Indicador | Explicação | Uso |
+| --- | --- | --- | --- |
+| KPI 3 | IDHM | Representa o Índice de Desenvolvimento Humano Municipal geral. | Calcula a média da base e identifica o maior IDHM observado. |
+| KPI 4 | IDHM Renda | Mede a dimensão de renda do desenvolvimento humano. | É um dos componentes usados na análise do IDHM. |
+| KPI 5 | IDHM Longevidade | Mede a dimensão de longevidade do desenvolvimento humano. | Indica condições relacionadas à expectativa de vida. |
+| KPI 6 | IDHM Educação | Mede a dimensão educacional do desenvolvimento humano. | Reflete o nível educacional médio dos municípios. |
+
+</details>
+
+<details>
+<summary><strong>3. Educação</strong></summary>
+
+| KPI | Indicador | Explicação | Uso |
+| --- | --- | --- | --- |
+| KPI 7 | IDEB | Índice que mede a qualidade da educação com base em rendimento escolar e desempenho. | Foi usado como principal indicador de qualidade do ensino médio. |
+| KPI 8 | Fluxo | Indica a progressão/aprovação escolar. | Complementa o IDEB ao mostrar eficiência do percurso escolar. |
+| KPI 9 | Aprendizado | Mede o nível de aprendizagem dos estudantes. | Serve para avaliar desempenho educacional. |
+| KPI 10 | Nota MT | Nota média em Matemática. | Representa o desempenho em matemática no ensino médio. |
+| KPI 11 | Nota LP | Nota média em Língua Portuguesa. | Representa o desempenho em português/leitura. |
+
+</details>
+
+<details>
+<summary><strong>4. Segurança Pública - Contagens Absolutas</strong></summary>
+
+| KPI | Indicador | Explicação | Uso |
+| --- | --- | --- | --- |
+| KPI 12 | Mortes violentas intencionais | Total de mortes violentas intencionais registradas. | Compõe o total de crimes severos analisados. |
+| KPI 13 | Homicídios dolosos | Mortes causadas com intenção de matar. | Indicador central de violência letal. |
+| KPI 14 | Feminicídios | Homicídios motivados por violência de gênero. | Indicador específico de violência contra mulheres. |
+| KPI 15 | Estupros | Total de crimes de estupro registrados. | Entra tanto nas contagens absolutas quanto nas taxas padronizadas. |
+| KPI 16 | Furto de veículos | Número de furtos de veículos. | Indicador de crime patrimonial. |
+| KPI 17 | Roubo de veículos | Número de roubos de veículos. | Crime patrimonial relevante para análise urbana. |
+| KPI 18 | Latrocínios | Roubos seguidos de morte. | Crime grave com impacto direto no índice de violência. |
+| KPI 19 | Lesão corporal seguida de morte | Agressão que resulta em morte. | Compõe a análise descritiva de crimes violentos. |
+
+</details>
+
+<details>
+<summary><strong>5. Segurança Pública - Taxas por 100 mil Habitantes</strong></summary>
+
+| KPI | Indicador | Explicação | Uso |
+| --- | --- | --- | --- |
+| KPI 20 | Taxa total de crimes por 100 mil habitantes | Padroniza a criminalidade pela população, permitindo comparação entre municípios. | Principal taxa comparativa entre localidades. |
+| KPI 21 | Taxa de mortes violentas intencionais por 100 mil habitantes | Número de mortes violentas intencionais ajustado pela população. | Mostra a intensidade da violência letal. |
+| KPI 22 | Taxa de homicídios dolosos por 100 mil habitantes | Homicídios dolosos normalizados pela população. | Facilita comparação entre municípios de tamanhos distintos. |
+| KPI 23 | Taxa de feminicídios por 100 mil habitantes | Feminicídios ajustados por população. | Indicador de violência de gênero comparável entre municípios. |
+| KPI 24 | Taxa de estupros por 100 mil habitantes | Estupros normalizados pela população. | Mede a incidência proporcional do crime. |
+| KPI 25 | Taxa de furto de veículos por 100 mil habitantes | Furtos de veículos padronizados pela população. | Indicador de crime patrimonial comparável. |
+| KPI 26 | Taxa de roubo de veículos por 100 mil habitantes | Roubos de veículos ajustados pela população. | Mede a pressão desse tipo de crime em cada município. |
+
+</details>
+
+<details>
+<summary><strong>6. Features Temporais</strong></summary>
+
+| KPI | Indicador | Explicação | Uso |
+| --- | --- | --- | --- |
+| KPI 27 | Lag 1 da taxa de crimes | Taxa de crimes do ano anterior para cada município. | Serve como referência temporal para detectar tendência. |
+| KPI 28 | Lag 1 da taxa de mortes violentas | Taxa do ano anterior de mortes violentas intencionais. | Apoia análise de evolução da violência letal. |
+| KPI 29 | Variação anual da taxa de crimes | Diferença percentual entre o ano atual e o anterior. | Mostra aceleração ou redução da criminalidade. |
+
+</details>
+
+<details>
+<summary><strong>7. Índice de Risco Composto</strong></summary>
+
+| KPI | Indicador | Explicação | Uso |
+| --- | --- | --- | --- |
+| KPI 30 | Índice de risco | Combina crimes severos normalizados em um único indicador na escala de 0 a 1. | Resume o nível relativo de risco criminal do município. |
+
+</details>
 
 ---
 

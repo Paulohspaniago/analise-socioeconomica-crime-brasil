@@ -118,7 +118,7 @@ flowchart LR
     C --> D[Data Mart / Views Analíticas]
     D --> E[Metabase Dashboard]
     C --> F[Jupyter - Machine Learning]
-    F --> G[Regressão Linear / Previsões]
+    F --> G[Comparação de Modelos / Previsões]
     G --> D
 ```
 
@@ -266,12 +266,16 @@ Target do modelo:
 target_taxa_mortes_violentas_100k
 ```
 
-Serão comparados dois modelos de regressão:
+Estratégia de modelagem:
 
-| Modelo | Finalidade | Variáveis principais |
+| Modelo | Papel no projeto | Justificativa |
 | --- | --- | --- |
-| Modelo A - Baseline sem educação | Medir o desempenho mínimo usando histórico criminal, população e IDHM. | População, crescimento populacional, IDHM e variáveis criminais defasadas disponíveis em todo o período. |
-| Modelo B - Principal com educação | Representar o objetivo completo do projeto, incluindo indicadores educacionais. | Variáveis do Modelo A + IDEB, fluxo, aprendizado, nota de matemática e nota de língua portuguesa. |
+| Linear Regression | Baseline simples | Serve como ponto de partida interpretável e ajuda a demonstrar as limitações de um modelo linear puro. |
+| Ridge Regression | Baseline linear regularizado | Reduz exageros nos coeficientes e tende a ser mais estável que a regressão linear simples. |
+| Ridge com target logarítmico | Baseline linear ajustado | Ajuda a evitar previsões negativas e estabiliza a escala da taxa prevista. |
+| Random Forest Regressor | Candidato principal | Captura relações não lineares e interações entre população, IDHM, educação e histórico criminal. |
+
+A regressão linear não será descartada. Ela será mantida como baseline comparativo, enquanto modelos mais robustos serão avaliados como candidatos ao modelo final.
 
 Como o IDEB não é divulgado todos os anos, será aplicada a propagação do último valor conhecido por UF, também chamada de `forward fill`. Essa decisão é defensável porque indicadores educacionais representam condições estruturais e tendem a mudar de forma mais lenta.
 
@@ -293,10 +297,10 @@ Métricas de avaliação:
 * RMSE
 * R²
 
-Equação conceitual do modelo principal:
+Equação conceitual da previsão:
 
 $$
-crime\_rate = f(IDHM, População, Educação, Histórico Criminal)
+taxa\_mortes\_violentas = f(IDHM, População, Educação, Histórico Criminal)
 $$
 
 ---
@@ -362,7 +366,7 @@ Cada integrante do grupo é responsável por uma área específica:
 * Variáveis socioeconômicas ainda limitadas
 * Possíveis inconsistências entre fontes de dados
 * IDHM municipal utilizado como referência estrutural de 2010, não como série anual
-* Premissas do modelo linear
+* Regressão linear simples pode gerar previsões negativas para taxas criminais
 * Correlação ≠ causalidade
 
 ---
@@ -370,7 +374,8 @@ Cada integrante do grupo é responsável por uma área específica:
 ## 🚀 Melhorias Futuras
 
 * Adicionar novas variáveis, como renda e desemprego
-* Testar modelos avançados, como ARIMA, Prophet ou modelos baseados em árvores
+* Comparar modelos não lineares, como Random Forest e Gradient Boosting
+* Testar modelos temporais, como ARIMA ou Prophet, quando houver série histórica maior
 * Criar scripts de produção para treinamento e versionamento de modelos
 * Criar uma API para disponibilizar previsões
 

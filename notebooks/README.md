@@ -8,8 +8,8 @@ Objetivo:
 
 - consumir dados tratados e preparados no schema `datamart`
 - preparar a base para modelagem
-- comparar o baseline sem educação com o modelo principal com educação
-- treinar Regressão Linear e Ridge Regression
+- comparar modelos baseline com modelos mais robustos
+- treinar Regressão Linear, Ridge Regression e Random Forest Regressor
 - avaliar métricas como MAE, RMSE e R²
 - futuramente salvar previsões/resultados para consumo no BI
 
@@ -25,9 +25,14 @@ Fonte principal do notebook:
 
 Modelos previstos:
 
-- Modelo A: baseline sem educação
-- Modelo B: modelo principal com educação
-- Modelo B Ridge: versão regularizada do modelo principal
+- Linear Regression: baseline simples e interpretável
+- Ridge Regression: baseline linear regularizado
+- Ridge com target logarítmico: alternativa para reduzir previsões negativas
+- Random Forest Regressor: candidato principal por capturar relações não lineares
+
+Decisão metodológica:
+
+A regressão linear será mantida como baseline comparativo, não como modelo final obrigatório. Como ela pode gerar previsões negativas para taxas criminais e apresentou baixa capacidade preditiva inicial, o projeto seguirá comparando modelos mais robustos, com destaque para Random Forest.
 
 Observação:
 

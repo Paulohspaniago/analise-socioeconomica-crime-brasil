@@ -513,7 +513,7 @@ Papel de cada view:
 - `vw_tendencia_criminalidade`: compara taxa atual com ano anterior e classifica tendencia.
 - `vw_ranking_risco_capitais`: ranking anual de risco por capital.
 - `vw_educacao_criminalidade`: relacao entre indicadores educacionais e criminalidade.
-- `vw_base_modelagem_ml`: base preparada para regressao, usando lags e evitando vazamento de informacao. O alvo principal recomendado e `target_taxa_mortes_violentas_100k`, por possuir cobertura completa no periodo atual.
+- `vw_base_modelagem_ml`: base preparada para Machine Learning, usando lags e evitando vazamento de informacao. O alvo principal recomendado e `target_taxa_mortes_violentas_100k`, por possuir cobertura completa no periodo atual. Essa view pode ser usada tanto por modelos lineares de baseline quanto por modelos nao lineares, como Random Forest.
 
 ## 10. Scripts Oficiais
 

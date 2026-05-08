@@ -1,6 +1,6 @@
 # Modelagem Dimensional do Data Warehouse
 
-Este documento registra a construcao do schema `dw`, das dimensoes e da tabela fato principal do projeto.
+Este documento registra a construcao do schema `dw`, das dimensoes e das tabelas fato principais do projeto.
 
 O objetivo do Data Warehouse e apoiar analises sobre seguranca publica no Brasil, combinando:
 
@@ -13,13 +13,13 @@ O objetivo do Data Warehouse e apoiar analises sobre seguranca publica no Brasil
 
 O modelo segue uma arquitetura estrela com snowflake parcial.
 
-Granularidade da tabela fato:
+Granularidade da tabela fato consolidada:
 
 ```text
 1 linha = 1 capital brasileira + 1 ano
 ```
 
-Tabela fato principal:
+Tabela fato consolidada:
 
 ```sql
 dw.fato_municipio_ano
@@ -34,6 +34,8 @@ dw.dim_municipio
 dw.dim_tempo
 dw.dim_educacao
 dw.dim_indicador_crime
+dw.dim_sexo
+dw.dim_grupo_idade
 ```
 
 Snowflake parcial:
@@ -48,7 +50,7 @@ Conceitos aplicados:
 - dimensao conformada: `dw.dim_municipio`
 - snowflake parcial: municipio, UF e regiao
 - chaves primarias e estrangeiras
-- fato com granularidade clara
+- fatos com granularidade clara
 
 ## 2. Pre-Requisito
 
@@ -79,7 +81,12 @@ Depois removemos tabelas antigas para recriar o modelo de forma controlada:
 
 ```sql
 DROP TABLE IF EXISTS dw.fato_municipio_ano CASCADE;
+DROP TABLE IF EXISTS dw.fato_crime_municipio_ano_indicador CASCADE;
+DROP TABLE IF EXISTS dw.fato_populacao_municipio_ano_demografia CASCADE;
+DROP TABLE IF EXISTS dw.fato_educacao_uf_ano CASCADE;
 DROP TABLE IF EXISTS dw.dim_municipio CASCADE;
+DROP TABLE IF EXISTS dw.dim_sexo CASCADE;
+DROP TABLE IF EXISTS dw.dim_grupo_idade CASCADE;
 DROP TABLE IF EXISTS dw.dim_uf CASCADE;
 DROP TABLE IF EXISTS dw.dim_regiao CASCADE;
 DROP TABLE IF EXISTS dw.dim_tempo CASCADE;
@@ -252,7 +259,35 @@ Resultado esperado:
 0 linhas
 ```
 
-## 5. Momento 3 - Criacao Da Fato
+### 4.7 `dw.dim_sexo`
+
+Finalidade:
+
+Guardar os sexos presentes na base populacional.
+
+Essa dimensao e usada pela fato demografica de populacao.
+
+Resultado esperado:
+
+```text
+2 registros
+```
+
+### 4.8 `dw.dim_grupo_idade`
+
+Finalidade:
+
+Guardar as faixas etarias presentes na base populacional.
+
+Essa dimensao permite analisar distribuicao populacional por idade e sexo.
+
+Resultado esperado:
+
+```text
+17 registros
+```
+
+## 5. Momento 3 - Criacao Da Fato Consolidada
 
 Tabela:
 
@@ -381,7 +416,96 @@ Resultado esperado:
 27 linhas para 2019
 ```
 
-## 8. Scripts Oficiais
+## 8. Momento 4 - Fatos Especializadas
+
+Além da fato consolidada, o DW possui fatos especializadas para análises mais detalhadas.
+
+### 8.1 `dw.fato_crime_municipio_ano_indicador`
+
+Granularidade:
+
+```text
+1 linha = 1 capital + 1 ano + 1 indicador criminal
+```
+
+Finalidade:
+
+- analisar crimes por tipo;
+- aproveitar a `dw.dim_indicador_crime`;
+- facilitar dashboards por categoria criminal;
+- calcular taxa por 100 mil habitantes para cada indicador.
+
+Resultado esperado:
+
+```text
+1620 linhas = 27 capitais x 6 anos x 10 indicadores
+```
+
+### 8.2 `dw.fato_populacao_municipio_ano_demografia`
+
+Granularidade:
+
+```text
+1 linha = 1 capital + 1 ano + 1 sexo + 1 grupo de idade
+```
+
+Finalidade:
+
+- analisar perfil demografico das capitais;
+- permitir cortes por sexo e faixa etaria;
+- preservar a riqueza do dataset populacional.
+
+Resultado esperado:
+
+```text
+5508 linhas
+```
+
+### 8.3 `dw.fato_educacao_uf_ano`
+
+Granularidade:
+
+```text
+1 linha = 1 UF + 1 ano + 1 ciclo educacional + 1 dependencia administrativa
+```
+
+Finalidade:
+
+- preservar todos os recortes educacionais disponiveis;
+- analisar IDEB por ciclo e dependencia;
+- manter a granularidade real do dataset de educacao, que esta em nivel de UF.
+
+Resultado esperado:
+
+```text
+243 linhas
+```
+
+## 9. Data Mart
+
+O schema `datamart` publica views analiticas prontas para Metabase e Machine Learning.
+
+Views principais:
+
+```text
+datamart.vw_indicadores_municipio_ano
+datamart.vw_crimes_por_tipo
+datamart.vw_tendencia_criminalidade
+datamart.vw_ranking_risco_capitais
+datamart.vw_educacao_criminalidade
+datamart.vw_base_modelagem_ml
+```
+
+Papel de cada view:
+
+- `vw_indicadores_municipio_ano`: visao executiva geral por capital e ano.
+- `vw_crimes_por_tipo`: analise de indicadores criminais por tipo e categoria.
+- `vw_tendencia_criminalidade`: compara taxa atual com ano anterior e classifica tendencia.
+- `vw_ranking_risco_capitais`: ranking anual de risco por capital.
+- `vw_educacao_criminalidade`: relacao entre indicadores educacionais e criminalidade.
+- `vw_base_modelagem_ml`: base preparada para regressao, usando lags e evitando vazamento de informacao.
+
+## 10. Scripts Oficiais
 
 Os scripts versionados sao:
 

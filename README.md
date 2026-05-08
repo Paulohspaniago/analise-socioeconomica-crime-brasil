@@ -250,6 +250,13 @@ O PostgreSQL organiza o pipeline analítico em schemas:
 * `dw`: modelo dimensional limpo, padronizado e integrado com fatos e dimensões
 * `datamart`: views analíticas preparadas para BI e Machine Learning
 
+Fatos principais no `dw`:
+
+* `dw.fato_municipio_ano`: visão consolidada por capital e ano
+* `dw.fato_crime_municipio_ano_indicador`: crimes por capital, ano e tipo de indicador
+* `dw.fato_populacao_municipio_ano_demografia`: população por capital, ano, sexo e grupo de idade
+* `dw.fato_educacao_uf_ano`: indicadores educacionais por UF, ano, ciclo e dependência administrativa
+
 ---
 
 ### 6. Visualização

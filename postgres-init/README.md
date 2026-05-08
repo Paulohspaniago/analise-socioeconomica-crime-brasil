@@ -61,12 +61,17 @@ Principais dimensões:
 - `dw.dim_tempo`
 - `dw.dim_educacao`
 - `dw.dim_indicador_crime`
+- `dw.dim_sexo`
+- `dw.dim_grupo_idade`
 
-Tabela fato principal:
+Tabelas fato:
 
 - `dw.fato_municipio_ano`
+- `dw.fato_crime_municipio_ano_indicador`
+- `dw.fato_populacao_municipio_ano_demografia`
+- `dw.fato_educacao_uf_ano`
 
-Granularidade da fato:
+Granularidade da fato principal:
 
 ```text
 1 linha = 1 capital brasileira + 1 ano
@@ -89,13 +94,19 @@ Cria o schema `datamart` e publica views analíticas prontas para consumo no Met
 View criada:
 
 - `datamart.vw_indicadores_municipio_ano`
+- `datamart.vw_crimes_por_tipo`
+- `datamart.vw_tendencia_criminalidade`
+- `datamart.vw_ranking_risco_capitais`
+- `datamart.vw_educacao_criminalidade`
+- `datamart.vw_base_modelagem_ml`
 
 Finalidade:
 
 - centralizar os principais indicadores por capital e ano;
-- juntar dados da fato com município, UF, região, tempo e educação;
+- juntar dados das fatos com município, UF, região, tempo, crime, educação e população;
 - facilitar a construção de dashboards no Metabase;
-- expor rankings e classificação de risco por ano.
+- expor rankings e classificação de risco por ano;
+- preparar uma base controlada para Machine Learning, evitando vazamento de informação.
 
 ## Como Executar
 

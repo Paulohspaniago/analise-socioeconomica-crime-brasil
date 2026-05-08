@@ -1,6 +1,11 @@
 CREATE SCHEMA IF NOT EXISTS dw;
 
+DROP TABLE IF EXISTS dw.fato_crime_municipio_ano_indicador CASCADE;
+DROP TABLE IF EXISTS dw.fato_populacao_municipio_ano_demografia CASCADE;
+DROP TABLE IF EXISTS dw.fato_educacao_uf_ano CASCADE;
 DROP TABLE IF EXISTS dw.fato_municipio_ano CASCADE;
+DROP TABLE IF EXISTS dw.dim_grupo_idade CASCADE;
+DROP TABLE IF EXISTS dw.dim_sexo CASCADE;
 DROP TABLE IF EXISTS dw.dim_municipio CASCADE;
 DROP TABLE IF EXISTS dw.dim_uf CASCADE;
 DROP TABLE IF EXISTS dw.dim_regiao CASCADE;
@@ -165,6 +170,37 @@ VALUES
     ('quantidade_posse_uso_entorpecente', 'Drogas', 'Quantidade de ocorrencias de posse ou uso de entorpecentes'),
     ('quantidade_porte_ilegal_arma_de_fogo', 'Armas', 'Quantidade de ocorrencias de porte ilegal de arma de fogo');
 
+CREATE TABLE dw.dim_sexo (
+    id_sexo_dw SERIAL PRIMARY KEY,
+    sexo VARCHAR(50) NOT NULL UNIQUE
+);
+
+INSERT INTO dw.dim_sexo (sexo)
+SELECT DISTINCT
+    TRIM(pop.sexo) AS sexo
+FROM raw.dataset_populacao AS pop
+WHERE NULLIF(TRIM(pop.sexo), '') IS NOT NULL;
+
+CREATE TABLE dw.dim_grupo_idade (
+    id_grupo_idade_dw SERIAL PRIMARY KEY,
+    grupo_idade VARCHAR(50) NOT NULL UNIQUE,
+    ordem_grupo_idade INTEGER NOT NULL
+);
+
+INSERT INTO dw.dim_grupo_idade (
+    grupo_idade,
+    ordem_grupo_idade
+)
+SELECT DISTINCT
+    TRIM(pop.grupo_idade) AS grupo_idade,
+    CASE
+        WHEN TRIM(pop.grupo_idade) ~ '^[0-9]+'
+            THEN REGEXP_REPLACE(TRIM(pop.grupo_idade), '^([0-9]+).*$', '\1')::INTEGER
+        ELSE 999
+    END AS ordem_grupo_idade
+FROM raw.dataset_populacao AS pop
+WHERE NULLIF(TRIM(pop.grupo_idade), '') IS NOT NULL;
+
 CREATE TABLE dw.dim_municipio (
     id_municipio_dw SERIAL PRIMARY KEY,
     codigo_municipio INTEGER NOT NULL UNIQUE,
@@ -226,6 +262,8 @@ SELECT COUNT(*) AS total_dim_municipio FROM dw.dim_municipio;
 SELECT COUNT(*) AS total_dim_tempo FROM dw.dim_tempo;
 SELECT COUNT(*) AS total_dim_educacao FROM dw.dim_educacao;
 SELECT COUNT(*) AS total_dim_indicador_crime FROM dw.dim_indicador_crime;
+SELECT COUNT(*) AS total_dim_sexo FROM dw.dim_sexo;
+SELECT COUNT(*) AS total_dim_grupo_idade FROM dw.dim_grupo_idade;
 
 SELECT
     nome_municipio,
@@ -533,3 +571,211 @@ JOIN dw.dim_municipio AS municipio
     ON municipio.id_municipio_dw = fato.id_municipio_dw
 WHERE fato.ano = 2019
 ORDER BY municipio.nome_municipio ASC;
+
+CREATE TABLE dw.fato_crime_municipio_ano_indicador (
+    id_fato_crime_municipio_ano_indicador_dw SERIAL PRIMARY KEY,
+    id_tempo_dw INTEGER NOT NULL,
+    id_municipio_dw INTEGER NOT NULL,
+    id_indicador_crime_dw INTEGER NOT NULL,
+    codigo_municipio INTEGER NOT NULL,
+    ano INTEGER NOT NULL,
+    quantidade NUMERIC(18, 2) NOT NULL,
+    populacao_total NUMERIC(18, 2),
+    taxa_100k NUMERIC(18, 6),
+    CONSTRAINT fk_fato_crime_tempo
+        FOREIGN KEY (id_tempo_dw)
+        REFERENCES dw.dim_tempo (id_tempo_dw),
+    CONSTRAINT fk_fato_crime_municipio
+        FOREIGN KEY (id_municipio_dw)
+        REFERENCES dw.dim_municipio (id_municipio_dw),
+    CONSTRAINT fk_fato_crime_indicador
+        FOREIGN KEY (id_indicador_crime_dw)
+        REFERENCES dw.dim_indicador_crime (id_indicador_crime_dw),
+    CONSTRAINT uk_fato_crime_municipio_ano_indicador
+        UNIQUE (id_municipio_dw, id_tempo_dw, id_indicador_crime_dw)
+);
+
+INSERT INTO dw.fato_crime_municipio_ano_indicador (
+    id_tempo_dw,
+    id_municipio_dw,
+    id_indicador_crime_dw,
+    codigo_municipio,
+    ano,
+    quantidade,
+    populacao_total,
+    taxa_100k
+)
+WITH crimes_long AS (
+    SELECT
+        CAST(crime.id_municipio AS INTEGER) AS codigo_municipio,
+        CAST(crime.ano AS INTEGER) AS ano,
+        indicador.nome_indicador,
+        indicador.quantidade
+    FROM raw.dataset_crimes AS crime
+    CROSS JOIN LATERAL (
+        VALUES
+            ('quantidade_homicidio_doloso', COALESCE(NULLIF(REPLACE(crime.quantidade_homicidio_doloso, ',', '.'), '')::NUMERIC, 0)),
+            ('quantidade_feminicidio', COALESCE(NULLIF(REPLACE(crime.quantidade_feminicidio, ',', '.'), '')::NUMERIC, 0)),
+            ('quantidade_mortes_violentas_intencionais', COALESCE(NULLIF(REPLACE(crime.quantidade_mortes_violentas_intencionais, ',', '.'), '')::NUMERIC, 0)),
+            ('quantidade_estupro', COALESCE(NULLIF(REPLACE(crime.quantidade_estupro, ',', '.'), '')::NUMERIC, 0)),
+            ('quantidade_furto_veiculos', COALESCE(NULLIF(REPLACE(crime.quantidade_furto_veiculos, ',', '.'), '')::NUMERIC, 0)),
+            ('quantidade_roubo_veiculos', COALESCE(NULLIF(REPLACE(crime.quantidade_roubo_veiculos, ',', '.'), '')::NUMERIC, 0)),
+            ('quantidade_latrocinio', COALESCE(NULLIF(REPLACE(crime.quantidade_latrocinio, ',', '.'), '')::NUMERIC, 0)),
+            ('quantidade_trafico_entorpecente', COALESCE(NULLIF(REPLACE(crime.quantidade_trafico_entorpecente, ',', '.'), '')::NUMERIC, 0)),
+            ('quantidade_posse_uso_entorpecente', COALESCE(NULLIF(REPLACE(crime.quantidade_posse_uso_entorpecente, ',', '.'), '')::NUMERIC, 0)),
+            ('quantidade_porte_ilegal_arma_de_fogo', COALESCE(NULLIF(REPLACE(crime.quantidade_porte_ilegal_arma_de_fogo, ',', '.'), '')::NUMERIC, 0))
+    ) AS indicador(nome_indicador, quantidade)
+)
+SELECT
+    tempo.id_tempo_dw,
+    municipio.id_municipio_dw,
+    indicador_crime.id_indicador_crime_dw,
+    municipio.codigo_municipio,
+    tempo.ano,
+    crimes_long.quantidade,
+    fato_municipio.populacao_total,
+    (crimes_long.quantidade / NULLIF(fato_municipio.populacao_total, 0)) * 100000 AS taxa_100k
+FROM crimes_long
+JOIN dw.dim_municipio AS municipio
+    ON municipio.codigo_municipio = crimes_long.codigo_municipio
+JOIN dw.dim_tempo AS tempo
+    ON tempo.ano = crimes_long.ano
+JOIN dw.dim_indicador_crime AS indicador_crime
+    ON indicador_crime.nome_indicador = crimes_long.nome_indicador
+LEFT JOIN dw.fato_municipio_ano AS fato_municipio
+    ON fato_municipio.id_municipio_dw = municipio.id_municipio_dw
+   AND fato_municipio.id_tempo_dw = tempo.id_tempo_dw;
+
+CREATE TABLE dw.fato_populacao_municipio_ano_demografia (
+    id_fato_populacao_municipio_ano_demografia_dw SERIAL PRIMARY KEY,
+    id_tempo_dw INTEGER NOT NULL,
+    id_municipio_dw INTEGER NOT NULL,
+    id_sexo_dw INTEGER NOT NULL,
+    id_grupo_idade_dw INTEGER NOT NULL,
+    codigo_municipio INTEGER NOT NULL,
+    ano INTEGER NOT NULL,
+    populacao NUMERIC(18, 2) NOT NULL,
+    CONSTRAINT fk_fato_populacao_tempo
+        FOREIGN KEY (id_tempo_dw)
+        REFERENCES dw.dim_tempo (id_tempo_dw),
+    CONSTRAINT fk_fato_populacao_municipio
+        FOREIGN KEY (id_municipio_dw)
+        REFERENCES dw.dim_municipio (id_municipio_dw),
+    CONSTRAINT fk_fato_populacao_sexo
+        FOREIGN KEY (id_sexo_dw)
+        REFERENCES dw.dim_sexo (id_sexo_dw),
+    CONSTRAINT fk_fato_populacao_grupo_idade
+        FOREIGN KEY (id_grupo_idade_dw)
+        REFERENCES dw.dim_grupo_idade (id_grupo_idade_dw),
+    CONSTRAINT uk_fato_populacao_municipio_ano_demografia
+        UNIQUE (id_municipio_dw, id_tempo_dw, id_sexo_dw, id_grupo_idade_dw)
+);
+
+INSERT INTO dw.fato_populacao_municipio_ano_demografia (
+    id_tempo_dw,
+    id_municipio_dw,
+    id_sexo_dw,
+    id_grupo_idade_dw,
+    codigo_municipio,
+    ano,
+    populacao
+)
+SELECT
+    tempo.id_tempo_dw,
+    municipio.id_municipio_dw,
+    sexo.id_sexo_dw,
+    grupo_idade.id_grupo_idade_dw,
+    municipio.codigo_municipio,
+    tempo.ano,
+    SUM(CAST(pop.populacao AS NUMERIC)) AS populacao
+FROM raw.dataset_populacao AS pop
+JOIN dw.dim_municipio AS municipio
+    ON municipio.codigo_municipio = CAST(pop.id_municipio AS INTEGER)
+JOIN dw.dim_tempo AS tempo
+    ON tempo.ano = CAST(pop.ano AS INTEGER)
+JOIN dw.dim_sexo AS sexo
+    ON sexo.sexo = TRIM(pop.sexo)
+JOIN dw.dim_grupo_idade AS grupo_idade
+    ON grupo_idade.grupo_idade = TRIM(pop.grupo_idade)
+GROUP BY
+    tempo.id_tempo_dw,
+    municipio.id_municipio_dw,
+    sexo.id_sexo_dw,
+    grupo_idade.id_grupo_idade_dw,
+    municipio.codigo_municipio,
+    tempo.ano;
+
+CREATE TABLE dw.fato_educacao_uf_ano (
+    id_fato_educacao_uf_ano_dw SERIAL PRIMARY KEY,
+    id_tempo_dw INTEGER NOT NULL,
+    id_uf_dw INTEGER NOT NULL,
+    id_educacao_dw INTEGER NOT NULL,
+    codigo_uf_ibge INTEGER NOT NULL,
+    ano INTEGER NOT NULL,
+    ideb NUMERIC(8, 4),
+    fluxo NUMERIC(8, 4),
+    aprendizado NUMERIC(8, 4),
+    nota_mt NUMERIC(10, 4),
+    nota_lp NUMERIC(10, 4),
+    CONSTRAINT fk_fato_educacao_tempo
+        FOREIGN KEY (id_tempo_dw)
+        REFERENCES dw.dim_tempo (id_tempo_dw),
+    CONSTRAINT fk_fato_educacao_uf
+        FOREIGN KEY (id_uf_dw)
+        REFERENCES dw.dim_uf (id_uf_dw),
+    CONSTRAINT fk_fato_educacao_dim
+        FOREIGN KEY (id_educacao_dw)
+        REFERENCES dw.dim_educacao (id_educacao_dw),
+    CONSTRAINT uk_fato_educacao_uf_ano
+        UNIQUE (id_uf_dw, id_tempo_dw, id_educacao_dw)
+);
+
+INSERT INTO dw.fato_educacao_uf_ano (
+    id_tempo_dw,
+    id_uf_dw,
+    id_educacao_dw,
+    codigo_uf_ibge,
+    ano,
+    ideb,
+    fluxo,
+    aprendizado,
+    nota_mt,
+    nota_lp
+)
+SELECT
+    tempo.id_tempo_dw,
+    uf.id_uf_dw,
+    educacao.id_educacao_dw,
+    uf.codigo_uf_ibge,
+    tempo.ano,
+    NULLIF(REPLACE(raw_educacao.ideb, ',', '.'), '')::NUMERIC AS ideb,
+    NULLIF(REPLACE(raw_educacao.fluxo, ',', '.'), '')::NUMERIC AS fluxo,
+    NULLIF(REPLACE(raw_educacao.aprendizado, ',', '.'), '')::NUMERIC AS aprendizado,
+    NULLIF(REPLACE(raw_educacao.nota_mt, ',', '.'), '')::NUMERIC AS nota_mt,
+    NULLIF(REPLACE(raw_educacao.nota_lp, ',', '.'), '')::NUMERIC AS nota_lp
+FROM raw.dataset_educacao AS raw_educacao
+JOIN dw.dim_uf AS uf
+    ON uf.codigo_uf_ibge = CAST(raw_educacao.ibge_id AS INTEGER)
+JOIN dw.dim_tempo AS tempo
+    ON tempo.ano = CAST(raw_educacao.ano AS INTEGER)
+JOIN dw.dim_educacao AS educacao
+    ON educacao.ciclo_id = raw_educacao.ciclo_id
+   AND educacao.dependencia_id = CAST(raw_educacao.dependencia_id AS INTEGER);
+
+SELECT COUNT(*) AS total_fato_crime_municipio_ano_indicador
+FROM dw.fato_crime_municipio_ano_indicador;
+
+SELECT COUNT(*) AS total_fato_populacao_municipio_ano_demografia
+FROM dw.fato_populacao_municipio_ano_demografia;
+
+SELECT COUNT(*) AS total_fato_educacao_uf_ano
+FROM dw.fato_educacao_uf_ano;
+
+SELECT
+    tempo.ano,
+    COUNT(*) AS qtd_indicadores_crime
+FROM dw.fato_crime_municipio_ano_indicador AS fato_crime
+JOIN dw.dim_tempo AS tempo
+    ON tempo.id_tempo_dw = fato_crime.id_tempo_dw
+GROUP BY tempo.ano
+ORDER BY tempo.ano;

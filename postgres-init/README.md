@@ -91,7 +91,7 @@ O script também realiza transformações como:
 
 Cria o schema `datamart` e publica views analíticas prontas para consumo no Metabase e em análises futuras.
 
-View criada:
+Views criadas:
 
 - `datamart.vw_indicadores_municipio_ano`
 - `datamart.vw_crimes_por_tipo`
@@ -121,7 +121,7 @@ Use esta opção quando for iniciar o banco do zero.
 Abra o pgAdmin e execute:
 
 1. todo o conteúdo de `01-create_and_populate_raw.sql`;
-2. todo o conteúdo de `02-create_and_populate_dw.sql`.
+2. todo o conteúdo de `02-create_and_populate_dw.sql`;
 3. todo o conteúdo de `03-create_datamart.sql`.
 
 Esta é a opção mais simples durante o desenvolvimento.

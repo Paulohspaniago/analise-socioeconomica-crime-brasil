@@ -2,6 +2,24 @@
 
 Este documento descreve os campos do dataset de IDEB e indicadores educacionais associados.
 
+Observação:
+
+O dicionário abaixo cobre o layout amplo do dataset de educação/IDEB. No pipeline atual do projeto, o arquivo carregado em `raw.dataset_educacao` usa um recorte menor, com os campos:
+
+```text
+ibge_id
+dependencia_id
+ciclo_id
+ano
+ideb
+fluxo
+aprendizado
+nota_mt
+nota_lp
+```
+
+Esses campos alimentam `dw.dim_educacao`, `dw.fato_educacao_uf_ano`, `dw.fato_municipio_ano` e as views educacionais no `datamart`.
+
 | Campo | Descricao | Valores / Formato |
 | --- | --- | --- |
 | `ibge_id` | Codigo IBGE da unidade da federacao e municipios | `7` - Brasil; `11` - RO; `12` - AC; `13` - AM; `14` - RR; `15` - PA; `16` - AP; `17` - TO; `21` - MA; `22` - PI; `23` - CE; `24` - RN; `25` - PB; `26` - PE; `27` - AL; `28` - SE; `29` - BA; `31` - MG; `32` - ES; `33` - RJ; `35` - SP; `41` - PR; `42` - SC; `43` - RS; `50` - MS; `51` - MT; `52` - GO; `53` - DF; 7 digitos - codigo dos municipios |

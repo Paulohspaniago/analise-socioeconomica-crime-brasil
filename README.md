@@ -152,7 +152,11 @@ flowchart LR
 │   ├── 03-create_datamart.sql
 │   └── README.md
 ├── metabase-data/
+│   └── README.md
 ├── docs/
+│   ├── README.md
+│   ├── dicionario_dados_ideb.md
+│   └── modelagem_dw_dimensional.md
 └── src/
 ```
 
@@ -232,12 +236,59 @@ Nomes dos serviços no Docker Compose:
 
 ---
 
-### 4. Modelagem
+### 4. Machine Learning
 
-Usamos um modelo de **Regressão Linear** como primeiro baseline para prever taxas de criminalidade:
+O objetivo da etapa de Machine Learning é prever a taxa de crimes por 100 mil habitantes nas capitais brasileiras.
+
+A fonte oficial para modelagem é:
+
+```text
+datamart.vw_base_modelagem_ml
+```
+
+Essa view foi criada para evitar vazamento de informação. Por isso, variáveis criminais do próprio ano não são usadas como entrada do modelo. Quando usamos histórico criminal, utilizamos variáveis defasadas, como:
+
+```text
+taxa_crimes_100k_lag1
+taxa_mortes_violentas_100k_lag1
+risco_indice_lag1
+```
+
+Target do modelo:
+
+```text
+target_taxa_crimes_100k
+```
+
+Serão comparados dois modelos de regressão:
+
+| Modelo | Finalidade | Variáveis principais |
+| --- | --- | --- |
+| Modelo A - Baseline sem educação | Medir o desempenho mínimo usando histórico criminal, população e IDHM. | População, crescimento populacional, IDHM e variáveis criminais defasadas. |
+| Modelo B - Principal com educação | Representar o objetivo completo do projeto, incluindo indicadores educacionais. | Variáveis do Modelo A + IDEB, fluxo, aprendizado, nota de matemática e nota de língua portuguesa. |
+
+Como o IDEB não é divulgado todos os anos, será aplicada a propagação do último valor conhecido por UF, também chamada de `forward fill`. Essa decisão é defensável porque indicadores educacionais representam condições estruturais e tendem a mudar de forma mais lenta.
+
+Divisão temporal planejada:
+
+```text
+Treino: 2017, 2018 e 2019
+Teste: 2023, 2024 e 2025
+Período excluído: 2020, 2021 e 2022
+```
+
+Essa divisão evita que o período da pandemia distorça o treinamento e a avaliação do modelo.
+
+Métricas de avaliação:
+
+* MAE
+* RMSE
+* R²
+
+Equação conceitual do modelo principal:
 
 $$
-crime\_rate = f(IDHM, População, Educação, Tempo)
+crime\_rate = f(IDHM, População, Educação, Histórico Criminal)
 $$
 
 ---
@@ -256,6 +307,15 @@ Fatos principais no `dw`:
 * `dw.fato_crime_municipio_ano_indicador`: crimes por capital, ano e tipo de indicador
 * `dw.fato_populacao_municipio_ano_demografia`: população por capital, ano, sexo e grupo de idade
 * `dw.fato_educacao_uf_ano`: indicadores educacionais por UF, ano, ciclo e dependência administrativa
+
+Views principais no `datamart`:
+
+* `datamart.vw_indicadores_municipio_ano`: visão executiva geral
+* `datamart.vw_crimes_por_tipo`: análise por tipo de crime
+* `datamart.vw_tendencia_criminalidade`: evolução temporal da criminalidade
+* `datamart.vw_ranking_risco_capitais`: ranking anual de risco
+* `datamart.vw_educacao_criminalidade`: relação entre educação e criminalidade
+* `datamart.vw_base_modelagem_ml`: base oficial para Machine Learning
 
 ---
 

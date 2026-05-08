@@ -6,19 +6,29 @@ Fluxo atual do projeto:
 
 Objetivo:
 
-- consumir dados tratados e integrados do schema `dw`
+- consumir dados tratados e preparados no schema `datamart`
 - preparar a base para modelagem
-- treinar o primeiro baseline de regressao linear
-- avaliar metricas como MAE, RMSE e R2
-- futuramente salvar previsoes/resultados para consumo no BI
+- comparar o baseline sem educação com o modelo principal com educação
+- treinar Regressão Linear e Ridge Regression
+- avaliar métricas como MAE, RMSE e R²
+- futuramente salvar previsões/resultados para consumo no BI
 
-Decisao de arquitetura:
+Decisão de arquitetura:
 
-- limpeza, padronizacao e integracao acontecem no PostgreSQL
-- o Jupyter fica reservado para Machine Learning e analises experimentais
-- a fonte oficial dos dados tratados e o Data Warehouse
+- limpeza, padronização e integração acontecem no PostgreSQL
+- o Jupyter fica reservado para Machine Learning e análises experimentais
+- a fonte oficial para modelagem é o Data Mart
 
-Fonte principal:
+Fonte principal do notebook:
 
-- `dw.fato_municipio_ano`
+- `datamart.vw_base_modelagem_ml`
 
+Modelos previstos:
+
+- Modelo A: baseline sem educação
+- Modelo B: modelo principal com educação
+- Modelo B Ridge: versão regularizada do modelo principal
+
+Observação:
+
+O notebook usa split temporal. Quando os dados de 2023 a 2025 estiverem carregados, o plano oficial será treinar com 2017-2019 e testar com 2023-2025, evitando o período de pandemia.

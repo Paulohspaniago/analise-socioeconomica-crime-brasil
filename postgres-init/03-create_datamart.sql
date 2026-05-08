@@ -255,6 +255,7 @@ SELECT
     taxa_crimes_100k_lag1,
     taxa_mortes_violentas_100k_lag1,
     risco_indice_lag1,
+    taxa_mortes_violentas_100k AS target_taxa_mortes_violentas_100k,
     taxa_crimes_100k AS target_taxa_crimes_100k
 FROM base;
 

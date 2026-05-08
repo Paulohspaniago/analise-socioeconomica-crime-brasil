@@ -1,0 +1,82 @@
+quantidade_mortes_intervencao_policial_civil_fora_de_servico,quantidade_feminicidio,quantidade_mortes_intervencao_policial_militar_fora_de_servico,quantidade_furto_veiculos,quantidade_mortes_intervencao_policial_civil_em_servico,quantidade_estupro,quantidade_morte_policiais_civis_confronto_em_servico,quantidade_mortes_intervencao_policial_militar_em_servico,quantidade_mortes_policiais_confronto,quantidade_posse_uso_entorpecente,quantidade_mortes_violentas_intencionais,quantidade_morte_policiais_militares_fora_de_servico,quantidade_morte_policiais_civis_fora_de_servico,quantidade_latrocinio,quantidade_porte_ilegal_arma_de_fogo,quantidade_mortes_intervencao_policial,ano,quantidade_roubo_furto_veiculos,quantidade_posse_ilegal_arma_de_fogo,quantidade_lesao_corporal_dolosa_violencia_domestica,quantidade_trafico_entorpecente,quantidade_roubo_veiculos,quantidade_lesao_corporal_morte,proporcao_mortes_intenvencao_policial_x_mortes_violentas_intencionais,quantidade_morte_policiais_militares_confronto_em_servico,quantidade_posse_ilegal_porte_ilegal_arma_de_fogo,sigla_uf,sigla_uf_nome,id_municipio,id_municipio_nome,grupo,quantidade_homicidio_doloso
+,1.0,,,,,,,,,96.0,,,4.0,,9.0,2022,,,,,,4,9.375,,,AC,Acre,1200401,Rio Branco,Pós-pandemia,79.0
+,10.0,,,,,,,,,388.0,,,7.0,,5.0,2022,,,,,,1,1.2886597938144329,,,AL,Alagoas,2704302,Maceió,Pós-pandemia,375.0
+,11.0,,,,,,,,,1102.0,,,41.0,,61.0,2022,,,,,,24,5.535390199637023,,,AM,Amazonas,1302603,Manaus,Pós-pandemia,976.0
+,3.0,,,,,,,,,310.0,,,17.0,,86.0,2022,,,,,,5,27.741935483870968,,,AP,Amapá,1600303,Macapá,Pós-pandemia,202.0
+,21.0,,,,,,,,,1596.0,,,18.0,,438.0,2022,,,,,,15,27.44360902255639,,,BA,Bahia,2927408,Salvador,Pós-pandemia,1125.0
+,8.0,,,,,,,,,872.0,,,18.0,,22.0,2022,,,,,,5,2.522935779816514,,,CE,Ceará,2304400,Fortaleza,Pós-pandemia,827.0
+,19.0,,,,,,,,,318.0,,,21.0,,15.0,2022,,,,,,5,4.716981132075472,,,DF,Distrito Federal,5300108,Brasília,Pós-pandemia,277.0
+,3.0,,,,,,,,,87.0,,,3.0,,9.0,2022,,,,,,5,10.344827586206897,,,ES,Espírito Santo,3205309,Vitória,Pós-pandemia,70.0
+,10.0,,,,,,,,,240.0,,,10.0,,87.0,2022,,,,,,5,36.25,,,GO,Goiás,5208707,Goiânia,Pós-pandemia,138.0
+,7.0,,,,,,,,,241.0,,,24.0,,9.0,2022,,,,,,1,3.7344398340248963,,,MA,Maranhão,2111300,São Luís,Pós-pandemia,207.0
+,14.0,,,,,,,,,336.0,,,2.0,,23.0,2022,,,,,,0,6.845238095238096,,,MG,Minas Gerais,3106200,Belo Horizonte,Pós-pandemia,334.0
+,12.0,,,,,,,,,153.0,,,6.0,,20.0,2022,,,,,,0,13.071895424836603,,,MS,Mato Grosso do Sul,5002704,Campo Grande,Pós-pandemia,147.0
+,2.0,,,,,,,,,92.0,,,3.0,,26.0,2022,,,,,,2,28.26086956521739,,,MT,Mato Grosso,5103403,Cuiabá,Pós-pandemia,61.0
+,3.0,,,,,,,,,338.0,,,14.0,,78.0,2022,,,,,,6,23.076923076923077,,,PA,Pará,1501402,Belém,Pós-pandemia,240.0
+,4.0,,,,,,,,,200.0,,,9.0,,9.0,2022,,,,,,1,4.5,,,PB,Paraíba,2507507,João Pessoa,Pós-pandemia,179.0
+,13.0,,,,,,,,,541.0,,,13.0,,12.0,2022,,,,,,2,2.2181146025878005,,,PE,Pernambuco,2611606,Recife,Pós-pandemia,526.0
+,5.0,,,,,,,,,358.0,,,13.0,,21.0,2022,,,,,,3,5.865921787709497,,,PI,Piauí,2211001,Teresina,Pós-pandemia,342.0
+,10.0,,,,,,,,,398.0,,,2.0,,121.0,2022,,,,,,9,30.402010050251256,,,PR,Paraná,4106902,Curitiba,Pós-pandemia,266.0
+,39.0,,,,,,,,,1319.0,,,38.0,,444.0,2022,,,,,,10,33.66186504927976,,,RJ,Rio de Janeiro,3304557,Rio de Janeiro,Pós-pandemia,827.0
+,3.0,,,,,,,,,261.0,,,10.0,,43.0,2022,,,,,,23,16.47509578544061,,,RN,Rio Grande do Norte,2408102,Natal,Pós-pandemia,185.0
+,6.0,,,,,,,,,194.0,,,2.0,,2.0,2022,,,,,,1,1.0309278350515463,,,RO,Rondônia,1100205,Porto Velho,Pós-pandemia,191.0
+,3.0,,,,,,,,,110.0,,,4.0,,6.0,2022,,,,,,3,5.454545454545454,,,RR,Roraima,1400100,Boa Vista,Pós-pandemia,97.0
+,12.0,,,,,,,,,388.0,,,7.0,,34.0,2022,,,,,,5,8.762886597938143,,,RS,Rio Grande do Sul,4314902,Porto Alegre,Pós-pandemia,342.0
+,3.0,,,,,,,,,53.0,,,2.0,,8.0,2022,,,,,,2,15.09433962264151,,,SC,Santa Catarina,4205407,Florianópolis,Pós-pandemia,41.0
+,4.0,,,,,,,,,230.0,,,3.0,,30.0,2022,,,,,,1,13.043478260869565,,,SE,Sergipe,2800308,Aracaju,Pós-pandemia,196.0
+,41.0,,,,,,,,,832.0,,,63.0,,182.0,2022,,,,,,27,21.875,,,SP,São Paulo,3550308,São Paulo,Pós-pandemia,560.0
+,3.0,,,,,,,,,100.0,,,3.0,,2.0,2022,,,,,,0,2.0,,,TO,Tocantins,1721000,Palmas,Pós-pandemia,95.0
+,4.0,,,,,,,,,110.0,,,4.0,,3.0,2023,,,,,,1,2.727272727272727,,,AC,Acre,1200401,Rio Branco,Pós-pandemia,102.0
+,3.0,,,,,,,,,427.0,,,4.0,,25.0,2023,,,,,,1,5.85480093676815,,,AL,Alagoas,2704302,Maceió,Pós-pandemia,397.0
+,11.0,,,,,,,,,957.0,,,24.0,,27.0,2023,,,,,,29,2.8213166144200628,,,AM,Amazonas,1302603,Manaus,Pós-pandemia,877.0
+,0.0,,,,,,,,,316.0,,,11.0,,129.0,2023,,,,,,10,40.822784810126585,,,AP,Amapá,1600303,Macapá,Pós-pandemia,166.0
+,18.0,,,,,,,,,1474.0,,,15.0,,457.0,2023,,,,,,19,31.004070556309358,,,BA,Bahia,2927408,Salvador,Pós-pandemia,983.0
+,10.0,,,,,,,,,758.0,,,9.0,,28.0,2023,,,,,,4,3.6939313984168867,,,CE,Ceará,2304400,Fortaleza,Pós-pandemia,717.0
+,33.0,,,,,,,,,313.0,,,18.0,,27.0,2023,,,,,,2,8.626198083067091,,,DF,Distrito Federal,5300108,Brasília,Pós-pandemia,266.0
+,3.0,,,,,,,,,110.0,,,2.0,,19.0,2023,,,,,,4,17.272727272727273,,,ES,Espírito Santo,3205309,Vitória,Pós-pandemia,85.0
+,5.0,,,,,,,,,260.0,,,7.0,,108.0,2023,,,,,,2,41.53846153846154,,,GO,Goiás,5208707,Goiânia,Pós-pandemia,143.0
+,8.0,,,,,,,,,191.0,,,7.0,,7.0,2023,,,,,,0,3.664921465968586,,,MA,Maranhão,2111300,São Luís,Pós-pandemia,177.0
+,14.0,,,,,,,,,322.0,,,3.0,,15.0,2023,,,,,,1,4.658385093167702,,,MG,Minas Gerais,3106200,Belo Horizonte,Pós-pandemia,318.0
+,8.0,,,,,,,,,193.0,,,1.0,,61.0,2023,,,,,,7,31.606217616580313,,,MS,Mato Grosso do Sul,5002704,Campo Grande,Pós-pandemia,124.0
+,5.0,,,,,,,,,84.0,,,1.0,,28.0,2023,,,,,,0,33.33333333333333,,,MT,Mato Grosso,5103403,Cuiabá,Pós-pandemia,55.0
+,5.0,,,,,,,,,296.0,,,9.0,,72.0,2023,,,,,,9,24.324324324324326,,,PA,Pará,1501402,Belém,Pós-pandemia,206.0
+,3.0,,,,,,,,,221.0,,,7.0,,10.0,2023,,,,,,1,4.524886877828054,,,PB,Paraíba,2507507,João Pessoa,Pós-pandemia,203.0
+,3.0,,,,,,,,,597.0,,,14.0,,20.0,2023,,,,,,6,3.350083752093802,,,PE,Pernambuco,2611606,Recife,Pós-pandemia,577.0
+,3.0,,,,,,,,,290.0,,,11.0,,12.0,2023,,,,,,5,4.137931034482759,,,PI,Piauí,2211001,Teresina,Pós-pandemia,262.0
+,3.0,,,,,,,,,279.0,,,8.0,,69.0,2023,,,,,,2,24.731182795698924,,,PR,Paraná,4106902,Curitiba,Pós-pandemia,200.0
+,40.0,,,,,,,,,1438.0,,,26.0,,376.0,2023,,,,,,19,26.14742698191933,,,RJ,Rio de Janeiro,3304557,Rio de Janeiro,Pós-pandemia,1017.0
+,6.0,,,,,,,,,187.0,,,7.0,,36.0,2023,,,,,,15,19.25133689839572,,,RN,Rio Grande do Norte,2408102,Natal,Pós-pandemia,129.0
+,3.0,,,,,,,,,174.0,,,3.0,,3.0,2023,,,,,,4,1.7241379310344827,,,RO,Rondônia,1100205,Porto Velho,Pós-pandemia,164.0
+,4.0,,,,,,,,,94.0,,,6.0,,13.0,2023,,,,,,6,13.829787234042554,,,RR,Roraima,1400100,Boa Vista,Pós-pandemia,69.0
+,3.0,,,,,,,,,328.0,,,7.0,,52.0,2023,,,,,,2,15.853658536585366,,,RS,Rio Grande do Sul,4314902,Porto Alegre,Pós-pandemia,267.0
+,1.0,,,,,,,,,50.0,,,2.0,,20.0,2023,,,,,,1,40.0,,,SC,Santa Catarina,4205407,Florianópolis,Pós-pandemia,27.0
+,2.0,,,,,,,,,163.0,,,1.0,,44.0,2023,,,,,,0,26.993865030674847,,,SE,Sergipe,2800308,Aracaju,Pós-pandemia,118.0
+,38.0,,,,,,,,,808.0,,,43.0,,229.0,2023,,,,,,20,28.341584158415838,,,SP,São Paulo,3550308,São Paulo,Pós-pandemia,516.0
+,2.0,,,,,,,,,133.0,,,5.0,,7.0,2023,,,,,,1,5.263157894736842,,,TO,Tocantins,1721000,Palmas,Pós-pandemia,118.0
+,5.0,,,,,,,,,88.0,,,0.0,,4.0,2024,,,,,,4,4.545454545454546,,,AC,Acre,1200401,Rio Branco,Pós-pandemia,80.0
+,8.0,,,,,,,,,384.0,,,3.0,,18.0,2024,,,,,,0,4.6875,,,AL,Alagoas,2704302,Maceió,Pós-pandemia,363.0
+,15.0,,,,,,,,,736.0,,,10.0,,23.0,2024,,,,,,17,3.125,,,AM,Amazonas,1302603,Manaus,Pós-pandemia,686.0
+,0.0,,,,,,,,,216.0,,,4.0,,94.0,2024,,,,,,3,43.51851851851852,,,AP,Amapá,1600303,Macapá,Pós-pandemia,115.0
+,9.0,,,,,,,,,1335.0,,,18.0,,420.0,2024,,,,,,24,31.46067415730337,,,BA,Bahia,2927408,Salvador,Pós-pandemia,873.0
+,9.0,,,,,,,,,867.0,,,20.0,,33.0,2024,,,,,,4,3.8062283737024223,,,CE,Ceará,2304400,Fortaleza,Pós-pandemia,810.0
+,23.0,,,,,,,,,266.0,,,8.0,,15.0,2024,,,,,,12,5.639097744360902,,,DF,Distrito Federal,5300108,Brasília,Pós-pandemia,231.0
+,1.0,,,,,,,,,95.0,,,0.0,,37.0,2024,,,,,,3,38.94736842105263,,,ES,Espírito Santo,3205309,Vitória,Pós-pandemia,55.0
+,9.0,,,,,,,,,222.0,,,3.0,,84.0,2024,,,,,,3,37.83783783783784,,,GO,Goiás,5208707,Goiânia,Pós-pandemia,132.0
+,6.0,,,,,,,,,201.0,,,12.0,,11.0,2024,,,,,,2,5.472636815920398,,,MA,Maranhão,2111300,São Luís,Pós-pandemia,176.0
+,12.0,,,,,,,,,396.0,,,4.0,,26.0,2024,,,,,,2,6.565656565656567,,,MG,Minas Gerais,3106200,Belo Horizonte,Pós-pandemia,390.0
+,11.0,,,,,,,,,180.0,,,3.0,,41.0,2024,,,,,,4,22.77777777777778,,,MS,Mato Grosso do Sul,5002704,Campo Grande,Pós-pandemia,132.0
+,4.0,,,,,,,,,99.0,,,3.0,,30.0,2024,,,,,,1,30.303030303030305,,,MT,Mato Grosso,5103403,Cuiabá,Pós-pandemia,65.0
+,2.0,,,,,,,,,369.0,,,16.0,,129.0,2024,,,,,,11,34.959349593495936,,,PA,Pará,1501402,Belém,Pós-pandemia,213.0
+,5.0,,,,,,,,,227.0,,,5.0,,17.0,2024,,,,,,4,7.488986784140969,,,PB,Paraíba,2507507,João Pessoa,Pós-pandemia,201.0
+,7.0,,,,,,,,,620.0,,,20.0,,9.0,2024,,,,,,9,1.4516129032258065,,,PE,Pernambuco,2611606,Recife,Pós-pandemia,591.0
+,12.0,,,,,,,,,269.0,,,6.0,,11.0,2024,,,,,,0,4.089219330855019,,,PI,Piauí,2211001,Teresina,Pós-pandemia,252.0
+,11.0,,,,,,,,,296.0,,,3.0,,106.0,2024,,,,,,9,35.810810810810814,,,PR,Paraná,4106902,Curitiba,Pós-pandemia,178.0
+,51.0,,,,,,,,,1375.0,,,44.0,,339.0,2024,,,,,,29,24.654545454545453,,,RJ,Rio de Janeiro,3304557,Rio de Janeiro,Pós-pandemia,963.0
+,1.0,,,,,,,,,136.0,,,5.0,,24.0,2024,,,,,,15,17.647058823529413,,,RN,Rio Grande do Norte,2408102,Natal,Pós-pandemia,92.0
+,1.0,,,,,,,,,188.0,,,5.0,,5.0,2024,,,,,,4,2.6595744680851063,,,RO,Rondônia,1100205,Porto Velho,Pós-pandemia,174.0
+,1.0,,,,,,,,,71.0,,,4.0,,4.0,2024,,,,,,3,5.633802816901409,,,RR,Roraima,1400100,Boa Vista,Pós-pandemia,60.0
+,8.0,,,,,,,,,204.0,,,4.0,,21.0,2024,,,,,,7,10.294117647058822,,,RS,Rio Grande do Sul,4314902,Porto Alegre,Pós-pandemia,172.0
+,3.0,,,,,,,,,60.0,,,0.0,,22.0,2024,,,,,,4,36.666666666666664,,,SC,Santa Catarina,4205407,Florianópolis,Pós-pandemia,34.0
+,4.0,,,,,,,,,144.0,,,2.0,,26.0,2024,,,,,,1,18.055555555555554,,,SE,Sergipe,2800308,Aracaju,Pós-pandemia,115.0
+,51.0,,,,,,,,,937.0,,,53.0,,357.0,2024,,,,,,29,38.10032017075774,,,SP,São Paulo,3550308,São Paulo,Pós-pandemia,498.0
+,3.0,,,,,,,,,53.0,,,1.0,,8.0,2024,,,,,,0,15.09433962264151,,,TO,Tocantins,1721000,Palmas,Pós-pandemia,44.0

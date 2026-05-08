@@ -1,0 +1,2755 @@
+ano,id_municipio,id_municipio_nome,sexo,grupo_idade,populacao
+2022,1600303,Macapá,feminino,0-4 anos,20733
+2024,2704302,Maceió,feminino,0-4 anos,31154
+2022,2927408,Salvador,feminino,0-4 anos,65848
+2023,1501402,Belém,feminino,0-4 anos,35806
+2023,1200401,Rio Branco,feminino,0-4 anos,13589
+2024,5103403,Cuiabá,feminino,0-4 anos,22031
+2023,2408102,Natal,feminino,10-14 anos,24411
+2024,3304557,Rio de Janeiro,feminino,10-14 anos,194860
+2024,2611606,Recife,feminino,10-14 anos,48169
+2022,2211001,Teresina,feminino,10-14 anos,29866
+2022,2800308,Aracaju,feminino,10-14 anos,20391
+2023,1100205,Porto Velho,feminino,10-14 anos,20071
+2022,1600303,Macapá,feminino,10-14 anos,20250
+2022,3550308,São Paulo,feminino,10-14 anos,365717
+2023,4106902,Curitiba,feminino,10-14 anos,53109
+2023,3205309,Vitória,feminino,10-14 anos,9633
+2022,5002704,Campo Grande,feminino,10-14 anos,32273
+2022,4314902,Porto Alegre,feminino,15-19 anos,42051
+2023,5002704,Campo Grande,feminino,15-19 anos,32646
+2022,3205309,Vitória,feminino,15-19 anos,10602
+2024,3550308,São Paulo,feminino,15-19 anos,374718
+2024,3205309,Vitória,feminino,15-19 anos,10211
+2022,2408102,Natal,feminino,15-19 anos,26640
+2024,5002704,Campo Grande,feminino,15-19 anos,32634
+2023,4106902,Curitiba,feminino,15-19 anos,57418
+2023,2704302,Maceió,feminino,15-19 anos,34908
+2023,1200401,Rio Branco,feminino,20-24 anos,18276
+2022,4314902,Porto Alegre,feminino,20-24 anos,50909
+2024,2611606,Recife,feminino,20-24 anos,56644
+2023,5103403,Cuiabá,feminino,20-24 anos,25217
+2022,1302603,Manaus,feminino,20-24 anos,101787
+2023,1302603,Manaus,feminino,20-24 anos,99990
+2024,5002704,Campo Grande,feminino,20-24 anos,34868
+2023,4314902,Porto Alegre,feminino,20-24 anos,49793
+2023,5300108,Brasília,feminino,20-24 anos,116379
+2022,3304557,Rio de Janeiro,feminino,20-24 anos,245857
+2022,4205407,Florianópolis,feminino,20-24 anos,20923
+2022,4314902,Porto Alegre,feminino,25-29 anos,54724
+2022,3304557,Rio de Janeiro,feminino,25-29 anos,266699
+2024,2507507,João Pessoa,feminino,25-29 anos,36384
+2023,1501402,Belém,feminino,25-29 anos,58106
+2024,2927408,Salvador,feminino,25-29 anos,102458
+2022,2927408,Salvador,feminino,25-29 anos,105042
+2023,2304400,Fortaleza,feminino,25-29 anos,112094
+2023,3106200,Belo Horizonte,feminino,25-29 anos,96478
+2022,2507507,João Pessoa,feminino,25-29 anos,36285
+2024,5002704,Campo Grande,feminino,30-34 anos,37148
+2023,4205407,Florianópolis,feminino,30-34 anos,25586
+2023,4314902,Porto Alegre,feminino,30-34 anos,53029
+2023,3304557,Rio de Janeiro,feminino,30-34 anos,260739
+2023,4106902,Curitiba,feminino,30-34 anos,71630
+2024,2304400,Fortaleza,feminino,30-34 anos,111386
+2024,1200401,Rio Branco,feminino,30-34 anos,16362
+2022,3304557,Rio de Janeiro,feminino,30-34 anos,261281
+2023,1501402,Belém,feminino,30-34 anos,55740
+2023,2211001,Teresina,feminino,35-39 anos,41140
+2023,2800308,Aracaju,feminino,35-39 anos,28207
+2022,2507507,João Pessoa,feminino,35-39 anos,38922
+2024,1721000,Palmas,feminino,35-39 anos,14393
+2024,2507507,João Pessoa,feminino,35-39 anos,38583
+2022,1100205,Porto Velho,feminino,35-39 anos,21752
+2022,3106200,Belo Horizonte,feminino,35-39 anos,103663
+2022,2111300,São Luís,feminino,35-39 anos,51243
+2023,2304400,Fortaleza,feminino,35-39 anos,112992
+2023,5208707,Goiânia,feminino,40-44 anos,64525
+2024,1302603,Manaus,feminino,40-44 anos,94417
+2023,3550308,São Paulo,feminino,40-44 anos,510361
+2024,2211001,Teresina,feminino,40-44 anos,40305
+2022,2927408,Salvador,feminino,40-44 anos,130008
+2023,1200401,Rio Branco,feminino,40-44 anos,15688
+2024,1600303,Macapá,feminino,40-44 anos,18634
+2023,5300108,Brasília,feminino,40-44 anos,138102
+2023,5002704,Campo Grande,feminino,40-44 anos,38133
+2022,5103403,Cuiabá,feminino,40-44 anos,28327
+2023,1600303,Macapá,feminino,40-44 anos,18373
+2022,1100205,Porto Velho,feminino,40-44 anos,19955
+2024,2507507,João Pessoa,feminino,40-44 anos,38604
+2024,1302603,Manaus,feminino,45-49 anos,82634
+2022,1501402,Belém,feminino,45-49 anos,54957
+2024,5002704,Campo Grande,feminino,45-49 anos,34852
+2022,2507507,João Pessoa,feminino,45-49 anos,31819
+2023,2507507,João Pessoa,feminino,45-49 anos,32840
+2024,5103403,Cuiabá,feminino,45-49 anos,25675
+2023,2611606,Recife,feminino,45-49 anos,62279
+2022,2111300,São Luís,feminino,45-49 anos,38888
+2022,1600303,Macapá,feminino,45-49 anos,14919
+2022,4205407,Florianópolis,feminino,45-49 anos,19891
+2024,1721000,Palmas,feminino,5-9 anos,12234
+2024,2111300,São Luís,feminino,5-9 anos,34114
+2022,2111300,São Luís,feminino,5-9 anos,34418
+2023,5103403,Cuiabá,feminino,5-9 anos,23873
+2024,1400100,Boa Vista,feminino,5-9 anos,20479
+2022,1200401,Rio Branco,feminino,5-9 anos,15019
+2023,3106200,Belo Horizonte,feminino,5-9 anos,64550
+2023,2408102,Natal,feminino,50-54 anos,27517
+2024,1501402,Belém,feminino,50-54 anos,50656
+2024,2304400,Fortaleza,feminino,50-54 anos,89718
+2022,2927408,Salvador,feminino,50-54 anos,97333
+2022,2611606,Recife,feminino,50-54 anos,58219
+2024,2408102,Natal,feminino,50-54 anos,27179
+2024,2927408,Salvador,feminino,50-54 anos,98422
+2023,2111300,São Luís,feminino,50-54 anos,35700
+2022,1100205,Porto Velho,feminino,55-59 anos,12220
+2023,5103403,Cuiabá,feminino,55-59 anos,19058
+2023,2927408,Salvador,feminino,55-59 anos,89381
+2023,2304400,Fortaleza,feminino,55-59 anos,84522
+2022,5208707,Goiânia,feminino,55-59 anos,45135
+2024,1302603,Manaus,feminino,55-59 anos,52655
+2022,1600303,Macapá,feminino,55-59 anos,9313
+2022,1302603,Manaus,feminino,55-59 anos,49344
+2024,3304557,Rio de Janeiro,feminino,55-59 anos,223643
+2023,2800308,Aracaju,feminino,55-59 anos,20194
+2023,3550308,São Paulo,feminino,60-64 anos,345531
+2023,4106902,Curitiba,feminino,60-64 anos,56719
+2022,1600303,Macapá,feminino,60-64 anos,7182
+2023,1400100,Boa Vista,feminino,60-64 anos,6641
+2024,2211001,Teresina,feminino,60-64 anos,23995
+2022,2507507,João Pessoa,feminino,60-64 anos,22427
+2022,1721000,Palmas,feminino,60-64 anos,4647
+2023,4205407,Florianópolis,feminino,65-69 anos,13533
+2022,1721000,Palmas,feminino,65-69 anos,3228
+2022,2507507,João Pessoa,feminino,65-69 anos,17577
+2022,2408102,Natal,feminino,65-69 anos,18031
+2024,1501402,Belém,feminino,65-69 anos,32409
+2023,5103403,Cuiabá,feminino,65-69 anos,12809
+2024,2111300,São Luís,feminino,65-69 anos,20979
+2023,2507507,João Pessoa,feminino,65-69 anos,18245
+2022,5208707,Goiânia,feminino,65-69 anos,31511
+2023,4106902,Curitiba,feminino,65-69 anos,47259
+2022,5103403,Cuiabá,feminino,65-69 anos,12160
+2023,2408102,Natal,feminino,70-74 anos,14609
+2024,2408102,Natal,feminino,70-74 anos,14968
+2024,1200401,Rio Branco,feminino,70-74 anos,4046
+2022,2927408,Salvador,feminino,70-74 anos,43933
+2022,5300108,Brasília,feminino,70-74 anos,38653
+2024,5002704,Campo Grande,feminino,70-74 anos,15340
+2023,1501402,Belém,feminino,70-74 anos,23794
+2023,2507507,João Pessoa,feminino,70-74 anos,14076
+2022,2111300,São Luís,feminino,70-74 anos,13664
+2022,4106902,Curitiba,feminino,70-74 anos,35080
+2022,2704302,Maceió,feminino,75-79 anos,9127
+2023,3304557,Rio de Janeiro,feminino,75-79 anos,106171
+2022,2211001,Teresina,feminino,75-79 anos,8361
+2023,1721000,Palmas,feminino,80-mais,1592
+2024,2304400,Fortaleza,feminino,80-mais,40234
+2022,1100205,Porto Velho,feminino,80-mais,2915
+2023,1100205,Porto Velho,masculino,0-4 anos,18613
+2024,2211001,Teresina,masculino,0-4 anos,28136
+2024,2111300,São Luís,masculino,0-4 anos,31413
+2022,2800308,Aracaju,masculino,0-4 anos,19091
+2023,4205407,Florianópolis,masculino,0-4 anos,14479
+2023,2304400,Fortaleza,masculino,0-4 anos,75145
+2023,1200401,Rio Branco,masculino,0-4 anos,14317
+2024,5103403,Cuiabá,masculino,0-4 anos,22913
+2023,4314902,Porto Alegre,masculino,0-4 anos,34717
+2023,5002704,Campo Grande,masculino,0-4 anos,32511
+2022,3205309,Vitória,masculino,0-4 anos,10027
+2024,1302603,Manaus,masculino,0-4 anos,82433
+2023,1200401,Rio Branco,masculino,10-14 anos,15427
+2023,2704302,Maceió,masculino,10-14 anos,34512
+2023,5300108,Brasília,masculino,10-14 anos,100747
+2024,3106200,Belo Horizonte,masculino,10-14 anos,66834
+2024,2304400,Fortaleza,masculino,15-19 anos,89239
+2022,2304400,Fortaleza,masculino,15-19 anos,91360
+2023,5002704,Campo Grande,masculino,15-19 anos,34598
+2023,1400100,Boa Vista,masculino,15-19 anos,19331
+2023,5208707,Goiânia,masculino,15-19 anos,49806
+2023,2704302,Maceió,masculino,15-19 anos,35881
+2022,2111300,São Luís,masculino,15-19 anos,40926
+2022,1600303,Macapá,masculino,15-19 anos,21797
+2023,2111300,São Luís,masculino,15-19 anos,40559
+2023,3304557,Rio de Janeiro,masculino,15-19 anos,206740
+2022,2611606,Recife,masculino,15-19 anos,54447
+2024,3106200,Belo Horizonte,masculino,20-24 anos,84919
+2022,2800308,Aracaju,masculino,20-24 anos,24129
+2024,2927408,Salvador,masculino,20-24 anos,88990
+2022,2211001,Teresina,masculino,20-24 anos,37155
+2024,4314902,Porto Alegre,masculino,20-24 anos,48247
+2023,3550308,São Paulo,masculino,25-29 anos,456652
+2022,2111300,São Luís,masculino,25-29 anos,46823
+2023,5300108,Brasília,masculino,25-29 anos,118330
+2022,3304557,Rio de Janeiro,masculino,25-29 anos,258397
+2024,2507507,João Pessoa,masculino,25-29 anos,34698
+2022,2507507,João Pessoa,masculino,25-29 anos,34402
+2022,4314902,Porto Alegre,masculino,25-29 anos,52354
+2022,4106902,Curitiba,masculino,25-29 anos,72505
+2022,5103403,Cuiabá,masculino,25-29 anos,27366
+2024,3106200,Belo Horizonte,masculino,25-29 anos,91296
+2023,2304400,Fortaleza,masculino,25-29 anos,105712
+2023,2211001,Teresina,masculino,30-34 anos,35097
+2024,2304400,Fortaleza,masculino,30-34 anos,102528
+2024,1600303,Macapá,masculino,30-34 anos,20058
+2023,1721000,Palmas,masculino,30-34 anos,14318
+2022,2507507,João Pessoa,masculino,30-34 anos,34094
+2023,4205407,Florianópolis,masculino,30-34 anos,25467
+2023,1600303,Macapá,masculino,35-39 anos,18781
+2023,2704302,Maceió,masculino,35-39 anos,36815
+2024,2304400,Fortaleza,masculino,35-39 anos,100004
+2022,1302603,Manaus,masculino,35-39 anos,90063
+2024,3205309,Vitória,masculino,35-39 anos,12842
+2024,5300108,Brasília,masculino,35-39 anos,116287
+2022,4205407,Florianópolis,masculino,40-44 anos,22745
+2022,3550308,São Paulo,masculino,40-44 anos,451020
+2024,2800308,Aracaju,masculino,40-44 anos,23569
+2023,1600303,Macapá,masculino,40-44 anos,16957
+2023,3205309,Vitória,masculino,40-44 anos,12983
+2024,5300108,Brasília,masculino,40-44 anos,119304
+2023,2800308,Aracaju,masculino,40-44 anos,23484
+2023,4106902,Curitiba,masculino,45-49 anos,62185
+2024,1400100,Boa Vista,masculino,45-49 anos,13874
+2023,1501402,Belém,masculino,45-49 anos,47941
+2023,3205309,Vitória,masculino,45-49 anos,10918
+2024,2800308,Aracaju,masculino,45-49 anos,20660
+2022,2211001,Teresina,masculino,45-49 anos,26677
+2024,2611606,Recife,masculino,45-49 anos,51941
+2023,2611606,Recife,masculino,45-49 anos,51129
+2023,5300108,Brasília,masculino,45-49 anos,104269
+2024,1721000,Palmas,masculino,45-49 anos,10499
+2024,2927408,Salvador,masculino,45-49 anos,92875
+2023,1600303,Macapá,masculino,5-9 anos,22075
+2024,5103403,Cuiabá,masculino,5-9 anos,24552
+2024,4106902,Curitiba,masculino,5-9 anos,52541
+2024,3106200,Belo Horizonte,masculino,5-9 anos,66049
+2024,1501402,Belém,masculino,5-9 anos,41831
+2023,1100205,Porto Velho,masculino,5-9 anos,20536
+2023,1400100,Boa Vista,masculino,5-9 anos,20207
+2023,4314902,Porto Alegre,masculino,5-9 anos,41512
+2023,2800308,Aracaju,masculino,50-54 anos,17282
+2022,5300108,Brasília,masculino,50-54 anos,84656
+2022,4314902,Porto Alegre,masculino,50-54 anos,38238
+2023,2704302,Maceió,masculino,50-54 anos,27457
+2024,3106200,Belo Horizonte,masculino,50-54 anos,72072
+2022,2111300,São Luís,masculino,50-54 anos,27817
+2022,1721000,Palmas,masculino,50-54 anos,7580
+2022,2507507,João Pessoa,masculino,50-54 anos,23252
+2023,2927408,Salvador,masculino,50-54 anos,77328
+2022,1501402,Belém,masculino,50-54 anos,41954
+2024,1100205,Porto Velho,masculino,55-59 anos,11952
+2023,3106200,Belo Horizonte,masculino,55-59 anos,66886
+2023,1100205,Porto Velho,masculino,55-59 anos,11783
+2023,2800308,Aracaju,masculino,55-59 anos,15198
+2024,1400100,Boa Vista,masculino,55-59 anos,8519
+2022,1501402,Belém,masculino,60-64 anos,30034
+2022,3304557,Rio de Janeiro,masculino,60-64 anos,161740
+2024,4106902,Curitiba,masculino,60-64 anos,44369
+2024,2704302,Maceió,masculino,60-64 anos,19384
+2024,2304400,Fortaleza,masculino,60-64 anos,53995
+2022,5103403,Cuiabá,masculino,60-64 anos,13359
+2022,1600303,Macapá,masculino,60-64 anos,6475
+2022,3106200,Belo Horizonte,masculino,60-64 anos,59200
+2023,5002704,Campo Grande,masculino,60-64 anos,19575
+2022,1200401,Rio Branco,masculino,60-64 anos,5849
+2024,4205407,Florianópolis,masculino,60-64 anos,13383
+2022,2408102,Natal,masculino,60-64 anos,17304
+2024,1400100,Boa Vista,masculino,60-64 anos,6492
+2022,1400100,Boa Vista,masculino,65-69 anos,4086
+2024,1200401,Rio Branco,masculino,65-69 anos,4696
+2024,3205309,Vitória,masculino,65-69 anos,7322
+2022,2507507,João Pessoa,masculino,70-74 anos,8803
+2023,2111300,São Luís,masculino,70-74 anos,10060
+2023,1200401,Rio Branco,masculino,70-74 anos,3159
+2024,1200401,Rio Branco,masculino,70-74 anos,3314
+2023,5300108,Brasília,masculino,70-74 anos,28389
+2024,4106902,Curitiba,masculino,70-74 anos,26206
+2023,2800308,Aracaju,masculino,70-74 anos,6875
+2022,1400100,Boa Vista,masculino,70-74 anos,2726
+2023,1721000,Palmas,masculino,75-79 anos,1392
+2022,2211001,Teresina,masculino,75-79 anos,5503
+2022,3550308,São Paulo,masculino,75-79 anos,92284
+2023,1400100,Boa Vista,masculino,80-mais,1486
+2023,3205309,Vitória,masculino,80-mais,3333
+2022,3106200,Belo Horizonte,masculino,80-mais,25894
+2024,1501402,Belém,masculino,80-mais,10240
+2024,2611606,Recife,masculino,80-mais,12513
+2023,2111300,São Luís,masculino,80-mais,6103
+2024,2111300,São Luís,masculino,80-mais,6316
+2023,2211001,Teresina,masculino,80-mais,5689
+2022,2211001,Teresina,masculino,80-mais,5472
+2023,2408102,Natal,masculino,80-mais,6492
+2024,1200401,Rio Branco,masculino,80-mais,1939
+2022,1400100,Boa Vista,masculino,80-mais,1402
+2023,4205407,Florianópolis,feminino,0-4 anos,13864
+2023,1600303,Macapá,feminino,0-4 anos,20000
+2024,5208707,Goiânia,feminino,0-4 anos,40324
+2023,1302603,Manaus,feminino,0-4 anos,80316
+2022,5208707,Goiânia,feminino,0-4 anos,42702
+2024,2611606,Recife,feminino,0-4 anos,40372
+2023,2507507,João Pessoa,feminino,0-4 anos,26763
+2024,3550308,São Paulo,feminino,10-14 anos,363551
+2022,3205309,Vitória,feminino,10-14 anos,9633
+2022,5103403,Cuiabá,feminino,10-14 anos,22809
+2022,2408102,Natal,feminino,10-14 anos,24702
+2023,1302603,Manaus,feminino,10-14 anos,89186
+2024,2800308,Aracaju,feminino,10-14 anos,20062
+2023,1721000,Palmas,feminino,10-14 anos,11552
+2024,4205407,Florianópolis,feminino,10-14 anos,14959
+2022,5300108,Brasília,feminino,10-14 anos,97199
+2024,1721000,Palmas,feminino,10-14 anos,11723
+2023,5300108,Brasília,feminino,10-14 anos,96495
+2022,2304400,Fortaleza,feminino,15-19 anos,89665
+2023,2927408,Salvador,feminino,15-19 anos,79642
+2023,4205407,Florianópolis,feminino,15-19 anos,15232
+2024,5300108,Brasília,feminino,15-19 anos,104327
+2022,2704302,Maceió,feminino,15-19 anos,35536
+2024,2507507,João Pessoa,feminino,15-19 anos,30145
+2024,2704302,Maceió,feminino,15-19 anos,34447
+2022,1501402,Belém,feminino,15-19 anos,51688
+2022,1721000,Palmas,feminino,15-19 anos,12367
+2022,1721000,Palmas,feminino,20-24 anos,15248
+2022,2211001,Teresina,feminino,20-24 anos,38351
+2022,5103403,Cuiabá,feminino,20-24 anos,25355
+2023,4205407,Florianópolis,feminino,20-24 anos,20396
+2023,2408102,Natal,feminino,20-24 anos,29943
+2023,5208707,Goiânia,feminino,20-24 anos,58826
+2022,3550308,São Paulo,feminino,20-24 anos,442486
+2024,3304557,Rio de Janeiro,feminino,20-24 anos,228721
+2022,1501402,Belém,feminino,25-29 anos,58814
+2024,3304557,Rio de Janeiro,feminino,25-29 anos,263936
+2024,2611606,Recife,feminino,25-29 anos,61126
+2024,1501402,Belém,feminino,25-29 anos,57356
+2022,2211001,Teresina,feminino,25-29 anos,37521
+2022,3550308,São Paulo,feminino,25-29 anos,464860
+2022,5103403,Cuiabá,feminino,25-29 anos,27103
+2024,2507507,João Pessoa,feminino,30-34 anos,36968
+2024,5103403,Cuiabá,feminino,30-34 anos,27746
+2022,2211001,Teresina,feminino,30-34 anos,39176
+2024,1302603,Manaus,feminino,30-34 anos,96760
+2024,3106200,Belo Horizonte,feminino,30-34 anos,93541
+2023,2611606,Recife,feminino,30-34 anos,62690
+2024,2611606,Recife,feminino,30-34 anos,61607
+2024,2927408,Salvador,feminino,30-34 anos,101479
+2022,2111300,São Luís,feminino,30-34 anos,49421
+2023,3106200,Belo Horizonte,feminino,30-34 anos,95545
+2024,3304557,Rio de Janeiro,feminino,30-34 anos,261730
+2023,3550308,São Paulo,feminino,35-39 anos,494297
+2023,5208707,Goiânia,feminino,35-39 anos,64264
+2023,3304557,Rio de Janeiro,feminino,35-39 anos,269871
+2022,4106902,Curitiba,feminino,35-39 anos,75112
+2022,1600303,Macapá,feminino,35-39 anos,19784
+2023,1721000,Palmas,feminino,35-39 anos,14469
+2022,3304557,Rio de Janeiro,feminino,35-39 anos,273965
+2024,1200401,Rio Branco,feminino,35-39 anos,15967
+2023,1400100,Boa Vista,feminino,35-39 anos,18873
+2023,3205309,Vitória,feminino,35-39 anos,14349
+2023,2507507,João Pessoa,feminino,35-39 anos,39011
+2024,2611606,Recife,feminino,35-39 anos,64384
+2023,1501402,Belém,feminino,40-44 anos,60912
+2023,3304557,Rio de Janeiro,feminino,40-44 anos,279299
+2023,4106902,Curitiba,feminino,40-44 anos,77958
+2022,2800308,Aracaju,feminino,40-44 anos,28231
+2023,4205407,Florianópolis,feminino,40-44 anos,24977
+2022,1200401,Rio Branco,feminino,40-44 anos,15495
+2023,1100205,Porto Velho,feminino,40-44 anos,20434
+2022,2704302,Maceió,feminino,40-44 anos,41993
+2023,2211001,Teresina,feminino,40-44 anos,40072
+2023,3205309,Vitória,feminino,40-44 anos,14964
+2022,1501402,Belém,feminino,40-44 anos,61116
+2024,2927408,Salvador,feminino,45-49 anos,114719
+2024,5208707,Goiânia,feminino,45-49 anos,58817
+2023,2211001,Teresina,feminino,45-49 anos,33803
+2024,1400100,Boa Vista,feminino,45-49 anos,14664
+2022,3550308,São Paulo,feminino,45-49 anos,450590
+2022,2611606,Recife,feminino,45-49 anos,61555
+2024,1200401,Rio Branco,feminino,45-49 anos,13627
+2022,5002704,Campo Grande,feminino,45-49 anos,32917
+2024,3304557,Rio de Janeiro,feminino,45-49 anos,262356
+2022,4106902,Curitiba,feminino,45-49 anos,69528
+2022,3205309,Vitória,feminino,45-49 anos,12792
+2023,4314902,Porto Alegre,feminino,45-49 anos,51074
+2022,2611606,Recife,feminino,5-9 anos,48916
+2023,1302603,Manaus,feminino,5-9 anos,89369
+2023,2611606,Recife,feminino,5-9 anos,48551
+2022,2211001,Teresina,feminino,5-9 anos,28939
+2024,5002704,Campo Grande,feminino,5-9 anos,33984
+2023,2927408,Salvador,feminino,5-9 anos,72876
+2022,1100205,Porto Velho,feminino,5-9 anos,19795
+2024,2611606,Recife,feminino,5-9 anos,47626
+2022,5103403,Cuiabá,feminino,5-9 anos,23647
+2024,2211001,Teresina,feminino,5-9 anos,29416
+2023,5208707,Goiânia,feminino,50-54 anos,50555
+2023,1400100,Boa Vista,feminino,50-54 anos,10598
+2024,1721000,Palmas,feminino,50-54 anos,8949
+2024,2800308,Aracaju,feminino,50-54 anos,22456
+2023,3106200,Belo Horizonte,feminino,50-54 anos,85447
+2024,5002704,Campo Grande,feminino,55-59 anos,28533
+2024,1721000,Palmas,feminino,55-59 anos,6868
+2023,3205309,Vitória,feminino,55-59 anos,11589
+2022,5300108,Brasília,feminino,55-59 anos,83596
+2022,4205407,Florianópolis,feminino,55-59 anos,17548
+2024,2111300,São Luís,feminino,55-59 anos,32031
+2023,1200401,Rio Branco,feminino,60-64 anos,7074
+2024,2507507,João Pessoa,feminino,60-64 anos,24444
+2024,4205407,Florianópolis,feminino,60-64 anos,16924
+2024,5002704,Campo Grande,feminino,60-64 anos,25637
+2022,3304557,Rio de Janeiro,feminino,60-64 anos,211983
+2022,4106902,Curitiba,feminino,60-64 anos,55653
+2022,2111300,São Luís,feminino,60-64 anos,25113
+2024,2927408,Salvador,feminino,60-64 anos,79707
+2022,2927408,Salvador,feminino,60-64 anos,76366
+2023,3205309,Vitória,feminino,60-64 anos,11141
+2024,4314902,Porto Alegre,feminino,60-64 anos,47890
+2024,2408102,Natal,feminino,60-64 anos,24511
+2022,2611606,Recife,feminino,60-64 anos,48383
+2023,3106200,Belo Horizonte,feminino,60-64 anos,78063
+2024,3106200,Belo Horizonte,feminino,60-64 anos,78904
+2023,1400100,Boa Vista,feminino,65-69 anos,4872
+2022,2611606,Recife,feminino,65-69 anos,39164
+2023,1100205,Porto Velho,feminino,65-69 anos,7174
+2023,2927408,Salvador,feminino,65-69 anos,63004
+2022,2800308,Aracaju,feminino,65-69 anos,12951
+2024,2304400,Fortaleza,feminino,65-69 anos,56260
+2023,2800308,Aracaju,feminino,65-69 anos,13402
+2023,3550308,São Paulo,feminino,65-69 anos,290523
+2022,3205309,Vitória,feminino,65-69 anos,9263
+2024,1600303,Macapá,feminino,65-69 anos,5912
+2022,2304400,Fortaleza,feminino,65-69 anos,52910
+2022,1100205,Porto Velho,feminino,65-69 anos,6751
+2022,1400100,Boa Vista,feminino,65-69 anos,4542
+2022,2408102,Natal,feminino,70-74 anos,14211
+2022,4314902,Porto Alegre,feminino,70-74 anos,33602
+2022,3550308,São Paulo,feminino,70-74 anos,216293
+2024,2304400,Fortaleza,feminino,70-74 anos,43901
+2024,1501402,Belém,feminino,75-79 anos,17375
+2023,4106902,Curitiba,feminino,75-79 anos,25452
+2024,5103403,Cuiabá,feminino,75-79 anos,6176
+2022,5300108,Brasília,feminino,75-79 anos,25796
+2023,5300108,Brasília,feminino,75-79 anos,27618
+2023,5002704,Campo Grande,feminino,75-79 anos,9702
+2022,2507507,João Pessoa,feminino,75-79 anos,9439
+2024,1400100,Boa Vista,feminino,75-79 anos,2147
+2023,3205309,Vitória,feminino,80-mais,6885
+2024,5103403,Cuiabá,feminino,80-mais,6633
+2023,2927408,Salvador,feminino,80-mais,39323
+2023,5103403,Cuiabá,feminino,80-mais,6270
+2022,2408102,Natal,feminino,80-mais,13321
+2023,2611606,Recife,feminino,80-mais,29387
+2024,1501402,Belém,feminino,80-mais,21204
+2023,5300108,Brasília,feminino,80-mais,31684
+2024,1200401,Rio Branco,feminino,80-mais,2842
+2022,5002704,Campo Grande,feminino,80-mais,10981
+2024,2704302,Maceió,feminino,80-mais,11146
+2023,4314902,Porto Alegre,feminino,80-mais,34030
+2024,3106200,Belo Horizonte,feminino,80-mais,54188
+2024,1600303,Macapá,feminino,80-mais,2991
+2024,2800308,Aracaju,masculino,0-4 anos,17692
+2024,2507507,João Pessoa,masculino,0-4 anos,27521
+2022,5103403,Cuiabá,masculino,0-4 anos,23542
+2022,5300108,Brasília,masculino,0-4 anos,100710
+2024,4106902,Curitiba,masculino,0-4 anos,43793
+2024,5002704,Campo Grande,masculino,0-4 anos,31750
+2024,2304400,Fortaleza,masculino,0-4 anos,71815
+2023,2507507,João Pessoa,masculino,10-14 anos,29643
+2022,2800308,Aracaju,masculino,10-14 anos,20855
+2024,4314902,Porto Alegre,masculino,10-14 anos,40586
+2023,1501402,Belém,masculino,10-14 anos,46553
+2023,4205407,Florianópolis,masculino,10-14 anos,15608
+2023,1721000,Palmas,masculino,15-19 anos,12417
+2024,1302603,Manaus,masculino,15-19 anos,94436
+2022,1400100,Boa Vista,masculino,15-19 anos,19154
+2022,2408102,Natal,masculino,15-19 anos,27066
+2024,5103403,Cuiabá,masculino,15-19 anos,24462
+2024,2111300,São Luís,masculino,15-19 anos,40299
+2023,5300108,Brasília,masculino,15-19 anos,107422
+2023,3205309,Vitória,masculino,15-19 anos,10410
+2024,2211001,Teresina,masculino,15-19 anos,32780
+2022,2211001,Teresina,masculino,15-19 anos,33658
+2022,3304557,Rio de Janeiro,masculino,15-19 anos,209834
+2024,1200401,Rio Branco,masculino,20-24 anos,17757
+2024,1400100,Boa Vista,masculino,20-24 anos,21975
+2024,2704302,Maceió,masculino,20-24 anos,39025
+2023,4205407,Florianópolis,masculino,20-24 anos,20532
+2024,2507507,João Pessoa,masculino,20-24 anos,34023
+2022,1501402,Belém,masculino,20-24 anos,58065
+2023,1100205,Porto Velho,masculino,20-24 anos,22396
+2024,3550308,São Paulo,masculino,20-24 anos,431639
+2023,5103403,Cuiabá,masculino,20-24 anos,25816
+2022,3304557,Rio de Janeiro,masculino,20-24 anos,246278
+2022,4106902,Curitiba,masculino,20-24 anos,69994
+2023,2408102,Natal,masculino,25-29 anos,31044
+2023,1100205,Porto Velho,masculino,25-29 anos,21676
+2023,2704302,Maceió,masculino,25-29 anos,41587
+2023,2304400,Fortaleza,masculino,30-34 anos,103239
+2023,1100205,Porto Velho,masculino,30-34 anos,21415
+2023,2927408,Salvador,masculino,30-34 anos,90714
+2022,1600303,Macapá,masculino,30-34 anos,19661
+2024,3106200,Belo Horizonte,masculino,30-34 anos,88819
+2023,1600303,Macapá,masculino,30-34 anos,19833
+2022,1302603,Manaus,masculino,30-34 anos,90203
+2022,5300108,Brasília,masculino,30-34 anos,114029
+2024,3550308,São Paulo,masculino,35-39 anos,454424
+2023,2611606,Recife,masculino,35-39 anos,58423
+2023,2111300,São Luís,masculino,35-39 anos,44323
+2024,1100205,Porto Velho,masculino,35-39 anos,21422
+2024,4314902,Porto Alegre,masculino,35-39 anos,49283
+2022,2304400,Fortaleza,masculino,35-39 anos,101502
+2023,5103403,Cuiabá,masculino,35-39 anos,27939
+2023,5300108,Brasília,masculino,35-39 anos,118030
+2024,1302603,Manaus,masculino,35-39 anos,89153
+2023,2927408,Salvador,masculino,35-39 anos,102162
+2024,5208707,Goiânia,masculino,35-39 anos,59644
+2023,1200401,Rio Branco,masculino,35-39 anos,15079
+2024,1200401,Rio Branco,masculino,40-44 anos,14297
+2024,2211001,Teresina,masculino,40-44 anos,33868
+2023,4106902,Curitiba,masculino,40-44 anos,70377
+2023,4314902,Porto Alegre,masculino,40-44 anos,51207
+2022,3205309,Vitória,masculino,40-44 anos,12804
+2023,2611606,Recife,masculino,40-44 anos,57716
+2024,2927408,Salvador,masculino,40-44 anos,104994
+2023,2304400,Fortaleza,masculino,40-44 anos,93063
+2024,2507507,João Pessoa,masculino,40-44 anos,33235
+2024,2111300,São Luís,masculino,40-44 anos,41349
+2023,1721000,Palmas,masculino,45-49 anos,10087
+2023,2408102,Natal,masculino,45-49 anos,24331
+2022,5208707,Goiânia,masculino,45-49 anos,49451
+2024,5103403,Cuiabá,masculino,45-49 anos,23703
+2023,5208707,Goiânia,masculino,45-49 anos,50796
+2022,2800308,Aracaju,masculino,45-49 anos,19527
+2022,3550308,São Paulo,masculino,45-49 anos,392324
+2022,2704302,Maceió,masculino,45-49 anos,30528
+2022,1721000,Palmas,masculino,45-49 anos,9609
+2022,5300108,Brasília,masculino,45-49 anos,100959
+2022,1600303,Macapá,masculino,45-49 anos,13908
+2022,5002704,Campo Grande,masculino,45-49 anos,29018
+2022,3205309,Vitória,masculino,5-9 anos,10537
+2024,3550308,São Paulo,masculino,5-9 anos,378686
+2023,3550308,São Paulo,masculino,5-9 anos,384762
+2023,1200401,Rio Branco,masculino,5-9 anos,15741
+2022,2927408,Salvador,masculino,5-9 anos,77097
+2024,1400100,Boa Vista,masculino,5-9 anos,21254
+2023,3304557,Rio de Janeiro,masculino,5-9 anos,206973
+2024,4205407,Florianópolis,masculino,5-9 anos,16326
+2024,1600303,Macapá,masculino,5-9 anos,21842
+2024,2927408,Salvador,masculino,5-9 anos,74980
+2023,4106902,Curitiba,masculino,5-9 anos,53945
+2022,3106200,Belo Horizonte,masculino,50-54 anos,71504
+2024,1721000,Palmas,masculino,50-54 anos,8206
+2022,2611606,Recife,masculino,50-54 anos,45919
+2024,2704302,Maceió,masculino,50-54 anos,27692
+2023,3205309,Vitória,masculino,50-54 anos,9302
+2022,1200401,Rio Branco,masculino,50-54 anos,9228
+2022,3550308,São Paulo,masculino,50-54 anos,349132
+2023,4106902,Curitiba,masculino,50-54 anos,56864
+2023,5300108,Brasília,masculino,50-54 anos,87048
+2024,2611606,Recife,masculino,50-54 anos,46278
+2022,2304400,Fortaleza,masculino,55-59 anos,63782
+2022,1302603,Manaus,masculino,55-59 anos,44443
+2024,5208707,Goiânia,masculino,55-59 anos,38170
+2022,1501402,Belém,masculino,55-59 anos,36065
+2024,4205407,Florianópolis,masculino,55-59 anos,14867
+2022,1200401,Rio Branco,masculino,55-59 anos,7531
+2022,1721000,Palmas,masculino,55-59 anos,5880
+2024,5300108,Brasília,masculino,55-59 anos,73935
+2022,2611606,Recife,masculino,55-59 anos,41772
+2024,2800308,Aracaju,masculino,55-59 anos,15397
+2024,2304400,Fortaleza,masculino,55-59 anos,65067
+2023,2304400,Fortaleza,masculino,55-59 anos,64611
+2023,4205407,Florianópolis,masculino,60-64 anos,13017
+2022,4106902,Curitiba,masculino,60-64 anos,42756
+2022,4205407,Florianópolis,masculino,60-64 anos,12627
+2022,3550308,São Paulo,masculino,60-64 anos,260602
+2023,4314902,Porto Alegre,masculino,60-64 anos,35671
+2023,3550308,São Paulo,masculino,60-64 anos,264866
+2022,2507507,João Pessoa,masculino,60-64 anos,16791
+2024,1501402,Belém,masculino,60-64 anos,31324
+2024,3304557,Rio de Janeiro,masculino,60-64 anos,164767
+2023,3106200,Belo Horizonte,masculino,60-64 anos,59771
+2023,3205309,Vitória,masculino,60-64 anos,8657
+2022,2611606,Recife,masculino,60-64 anos,34766
+2023,2927408,Salvador,masculino,65-69 anos,44002
+2024,2800308,Aracaju,masculino,65-69 anos,9765
+2022,5103403,Cuiabá,masculino,65-69 anos,9881
+2023,5002704,Campo Grande,masculino,65-69 anos,15049
+2022,4106902,Curitiba,masculino,65-69 anos,33275
+2022,1501402,Belém,masculino,65-69 anos,22489
+2022,2211001,Teresina,masculino,65-69 anos,12457
+2022,2304400,Fortaleza,masculino,65-69 anos,36268
+2022,1302603,Manaus,masculino,65-69 anos,23740
+2023,1200401,Rio Branco,masculino,65-69 anos,4501
+2024,2211001,Teresina,masculino,65-69 anos,13251
+2022,2800308,Aracaju,masculino,65-69 anos,9069
+2024,3106200,Belo Horizonte,masculino,65-69 anos,49159
+2022,1200401,Rio Branco,masculino,70-74 anos,3016
+2022,2704302,Maceió,masculino,70-74 anos,9168
+2023,2211001,Teresina,masculino,70-74 anos,9202
+2024,2507507,João Pessoa,masculino,70-74 anos,9521
+2024,2611606,Recife,masculino,70-74 anos,19339
+2022,2800308,Aracaju,masculino,70-74 anos,6576
+2023,3550308,São Paulo,masculino,70-74 anos,149793
+2022,3106200,Belo Horizonte,masculino,75-79 anos,23149
+2022,4205407,Florianópolis,masculino,75-79 anos,4571
+2022,5002704,Campo Grande,masculino,75-79 anos,6572
+2024,2611606,Recife,masculino,75-79 anos,12896
+2023,1200401,Rio Branco,masculino,75-79 anos,1932
+2024,3205309,Vitória,masculino,75-79 anos,3386
+2024,1600303,Macapá,masculino,75-79 anos,1977
+2023,5103403,Cuiabá,masculino,75-79 anos,4334
+2024,3550308,São Paulo,masculino,75-79 anos,101658
+2022,4106902,Curitiba,masculino,75-79 anos,15596
+2024,3205309,Vitória,masculino,80-mais,3483
+2023,2800308,Aracaju,masculino,80-mais,3889
+2024,3550308,São Paulo,masculino,80-mais,103067
+2024,1400100,Boa Vista,masculino,80-mais,1591
+2024,3304557,Rio de Janeiro,masculino,80-mais,66910
+2023,4314902,Porto Alegre,masculino,80-mais,15195
+2024,2408102,Natal,masculino,80-mais,6768
+2022,2611606,Recife,masculino,80-mais,11645
+2022,1501402,Belém,masculino,80-mais,9347
+2022,1600303,Macapá,masculino,80-mais,1705
+2022,5208707,Goiânia,masculino,80-mais,10488
+2023,1600303,Macapá,masculino,80-mais,1792
+2023,5002704,Campo Grande,masculino,80-mais,6948
+2022,2304400,Fortaleza,feminino,0-4 anos,74821
+2023,5103403,Cuiabá,feminino,0-4 anos,22357
+2024,4106902,Curitiba,feminino,0-4 anos,41898
+2024,1721000,Palmas,feminino,0-4 anos,11760
+2024,2304400,Fortaleza,feminino,0-4 anos,68602
+2023,2211001,Teresina,feminino,0-4 anos,27650
+2022,3106200,Belo Horizonte,feminino,0-4 anos,58782
+2022,4205407,Florianópolis,feminino,0-4 anos,13920
+2024,4205407,Florianópolis,feminino,0-4 anos,13961
+2023,4106902,Curitiba,feminino,0-4 anos,43673
+2023,4314902,Porto Alegre,feminino,0-4 anos,33386
+2022,2211001,Teresina,feminino,0-4 anos,28278
+2024,1100205,Porto Velho,feminino,0-4 anos,17472
+2022,2611606,Recife,feminino,0-4 anos,43930
+2023,5002704,Campo Grande,feminino,0-4 anos,31189
+2023,3106200,Belo Horizonte,feminino,0-4 anos,57141
+2023,5208707,Goiânia,feminino,10-14 anos,44275
+2024,2704302,Maceió,feminino,10-14 anos,32859
+2023,4314902,Porto Alegre,feminino,10-14 anos,38706
+2022,1200401,Rio Branco,feminino,10-14 anos,15480
+2023,2507507,João Pessoa,feminino,10-14 anos,28194
+2022,2111300,São Luís,feminino,10-14 anos,36835
+2024,2927408,Salvador,feminino,10-14 anos,72908
+2022,1302603,Manaus,feminino,10-14 anos,88813
+2022,5002704,Campo Grande,feminino,15-19 anos,32765
+2024,2927408,Salvador,feminino,15-19 anos,78108
+2023,2304400,Fortaleza,feminino,15-19 anos,88222
+2024,1400100,Boa Vista,feminino,15-19 anos,19003
+2023,1100205,Porto Velho,feminino,15-19 anos,19835
+2022,3304557,Rio de Janeiro,feminino,15-19 anos,203394
+2023,1721000,Palmas,feminino,15-19 anos,12402
+2024,5208707,Goiânia,feminino,15-19 anos,47732
+2024,2800308,Aracaju,feminino,15-19 anos,21427
+2023,1400100,Boa Vista,feminino,15-19 anos,18863
+2022,2927408,Salvador,feminino,15-19 anos,81935
+2023,3205309,Vitória,feminino,15-19 anos,10383
+2022,2211001,Teresina,feminino,15-19 anos,33571
+2023,2800308,Aracaju,feminino,20-24 anos,24774
+2022,3106200,Belo Horizonte,feminino,20-24 anos,90673
+2023,3205309,Vitória,feminino,20-24 anos,12616
+2023,3304557,Rio de Janeiro,feminino,20-24 anos,237521
+2024,2111300,São Luís,feminino,20-24 anos,46655
+2023,1400100,Boa Vista,feminino,20-24 anos,21304
+2023,2927408,Salvador,feminino,20-24 anos,96081
+2024,3550308,São Paulo,feminino,25-29 anos,458423
+2023,1600303,Macapá,feminino,25-29 anos,22366
+2023,2704302,Maceió,feminino,25-29 anos,43693
+2022,2408102,Natal,feminino,25-29 anos,32321
+2023,1100205,Porto Velho,feminino,25-29 anos,22114
+2024,1600303,Macapá,feminino,25-29 anos,22466
+2023,1721000,Palmas,feminino,25-29 anos,16184
+2022,1100205,Porto Velho,feminino,25-29 anos,22103
+2023,3550308,São Paulo,feminino,25-29 anos,461892
+2023,1600303,Macapá,feminino,30-34 anos,20368
+2022,1400100,Boa Vista,feminino,30-34 anos,19420
+2024,2800308,Aracaju,feminino,30-34 anos,26066
+2024,4314902,Porto Alegre,feminino,30-34 anos,52119
+2022,3550308,São Paulo,feminino,30-34 anos,470731
+2024,3550308,São Paulo,feminino,30-34 anos,457656
+2022,5002704,Campo Grande,feminino,30-34 anos,37180
+2022,1501402,Belém,feminino,35-39 anos,59690
+2023,1600303,Macapá,feminino,35-39 anos,19762
+2024,2111300,São Luís,feminino,35-39 anos,49371
+2022,5002704,Campo Grande,feminino,35-39 anos,37941
+2022,1721000,Palmas,feminino,35-39 anos,14242
+2024,3205309,Vitória,feminino,35-39 anos,13891
+2024,2800308,Aracaju,feminino,35-39 anos,27520
+2023,1501402,Belém,feminino,35-39 anos,58326
+2024,4205407,Florianópolis,feminino,35-39 anos,26231
+2023,2408102,Natal,feminino,35-39 anos,33396
+2023,2611606,Recife,feminino,35-39 anos,65966
+2022,3550308,São Paulo,feminino,35-39 anos,505733
+2023,4205407,Florianópolis,feminino,35-39 anos,26023
+2024,2800308,Aracaju,feminino,40-44 anos,28555
+2024,3106200,Belo Horizonte,feminino,40-44 anos,104356
+2023,3106200,Belo Horizonte,feminino,40-44 anos,105411
+2024,4106902,Curitiba,feminino,40-44 anos,76929
+2023,2704302,Maceió,feminino,40-44 anos,42180
+2023,1302603,Manaus,feminino,40-44 anos,93410
+2023,2111300,São Luís,feminino,40-44 anos,48299
+2023,3205309,Vitória,feminino,45-49 anos,13147
+2023,1600303,Macapá,feminino,45-49 anos,15469
+2023,5002704,Campo Grande,feminino,45-49 anos,33751
+2024,2507507,João Pessoa,feminino,45-49 anos,33944
+2023,2111300,São Luís,feminino,45-49 anos,40094
+2024,4106902,Curitiba,feminino,5-9 anos,50410
+2024,5300108,Brasília,feminino,5-9 anos,99050
+2022,2507507,João Pessoa,feminino,5-9 anos,28127
+2023,1721000,Palmas,feminino,5-9 anos,12036
+2024,2408102,Natal,feminino,5-9 anos,23854
+2023,2704302,Maceió,feminino,5-9 anos,33154
+2022,3205309,Vitória,feminino,5-9 anos,9853
+2024,5103403,Cuiabá,feminino,5-9 anos,23885
+2022,3304557,Rio de Janeiro,feminino,5-9 anos,198770
+2024,3304557,Rio de Janeiro,feminino,5-9 anos,194792
+2022,4106902,Curitiba,feminino,50-54 anos,66042
+2022,2704302,Maceió,feminino,50-54 anos,34155
+2023,5103403,Cuiabá,feminino,50-54 anos,21590
+2022,1200401,Rio Branco,feminino,50-54 anos,10469
+2022,5300108,Brasília,feminino,50-54 anos,97814
+2022,3205309,Vitória,feminino,50-54 anos,11549
+2022,1302603,Manaus,feminino,50-54 anos,60698
+2024,2304400,Fortaleza,feminino,55-59 anos,85238
+2023,2507507,João Pessoa,feminino,55-59 anos,27836
+2023,5300108,Brasília,feminino,55-59 anos,85907
+2024,1501402,Belém,feminino,55-59 anos,45192
+2022,2211001,Teresina,feminino,55-59 anos,27030
+2023,4106902,Curitiba,feminino,55-59 anos,62873
+2022,4314902,Porto Alegre,feminino,55-59 anos,48749
+2023,3106200,Belo Horizonte,feminino,55-59 anos,83491
+2022,3304557,Rio de Janeiro,feminino,55-59 anos,225281
+2022,2111300,São Luís,feminino,55-59 anos,30643
+2022,4205407,Florianópolis,feminino,60-64 anos,16067
+2024,1600303,Macapá,feminino,60-64 anos,7852
+2022,1200401,Rio Branco,feminino,60-64 anos,6834
+2022,5103403,Cuiabá,feminino,60-64 anos,15888
+2024,1721000,Palmas,feminino,60-64 anos,5246
+2023,5300108,Brasília,feminino,60-64 anos,69669
+2024,3304557,Rio de Janeiro,feminino,65-69 anos,190721
+2022,2111300,São Luís,feminino,65-69 anos,19265
+2022,4314902,Porto Alegre,feminino,65-69 anos,42047
+2024,3205309,Vitória,feminino,65-69 anos,9896
+2023,2211001,Teresina,feminino,65-69 anos,18025
+2024,2408102,Natal,feminino,65-69 anos,19158
+2024,2611606,Recife,feminino,65-69 anos,41531
+2022,2704302,Maceió,feminino,65-69 anos,19011
+2023,1600303,Macapá,feminino,70-74 anos,3733
+2022,5208707,Goiânia,feminino,70-74 anos,23390
+2022,2611606,Recife,feminino,70-74 anos,30434
+2024,3304557,Rio de Janeiro,feminino,70-74 anos,153566
+2024,1400100,Boa Vista,feminino,70-74 anos,3525
+2023,5300108,Brasília,feminino,70-74 anos,40829
+2024,5103403,Cuiabá,feminino,70-74 anos,9601
+2023,1302603,Manaus,feminino,70-74 anos,21559
+2024,3106200,Belo Horizonte,feminino,75-79 anos,39804
+2024,2304400,Fortaleza,feminino,75-79 anos,31785
+2023,2408102,Natal,feminino,75-79 anos,10838
+2024,3550308,São Paulo,feminino,75-79 anos,166644
+2022,4205407,Florianópolis,feminino,75-79 anos,6556
+2023,4205407,Florianópolis,feminino,75-79 anos,7055
+2022,4314902,Porto Alegre,feminino,75-79 anos,24352
+2022,5103403,Cuiabá,feminino,75-79 anos,5433
+2023,5002704,Campo Grande,feminino,80-mais,11433
+2022,3304557,Rio de Janeiro,feminino,80-mais,138360
+2024,1302603,Manaus,feminino,80-mais,15287
+2023,2304400,Fortaleza,feminino,80-mais,38835
+2022,1600303,Macapá,feminino,80-mais,2782
+2024,1721000,Palmas,feminino,80-mais,1672
+2022,3106200,Belo Horizonte,masculino,0-4 anos,61402
+2023,2800308,Aracaju,masculino,0-4 anos,18411
+2023,1501402,Belém,masculino,0-4 anos,37475
+2023,2611606,Recife,masculino,0-4 anos,44281
+2022,2704302,Maceió,masculino,0-4 anos,34021
+2024,5208707,Goiânia,masculino,0-4 anos,42063
+2022,2611606,Recife,masculino,0-4 anos,46083
+2022,3304557,Rio de Janeiro,masculino,0-4 anos,184479
+2022,2408102,Natal,masculino,0-4 anos,23982
+2023,3106200,Belo Horizonte,masculino,0-4 anos,59633
+2023,2507507,João Pessoa,masculino,0-4 anos,28151
+2023,2927408,Salvador,masculino,0-4 anos,65247
+2024,5300108,Brasília,masculino,0-4 anos,92086
+2023,2800308,Aracaju,masculino,10-14 anos,20690
+2023,5103403,Cuiabá,masculino,10-14 anos,23742
+2023,1721000,Palmas,masculino,10-14 anos,11912
+2022,1302603,Manaus,masculino,10-14 anos,93059
+2022,3205309,Vitória,masculino,10-14 anos,10188
+2022,3106200,Belo Horizonte,masculino,10-14 anos,67258
+2022,2111300,São Luís,masculino,10-14 anos,37965
+2024,3304557,Rio de Janeiro,masculino,10-14 anos,203126
+2023,2611606,Recife,masculino,10-14 anos,50985
+2023,1302603,Manaus,masculino,10-14 anos,93482
+2022,2408102,Natal,masculino,10-14 anos,25951
+2024,5300108,Brasília,masculino,10-14 anos,100640
+2022,4106902,Curitiba,masculino,10-14 anos,55017
+2024,2704302,Maceió,masculino,10-14 anos,34380
+2023,1501402,Belém,masculino,15-19 anos,52674
+2022,1501402,Belém,masculino,15-19 anos,53703
+2024,2408102,Natal,masculino,15-19 anos,26242
+2024,4314902,Porto Alegre,masculino,15-19 anos,41216
+2023,2800308,Aracaju,masculino,15-19 anos,21579
+2022,5208707,Goiânia,masculino,15-19 anos,50446
+2024,1721000,Palmas,masculino,15-19 anos,12602
+2024,3550308,São Paulo,masculino,15-19 anos,389859
+2023,3550308,São Paulo,masculino,15-19 anos,397295
+2022,1302603,Manaus,masculino,15-19 anos,92677
+2022,1100205,Porto Velho,masculino,15-19 anos,21274
+2023,2304400,Fortaleza,masculino,15-19 anos,90202
+2023,1200401,Rio Branco,masculino,20-24 anos,17945
+2022,4314902,Porto Alegre,masculino,20-24 anos,50895
+2024,4106902,Curitiba,masculino,20-24 anos,66735
+2023,3550308,São Paulo,masculino,20-24 anos,440442
+2023,3304557,Rio de Janeiro,masculino,25-29 anos,258053
+2024,1100205,Porto Velho,masculino,25-29 anos,21720
+2022,3550308,São Paulo,masculino,25-29 anos,458087
+2023,3106200,Belo Horizonte,masculino,25-29 anos,92520
+2022,2611606,Recife,masculino,25-29 anos,60238
+2022,3205309,Vitória,masculino,25-29 anos,12091
+2023,2211001,Teresina,masculino,25-29 anos,35815
+2024,3205309,Vitória,masculino,25-29 anos,11864
+2024,2211001,Teresina,masculino,25-29 anos,35936
+2024,1200401,Rio Branco,masculino,25-29 anos,17063
+2024,1100205,Porto Velho,masculino,30-34 anos,21141
+2022,2704302,Maceió,masculino,30-34 anos,37339
+2023,5002704,Campo Grande,masculino,30-34 anos,37309
+2023,3304557,Rio de Janeiro,masculino,30-34 anos,246782
+2022,1501402,Belém,masculino,30-34 anos,51693
+2023,3205309,Vitória,masculino,30-34 anos,12105
+2024,1721000,Palmas,masculino,30-34 anos,14479
+2023,2211001,Teresina,masculino,35-39 anos,35953
+2023,3106200,Belo Horizonte,masculino,35-39 anos,92795
+2023,3550308,São Paulo,masculino,35-39 anos,463635
+2024,1721000,Palmas,masculino,35-39 anos,13480
+2022,2611606,Recife,masculino,35-39 anos,59153
+2024,2211001,Teresina,masculino,35-39 anos,35299
+2024,2507507,João Pessoa,masculino,35-39 anos,34653
+2022,2800308,Aracaju,masculino,35-39 anos,24380
+2022,2800308,Aracaju,masculino,40-44 anos,23149
+2024,4314902,Porto Alegre,masculino,40-44 anos,50459
+2022,3106200,Belo Horizonte,masculino,40-44 anos,93552
+2022,2704302,Maceió,masculino,40-44 anos,35865
+2024,4106902,Curitiba,masculino,40-44 anos,69585
+2023,5103403,Cuiabá,masculino,40-44 anos,27194
+2024,3304557,Rio de Janeiro,masculino,40-44 anos,249685
+2022,1501402,Belém,masculino,40-44 anos,52999
+2024,3106200,Belo Horizonte,masculino,40-44 anos,92642
+2023,4205407,Florianópolis,masculino,40-44 anos,23564
+2023,1400100,Boa Vista,masculino,40-44 anos,16458
+2024,2304400,Fortaleza,masculino,40-44 anos,94011
+2023,5002704,Campo Grande,masculino,45-49 anos,29795
+2023,1400100,Boa Vista,masculino,45-49 anos,12997
+2023,2111300,São Luís,masculino,45-49 anos,32605
+2024,1200401,Rio Branco,masculino,45-49 anos,12104
+2022,2611606,Recife,masculino,45-49 anos,50218
+2022,4106902,Curitiba,masculino,45-49 anos,61167
+2024,2408102,Natal,masculino,45-49 anos,24776
+2023,2507507,João Pessoa,masculino,45-49 anos,26878
+2022,1200401,Rio Branco,masculino,45-49 anos,11288
+2023,3106200,Belo Horizonte,masculino,45-49 anos,81208
+2023,1200401,Rio Branco,masculino,45-49 anos,11696
+2022,3304557,Rio de Janeiro,masculino,45-49 anos,216366
+2023,1600303,Macapá,masculino,45-49 anos,14322
+2023,5002704,Campo Grande,masculino,5-9 anos,35124
+2022,3304557,Rio de Janeiro,masculino,5-9 anos,208135
+2024,2304400,Fortaleza,masculino,5-9 anos,83675
+2024,2704302,Maceió,masculino,5-9 anos,34682
+2023,1721000,Palmas,masculino,5-9 anos,12546
+2023,3205309,Vitória,masculino,5-9 anos,10524
+2022,1721000,Palmas,masculino,5-9 anos,12178
+2022,1100205,Porto Velho,masculino,5-9 anos,20559
+2024,5300108,Brasília,masculino,5-9 anos,103790
+2022,2211001,Teresina,masculino,50-54 anos,22863
+2022,1100205,Porto Velho,masculino,50-54 anos,13284
+2022,2704302,Maceió,masculino,50-54 anos,27182
+2023,2507507,João Pessoa,masculino,50-54 anos,23497
+2024,2507507,João Pessoa,masculino,50-54 anos,23751
+2024,3550308,São Paulo,masculino,50-54 anos,355280
+2023,2408102,Natal,masculino,50-54 anos,21916
+2022,1302603,Manaus,masculino,50-54 anos,55195
+2024,1501402,Belém,masculino,55-59 anos,37413
+2023,3205309,Vitória,masculino,55-59 anos,9183
+2024,2408102,Natal,masculino,55-59 anos,20787
+2022,3106200,Belo Horizonte,masculino,55-59 anos,66959
+2023,2111300,São Luís,masculino,55-59 anos,23641
+2024,2507507,João Pessoa,masculino,55-59 anos,21745
+2024,2211001,Teresina,masculino,55-59 anos,20832
+2024,2704302,Maceió,masculino,55-59 anos,23895
+2022,2800308,Aracaju,masculino,55-59 anos,14899
+2023,2211001,Teresina,masculino,55-59 anos,20595
+2023,3550308,São Paulo,masculino,55-59 anos,312171
+2023,2408102,Natal,masculino,55-59 anos,20881
+2023,2704302,Maceió,masculino,60-64 anos,18784
+2022,5300108,Brasília,masculino,60-64 anos,52289
+2022,2304400,Fortaleza,masculino,60-64 anos,49828
+2023,2211001,Teresina,masculino,60-64 anos,16707
+2023,3304557,Rio de Janeiro,masculino,60-64 anos,163357
+2024,5103403,Cuiabá,masculino,60-64 anos,14098
+2024,3205309,Vitória,masculino,60-64 anos,8681
+2022,1400100,Boa Vista,masculino,60-64 anos,5740
+2022,2211001,Teresina,masculino,60-64 anos,16116
+2024,3550308,São Paulo,masculino,65-69 anos,213363
+2022,2507507,João Pessoa,masculino,65-69 anos,12287
+2024,5002704,Campo Grande,masculino,65-69 anos,15552
+2023,2408102,Natal,masculino,65-69 anos,13236
+2024,5208707,Goiânia,masculino,65-69 anos,24565
+2024,2704302,Maceió,masculino,65-69 anos,14400
+2023,2704302,Maceió,masculino,65-69 anos,13927
+2022,1200401,Rio Branco,masculino,65-69 anos,4313
+2023,2507507,João Pessoa,masculino,70-74 anos,9256
+2023,1600303,Macapá,masculino,70-74 anos,3134
+2024,3205309,Vitória,masculino,70-74 anos,5360
+2024,2111300,São Luís,masculino,70-74 anos,10618
+2022,4314902,Porto Alegre,masculino,70-74 anos,21402
+2022,4106902,Curitiba,masculino,70-74 anos,24220
+2024,2927408,Salvador,masculino,70-74 anos,31228
+2023,5002704,Campo Grande,masculino,70-74 anos,10729
+2023,1721000,Palmas,masculino,70-74 anos,2260
+2024,5002704,Campo Grande,masculino,75-79 anos,7194
+2023,4106902,Curitiba,masculino,75-79 anos,16534
+2022,3205309,Vitória,masculino,75-79 anos,3030
+2024,2927408,Salvador,masculino,75-79 anos,19630
+2023,2507507,João Pessoa,masculino,75-79 anos,6085
+2023,4205407,Florianópolis,masculino,75-79 anos,4984
+2024,1501402,Belém,masculino,75-79 anos,10724
+2022,3304557,Rio de Janeiro,masculino,80-mais,63329
+2023,2704302,Maceió,masculino,80-mais,5218
+2023,2611606,Recife,masculino,80-mais,12007
+2023,1721000,Palmas,masculino,80-mais,1319
+2022,5002704,Campo Grande,masculino,80-mais,6748
+2024,4314902,Porto Alegre,masculino,80-mais,15737
+2024,2304400,Fortaleza,masculino,80-mais,18347
+2024,2507507,João Pessoa,masculino,80-mais,5961
+2023,1200401,Rio Branco,masculino,80-mais,1854
+2022,2704302,Maceió,masculino,80-mais,5015
+2023,2507507,João Pessoa,masculino,80-mais,5641
+2023,4205407,Florianópolis,masculino,80-mais,4588
+2022,4106902,Curitiba,feminino,0-4 anos,45342
+2023,3205309,Vitória,feminino,0-4 anos,9110
+2022,2111300,São Luís,feminino,0-4 anos,32757
+2024,1302603,Manaus,feminino,0-4 anos,78461
+2022,3550308,São Paulo,feminino,0-4 anos,337616
+2022,5002704,Campo Grande,feminino,0-4 anos,31856
+2024,3205309,Vitória,feminino,0-4 anos,8888
+2024,2927408,Salvador,feminino,0-4 anos,58901
+2024,5002704,Campo Grande,feminino,0-4 anos,30473
+2024,3550308,São Paulo,feminino,0-4 anos,309224
+2024,4314902,Porto Alegre,feminino,10-14 anos,38876
+2022,4106902,Curitiba,feminino,10-14 anos,53542
+2024,5300108,Brasília,feminino,10-14 anos,96196
+2022,1400100,Boa Vista,feminino,15-19 anos,18717
+2023,5103403,Cuiabá,feminino,15-19 anos,23657
+2024,3106200,Belo Horizonte,feminino,15-19 anos,69298
+2023,1501402,Belém,feminino,15-19 anos,50471
+2022,3550308,São Paulo,feminino,15-19 anos,389033
+2024,2408102,Natal,feminino,15-19 anos,25602
+2022,5300108,Brasília,feminino,15-19 anos,107522
+2023,3106200,Belo Horizonte,feminino,15-19 anos,71034
+2022,1100205,Porto Velho,feminino,15-19 anos,20105
+2023,4314902,Porto Alegre,feminino,15-19 anos,40927
+2024,2111300,São Luís,feminino,15-19 anos,40731
+2024,3205309,Vitória,feminino,20-24 anos,12256
+2024,3106200,Belo Horizonte,feminino,20-24 anos,84911
+2023,3550308,São Paulo,feminino,20-24 anos,433529
+2022,2408102,Natal,feminino,20-24 anos,30950
+2022,2111300,São Luís,feminino,20-24 anos,49275
+2024,5300108,Brasília,feminino,20-24 anos,114891
+2024,2800308,Aracaju,feminino,20-24 anos,24004
+2024,3550308,São Paulo,feminino,20-24 anos,422776
+2024,1400100,Boa Vista,feminino,20-24 anos,21334
+2022,1100205,Porto Velho,feminino,20-24 anos,22148
+2023,4205407,Florianópolis,feminino,25-29 anos,25103
+2022,5300108,Brasília,feminino,25-29 anos,119823
+2023,3304557,Rio de Janeiro,feminino,25-29 anos,265675
+2024,2800308,Aracaju,feminino,25-29 anos,26160
+2024,1100205,Porto Velho,feminino,25-29 anos,22087
+2024,3205309,Vitória,feminino,25-29 anos,13096
+2022,2304400,Fortaleza,feminino,30-34 anos,113786
+2024,2111300,São Luís,feminino,30-34 anos,47891
+2022,5208707,Goiânia,feminino,30-34 anos,62911
+2024,1721000,Palmas,feminino,30-34 anos,15104
+2022,2304400,Fortaleza,feminino,35-39 anos,113881
+2023,2704302,Maceió,feminino,35-39 anos,42218
+2022,4205407,Florianópolis,feminino,35-39 anos,25740
+2024,2408102,Natal,feminino,35-39 anos,32410
+2024,2927408,Salvador,feminino,40-44 anos,128241
+2022,3106200,Belo Horizonte,feminino,40-44 anos,105242
+2024,1100205,Porto Velho,feminino,40-44 anos,20744
+2022,1302603,Manaus,feminino,40-44 anos,91801
+2022,1600303,Macapá,feminino,40-44 anos,18023
+2023,2611606,Recife,feminino,40-44 anos,67362
+2022,2304400,Fortaleza,feminino,40-44 anos,107806
+2022,5208707,Goiânia,feminino,40-44 anos,64088
+2024,2111300,São Luís,feminino,40-44 anos,48656
+2023,2304400,Fortaleza,feminino,45-49 anos,95893
+2024,4106902,Curitiba,feminino,45-49 anos,72113
+2023,2408102,Natal,feminino,45-49 anos,28945
+2022,1100205,Porto Velho,feminino,45-49 anos,16817
+2023,1302603,Manaus,feminino,45-49 anos,79475
+2023,3550308,São Paulo,feminino,45-49 anos,459095
+2022,3304557,Rio de Janeiro,feminino,45-49 anos,252607
+2023,5300108,Brasília,feminino,5-9 anos,99946
+2024,4314902,Porto Alegre,feminino,5-9 anos,38799
+2023,3304557,Rio de Janeiro,feminino,5-9 anos,197836
+2022,4205407,Florianópolis,feminino,5-9 anos,14869
+2024,2304400,Fortaleza,feminino,5-9 anos,80447
+2022,3106200,Belo Horizonte,feminino,5-9 anos,64622
+2023,1600303,Macapá,feminino,5-9 anos,21261
+2022,1600303,Macapá,feminino,5-9 anos,21230
+2024,2800308,Aracaju,feminino,5-9 anos,19515
+2023,3304557,Rio de Janeiro,feminino,50-54 anos,232930
+2022,2800308,Aracaju,feminino,50-54 anos,22003
+2022,5103403,Cuiabá,feminino,50-54 anos,21235
+2024,1200401,Rio Branco,feminino,50-54 anos,11057
+2022,5208707,Goiânia,feminino,50-54 anos,49795
+2022,3106200,Belo Horizonte,feminino,50-54 anos,85438
+2024,4106902,Curitiba,feminino,50-54 anos,65852
+2024,2611606,Recife,feminino,50-54 anos,58440
+2024,5300108,Brasília,feminino,55-59 anos,87956
+2024,2704302,Maceió,feminino,55-59 anos,31133
+2023,1721000,Palmas,feminino,55-59 anos,6530
+2022,3106200,Belo Horizonte,feminino,55-59 anos,83842
+2023,2211001,Teresina,feminino,55-59 anos,27427
+2022,1501402,Belém,feminino,55-59 anos,43765
+2022,3205309,Vitória,feminino,55-59 anos,11726
+2023,2111300,São Luís,feminino,55-59 anos,31499
+2023,1600303,Macapá,feminino,55-59 anos,9756
+2024,2800308,Aracaju,feminino,55-59 anos,20538
+2022,2304400,Fortaleza,feminino,55-59 anos,83226
+2023,1721000,Palmas,feminino,60-64 anos,4986
+2022,3106200,Belo Horizonte,feminino,60-64 anos,77216
+2023,2704302,Maceió,feminino,60-64 anos,25239
+2022,3205309,Vitória,feminino,60-64 anos,11043
+2024,2800308,Aracaju,feminino,60-64 anos,17590
+2022,5300108,Brasília,feminino,60-64 anos,66651
+2023,2927408,Salvador,feminino,60-64 anos,77979
+2024,2704302,Maceió,feminino,65-69 anos,20297
+2023,1501402,Belém,feminino,65-69 anos,31249
+2023,2704302,Maceió,feminino,65-69 anos,19685
+2024,1400100,Boa Vista,feminino,65-69 anos,5205
+2022,1501402,Belém,feminino,65-69 anos,30073
+2022,5300108,Brasília,feminino,65-69 anos,51352
+2022,5103403,Cuiabá,feminino,70-74 anos,8505
+2023,3205309,Vitória,feminino,70-74 anos,7296
+2022,1200401,Rio Branco,feminino,70-74 anos,3596
+2024,2611606,Recife,feminino,70-74 anos,32501
+2022,2507507,João Pessoa,feminino,70-74 anos,13499
+2024,1100205,Porto Velho,feminino,70-74 anos,5066
+2022,5002704,Campo Grande,feminino,75-79 anos,9248
+2024,4314902,Porto Alegre,feminino,75-79 anos,26483
+2024,2800308,Aracaju,feminino,75-79 anos,7661
+2023,2304400,Fortaleza,feminino,75-79 anos,30113
+2024,1600303,Macapá,feminino,75-79 anos,2576
+2023,4314902,Porto Alegre,feminino,75-79 anos,25425
+2023,1501402,Belém,feminino,75-79 anos,16667
+2022,3304557,Rio de Janeiro,feminino,75-79 anos,101847
+2022,2304400,Fortaleza,feminino,75-79 anos,28544
+2024,2704302,Maceió,feminino,75-79 anos,10238
+2023,3205309,Vitória,feminino,75-79 anos,4951
+2022,2111300,São Luís,feminino,75-79 anos,9507
+2024,4106902,Curitiba,feminino,75-79 anos,26866
+2024,3304557,Rio de Janeiro,feminino,75-79 anos,110976
+2024,1100205,Porto Velho,feminino,75-79 anos,3016
+2023,2800308,Aracaju,feminino,80-mais,8953
+2023,4205407,Florianópolis,feminino,80-mais,8572
+2022,1501402,Belém,feminino,80-mais,19771
+2024,3205309,Vitória,feminino,80-mais,7138
+2022,1721000,Palmas,feminino,80-mais,1484
+2022,1200401,Rio Branco,feminino,80-mais,2595
+2023,3550308,São Paulo,feminino,80-mais,202848
+2024,5208707,Goiânia,feminino,80-mais,20057
+2023,2111300,São Luís,feminino,80-mais,11857
+2023,3304557,Rio de Janeiro,masculino,0-4 anos,176154
+2022,4106902,Curitiba,masculino,0-4 anos,47292
+2024,4314902,Porto Alegre,masculino,0-4 anos,33286
+2024,1721000,Palmas,masculino,0-4 anos,12238
+2022,1100205,Porto Velho,masculino,0-4 anos,19058
+2022,1200401,Rio Branco,masculino,0-4 anos,14857
+2023,5208707,Goiânia,masculino,0-4 anos,43505
+2022,2304400,Fortaleza,masculino,0-4 anos,78214
+2022,2927408,Salvador,masculino,0-4 anos,68659
+2022,5002704,Campo Grande,masculino,0-4 anos,33205
+2024,2704302,Maceió,masculino,0-4 anos,32648
+2022,1302603,Manaus,masculino,0-4 anos,86375
+2023,2927408,Salvador,masculino,10-14 anos,76923
+2022,2611606,Recife,masculino,10-14 anos,51117
+2023,2408102,Natal,masculino,10-14 anos,25747
+2024,5002704,Campo Grande,masculino,10-14 anos,34646
+2023,1600303,Macapá,masculino,10-14 anos,21246
+2024,3205309,Vitória,masculino,10-14 anos,10240
+2023,5002704,Campo Grande,masculino,10-14 anos,34235
+2022,2507507,João Pessoa,masculino,15-19 anos,31390
+2023,2611606,Recife,masculino,15-19 anos,53427
+2023,2611606,Recife,masculino,20-24 anos,59115
+2023,3205309,Vitória,masculino,20-24 anos,11708
+2022,5300108,Brasília,masculino,20-24 anos,118998
+2024,1721000,Palmas,masculino,20-24 anos,14574
+2023,1302603,Manaus,masculino,20-24 anos,99549
+2023,2304400,Fortaleza,masculino,20-24 anos,99361
+2022,4205407,Florianópolis,masculino,20-24 anos,20974
+2022,1302603,Manaus,masculino,20-24 anos,100587
+2022,2304400,Fortaleza,masculino,20-24 anos,101800
+2023,2704302,Maceió,masculino,20-24 anos,40222
+2023,2800308,Aracaju,masculino,20-24 anos,23633
+2024,2704302,Maceió,masculino,25-29 anos,41706
+2024,5208707,Goiânia,masculino,25-29 anos,61344
+2022,5208707,Goiânia,masculino,25-29 anos,62345
+2022,1302603,Manaus,masculino,25-29 anos,99000
+2023,5103403,Cuiabá,masculino,25-29 anos,27339
+2023,1600303,Macapá,masculino,25-29 anos,21841
+2024,2800308,Aracaju,masculino,25-29 anos,24439
+2024,2611606,Recife,masculino,30-34 anos,57128
+2024,4205407,Florianópolis,masculino,30-34 anos,25736
+2022,1100205,Porto Velho,masculino,30-34 anos,21707
+2022,2304400,Fortaleza,masculino,30-34 anos,104031
+2024,5002704,Campo Grande,masculino,30-34 anos,37252
+2022,2611606,Recife,masculino,30-34 anos,58285
+2024,5208707,Goiânia,masculino,30-34 anos,60356
+2024,2507507,João Pessoa,masculino,30-34 anos,34115
+2023,2507507,João Pessoa,masculino,30-34 anos,34223
+2024,1200401,Rio Branco,masculino,30-34 anos,15430
+2022,2111300,São Luís,masculino,35-39 anos,44583
+2024,2611606,Recife,masculino,35-39 anos,57300
+2023,3205309,Vitória,masculino,35-39 anos,13235
+2022,2927408,Salvador,masculino,35-39 anos,106357
+2022,3106200,Belo Horizonte,masculino,35-39 anos,94043
+2024,1400100,Boa Vista,masculino,35-39 anos,19439
+2022,1100205,Porto Velho,masculino,35-39 anos,21657
+2024,2800308,Aracaju,masculino,35-39 anos,23662
+2023,5208707,Goiânia,masculino,35-39 anos,60415
+2022,5300108,Brasília,masculino,35-39 anos,119580
+2022,5208707,Goiânia,masculino,35-39 anos,60686
+2022,5002704,Campo Grande,masculino,35-39 anos,36480
+2022,2408102,Natal,masculino,35-39 anos,30430
+2022,1600303,Macapá,masculino,35-39 anos,18720
+2023,2408102,Natal,masculino,35-39 anos,30018
+2024,2611606,Recife,masculino,40-44 anos,57523
+2022,1200401,Rio Branco,masculino,40-44 anos,13993
+2022,2507507,João Pessoa,masculino,40-44 anos,31842
+2023,2111300,São Luís,masculino,40-44 anos,40953
+2022,3304557,Rio de Janeiro,masculino,40-44 anos,248896
+2024,1721000,Palmas,masculino,40-44 anos,12668
+2023,2211001,Teresina,masculino,45-49 anos,27649
+2024,4205407,Florianópolis,masculino,45-49 anos,19998
+2024,2304400,Fortaleza,masculino,45-49 anos,79756
+2024,5300108,Brasília,masculino,45-49 anos,107743
+2024,1501402,Belém,masculino,45-49 anos,48730
+2024,5208707,Goiânia,masculino,45-49 anos,52027
+2024,3550308,São Paulo,masculino,45-49 anos,406902
+2022,2304400,Fortaleza,masculino,45-49 anos,76241
+2023,2304400,Fortaleza,masculino,45-49 anos,77798
+2023,1100205,Porto Velho,masculino,45-49 anos,16179
+2022,2927408,Salvador,masculino,45-49 anos,88305
+2022,1302603,Manaus,masculino,45-49 anos,69114
+2022,4314902,Porto Alegre,masculino,45-49 anos,42919
+2022,2111300,São Luís,masculino,45-49 anos,31534
+2024,2704302,Maceió,masculino,45-49 anos,31965
+2024,3304557,Rio de Janeiro,masculino,45-49 anos,226461
+2022,1501402,Belém,masculino,5-9 anos,43919
+2024,5208707,Goiânia,masculino,5-9 anos,46827
+2023,2507507,João Pessoa,masculino,5-9 anos,30063
+2022,1600303,Macapá,masculino,5-9 anos,22068
+2022,1302603,Manaus,masculino,5-9 anos,94861
+2024,1302603,Manaus,masculino,5-9 anos,92640
+2023,1501402,Belém,masculino,5-9 anos,43068
+2023,3106200,Belo Horizonte,masculino,5-9 anos,67689
+2022,2611606,Recife,masculino,5-9 anos,51612
+2023,2408102,Natal,masculino,5-9 anos,25753
+2022,4106902,Curitiba,masculino,50-54 anos,56840
+2022,2408102,Natal,masculino,50-54 anos,22045
+2024,1400100,Boa Vista,masculino,50-54 anos,10756
+2024,2800308,Aracaju,masculino,50-54 anos,17570
+2023,5103403,Cuiabá,masculino,50-54 anos,19155
+2023,1600303,Macapá,masculino,50-54 anos,11704
+2024,4314902,Porto Alegre,masculino,50-54 anos,38285
+2024,2211001,Teresina,masculino,50-54 anos,23618
+2024,3205309,Vitória,masculino,50-54 anos,9413
+2022,2408102,Natal,masculino,55-59 anos,20844
+2024,2927408,Salvador,masculino,55-59 anos,69008
+2023,1302603,Manaus,masculino,55-59 anos,45882
+2023,4205407,Florianópolis,masculino,55-59 anos,14709
+2022,2927408,Salvador,masculino,55-59 anos,68490
+2023,5103403,Cuiabá,masculino,55-59 anos,16356
+2022,4106902,Curitiba,masculino,55-59 anos,50794
+2024,1200401,Rio Branco,masculino,55-59 anos,7928
+2022,1100205,Porto Velho,masculino,55-59 anos,11589
+2024,1721000,Palmas,masculino,55-59 anos,6392
+2022,4205407,Florianópolis,masculino,55-59 anos,14541
+2022,5002704,Campo Grande,masculino,55-59 anos,22989
+2022,1100205,Porto Velho,masculino,60-64 anos,9156
+2023,1600303,Macapá,masculino,60-64 anos,6759
+2023,2111300,São Luís,masculino,60-64 anos,19121
+2023,5300108,Brasília,masculino,60-64 anos,54764
+2023,2927408,Salvador,masculino,60-64 anos,57877
+2022,1721000,Palmas,masculino,60-64 anos,4225
+2024,3106200,Belo Horizonte,masculino,60-64 anos,60467
+2024,3550308,São Paulo,masculino,60-64 anos,269018
+2022,5208707,Goiânia,masculino,60-64 anos,30408
+2024,4314902,Porto Alegre,masculino,60-64 anos,35548
+2024,2800308,Aracaju,masculino,60-64 anos,12800
+2024,2408102,Natal,masculino,60-64 anos,18293
+2022,2800308,Aracaju,masculino,60-64 anos,11992
+2024,2111300,São Luís,masculino,60-64 anos,19698
+2023,5103403,Cuiabá,masculino,60-64 anos,13687
+2023,1600303,Macapá,masculino,65-69 anos,4890
+2024,1302603,Manaus,masculino,65-69 anos,26628
+2022,1721000,Palmas,masculino,65-69 anos,2973
+2024,5300108,Brasília,masculino,65-69 anos,41735
+2024,2611606,Recife,masculino,65-69 anos,27813
+2023,4314902,Porto Alegre,masculino,65-69 anos,29935
+2024,2304400,Fortaleza,masculino,65-69 anos,38815
+2022,3304557,Rio de Janeiro,masculino,65-69 anos,129074
+2023,1302603,Manaus,masculino,70-74 anos,15964
+2024,1721000,Palmas,masculino,70-74 anos,2343
+2023,3304557,Rio de Janeiro,masculino,70-74 anos,96626
+2024,1600303,Macapá,masculino,70-74 anos,3350
+2022,2927408,Salvador,masculino,70-74 anos,28904
+2024,5103403,Cuiabá,masculino,70-74 anos,7403
+2023,4106902,Curitiba,masculino,70-74 anos,25281
+2022,1302603,Manaus,masculino,70-74 anos,14904
+2024,2408102,Natal,masculino,70-74 anos,9583
+2022,1600303,Macapá,masculino,70-74 anos,2913
+2023,4205407,Florianópolis,masculino,70-74 anos,7730
+2022,2211001,Teresina,masculino,70-74 anos,8748
+2022,3550308,São Paulo,masculino,70-74 anos,144540
+2022,2927408,Salvador,masculino,75-79 anos,17195
+2024,2304400,Fortaleza,masculino,75-79 anos,18635
+2024,5208707,Goiânia,masculino,75-79 anos,11579
+2022,1400100,Boa Vista,masculino,75-79 anos,1547
+2024,2704302,Maceió,masculino,75-79 anos,6293
+2023,1600303,Macapá,masculino,75-79 anos,1907
+2022,2704302,Maceió,masculino,75-79 anos,5640
+2022,2800308,Aracaju,masculino,75-79 anos,4067
+2023,1501402,Belém,masculino,80-mais,9760
+2023,3304557,Rio de Janeiro,masculino,80-mais,64741
+2024,5208707,Goiânia,masculino,80-mais,11548
+2022,2111300,São Luís,masculino,80-mais,5960
+2024,1600303,Macapá,masculino,80-mais,1893
+2023,3304557,Rio de Janeiro,feminino,0-4 anos,168809
+2023,2611606,Recife,feminino,0-4 anos,42245
+2023,1721000,Palmas,feminino,0-4 anos,11848
+2024,2800308,Aracaju,feminino,0-4 anos,16889
+2024,1600303,Macapá,feminino,0-4 anos,19193
+2024,3106200,Belo Horizonte,feminino,0-4 anos,54698
+2022,2800308,Aracaju,feminino,0-4 anos,18204
+2022,1501402,Belém,feminino,0-4 anos,37456
+2023,1400100,Boa Vista,feminino,0-4 anos,20175
+2022,1200401,Rio Branco,feminino,0-4 anos,14100
+2022,2507507,João Pessoa,feminino,10-14 anos,28181
+2024,3205309,Vitória,feminino,10-14 anos,9655
+2024,1100205,Porto Velho,feminino,10-14 anos,20185
+2023,3106200,Belo Horizonte,feminino,10-14 anos,64093
+2024,1600303,Macapá,feminino,10-14 anos,20233
+2024,2111300,São Luís,feminino,10-14 anos,35599
+2023,2304400,Fortaleza,feminino,10-14 anos,81177
+2023,4205407,Florianópolis,feminino,10-14 anos,14629
+2024,2507507,João Pessoa,feminino,10-14 anos,28365
+2024,3106200,Belo Horizonte,feminino,10-14 anos,63967
+2023,2704302,Maceió,feminino,10-14 anos,32967
+2024,4106902,Curitiba,feminino,10-14 anos,52963
+2022,2611606,Recife,feminino,15-19 anos,52493
+2022,2111300,São Luís,feminino,15-19 anos,41534
+2023,2611606,Recife,feminino,15-19 anos,51332
+2024,1501402,Belém,feminino,15-19 anos,49276
+2022,2800308,Aracaju,feminino,15-19 anos,21551
+2024,2611606,Recife,feminino,15-19 anos,50522
+2024,1200401,Rio Branco,feminino,15-19 anos,16547
+2023,1501402,Belém,feminino,20-24 anos,57049
+2022,3205309,Vitória,feminino,20-24 anos,12972
+2024,1302603,Manaus,feminino,20-24 anos,98040
+2024,2704302,Maceió,feminino,20-24 anos,39154
+2022,1200401,Rio Branco,feminino,20-24 anos,18488
+2024,2211001,Teresina,feminino,20-24 anos,37043
+2022,1600303,Macapá,feminino,20-24 anos,23092
+2023,1100205,Porto Velho,feminino,20-24 anos,21902
+2024,4205407,Florianópolis,feminino,20-24 anos,19835
+2022,2507507,João Pessoa,feminino,20-24 anos,34970
+2023,2304400,Fortaleza,feminino,20-24 anos,100522
+2024,1721000,Palmas,feminino,20-24 anos,14572
+2022,2927408,Salvador,feminino,20-24 anos,99624
+2023,1400100,Boa Vista,feminino,25-29 anos,22107
+2024,2408102,Natal,feminino,25-29 anos,30978
+2022,1400100,Boa Vista,feminino,25-29 anos,21355
+2022,1200401,Rio Branco,feminino,25-29 anos,17766
+2023,2611606,Recife,feminino,25-29 anos,61866
+2022,5208707,Goiânia,feminino,25-29 anos,63987
+2022,2704302,Maceió,feminino,25-29 anos,43729
+2023,1302603,Manaus,feminino,25-29 anos,103924
+2023,5002704,Campo Grande,feminino,30-34 anos,37209
+2022,2408102,Natal,feminino,30-34 anos,32621
+2024,1501402,Belém,feminino,30-34 anos,54880
+2024,4205407,Florianópolis,feminino,30-34 anos,25972
+2023,1721000,Palmas,feminino,30-34 anos,14973
+2023,3550308,São Paulo,feminino,30-34 anos,463479
+2023,1200401,Rio Branco,feminino,30-34 anos,16353
+2024,2704302,Maceió,feminino,30-34 anos,41338
+2023,2507507,João Pessoa,feminino,30-34 anos,37314
+2024,3205309,Vitória,feminino,30-34 anos,12820
+2022,5300108,Brasília,feminino,35-39 anos,133629
+2023,1302603,Manaus,feminino,35-39 anos,95555
+2023,1200401,Rio Branco,feminino,35-39 anos,16224
+2024,4106902,Curitiba,feminino,35-39 anos,72233
+2023,2111300,São Luís,feminino,35-39 anos,50623
+2024,2927408,Salvador,feminino,35-39 anos,115304
+2022,2211001,Teresina,feminino,40-44 anos,39347
+2023,2408102,Natal,feminino,40-44 anos,32635
+2023,2304400,Fortaleza,feminino,40-44 anos,108963
+2024,2408102,Natal,feminino,40-44 anos,32661
+2022,2408102,Natal,feminino,40-44 anos,32511
+2024,5300108,Brasília,feminino,40-44 anos,138050
+2022,3205309,Vitória,feminino,40-44 anos,14873
+2023,1400100,Boa Vista,feminino,40-44 anos,17236
+2024,3304557,Rio de Janeiro,feminino,40-44 anos,277918
+2024,5208707,Goiânia,feminino,40-44 anos,64534
+2024,5103403,Cuiabá,feminino,40-44 anos,29106
+2022,1721000,Palmas,feminino,40-44 anos,13262
+2024,4314902,Porto Alegre,feminino,40-44 anos,56777
+2022,1200401,Rio Branco,feminino,45-49 anos,12695
+2022,2408102,Natal,feminino,45-49 anos,28521
+2022,5300108,Brasília,feminino,45-49 anos,116905
+2022,4314902,Porto Alegre,feminino,45-49 anos,49773
+2024,3106200,Belo Horizonte,feminino,45-49 anos,95721
+2023,5300108,Brasília,feminino,45-49 anos,121160
+2024,2800308,Aracaju,feminino,45-49 anos,25561
+2023,1100205,Porto Velho,feminino,45-49 anos,17379
+2023,4106902,Curitiba,feminino,45-49 anos,70779
+2023,2704302,Maceió,feminino,45-49 anos,38160
+2023,1721000,Palmas,feminino,45-49 anos,11341
+2022,1721000,Palmas,feminino,5-9 anos,11701
+2023,5002704,Campo Grande,feminino,5-9 anos,33908
+2022,1400100,Boa Vista,feminino,5-9 anos,18926
+2024,2507507,João Pessoa,feminino,5-9 anos,28940
+2022,1302603,Manaus,feminino,5-9 anos,90107
+2022,5208707,Goiânia,feminino,5-9 anos,45547
+2024,1501402,Belém,feminino,5-9 anos,39792
+2022,2304400,Fortaleza,feminino,5-9 anos,81290
+2022,2408102,Natal,feminino,5-9 anos,24486
+2023,4205407,Florianópolis,feminino,5-9 anos,15139
+2022,3550308,São Paulo,feminino,5-9 anos,370685
+2023,5002704,Campo Grande,feminino,50-54 anos,30255
+2024,1400100,Boa Vista,feminino,50-54 anos,11213
+2022,2304400,Fortaleza,feminino,50-54 anos,89784
+2023,1100205,Porto Velho,feminino,50-54 anos,14740
+2023,5300108,Brasília,feminino,50-54 anos,100512
+2024,4314902,Porto Alegre,feminino,50-54 anos,45873
+2022,3304557,Rio de Janeiro,feminino,50-54 anos,231465
+2023,2800308,Aracaju,feminino,50-54 anos,22181
+2024,3550308,São Paulo,feminino,50-54 anos,417729
+2024,1200401,Rio Branco,feminino,55-59 anos,9125
+2022,2408102,Natal,feminino,55-59 anos,27172
+2024,4314902,Porto Alegre,feminino,55-59 anos,46648
+2024,5208707,Goiânia,feminino,55-59 anos,46198
+2024,5103403,Cuiabá,feminino,55-59 anos,19494
+2024,3550308,São Paulo,feminino,55-59 anos,386350
+2022,2611606,Recife,feminino,55-59 anos,54710
+2024,2611606,Recife,feminino,55-59 anos,55208
+2024,4106902,Curitiba,feminino,55-59 anos,63094
+2023,5002704,Campo Grande,feminino,60-64 anos,24951
+2024,4106902,Curitiba,feminino,60-64 anos,57683
+2023,1100205,Porto Velho,feminino,60-64 anos,9998
+2023,2304400,Fortaleza,feminino,60-64 anos,70532
+2023,3304557,Rio de Janeiro,feminino,60-64 anos,212897
+2023,2507507,João Pessoa,feminino,60-64 anos,23407
+2023,2111300,São Luís,feminino,60-64 anos,26021
+2024,1400100,Boa Vista,feminino,60-64 anos,7032
+2024,1200401,Rio Branco,feminino,60-64 anos,7333
+2022,1600303,Macapá,feminino,65-69 anos,5288
+2022,2211001,Teresina,feminino,65-69 anos,17355
+2024,2211001,Teresina,feminino,65-69 anos,18658
+2023,5208707,Goiânia,feminino,65-69 anos,32795
+2022,3304557,Rio de Janeiro,feminino,65-69 anos,183235
+2023,3106200,Belo Horizonte,feminino,65-69 anos,66240
+2024,2800308,Aracaju,feminino,70-74 anos,10931
+2023,3106200,Belo Horizonte,feminino,70-74 anos,52101
+2023,4314902,Porto Alegre,feminino,70-74 anos,34760
+2024,3550308,São Paulo,feminino,70-74 anos,232091
+2023,5208707,Goiânia,feminino,70-74 anos,24668
+2024,2704302,Maceió,feminino,70-74 anos,15512
+2024,5300108,Brasília,feminino,70-74 anos,42983
+2024,2507507,João Pessoa,feminino,70-74 anos,14590
+2022,4205407,Florianópolis,feminino,70-74 anos,9731
+2022,1721000,Palmas,feminino,75-79 anos,1473
+2023,2704302,Maceió,feminino,75-79 anos,9653
+2024,5300108,Brasília,feminino,75-79 anos,29539
+2024,2611606,Recife,feminino,75-79 anos,23793
+2023,2927408,Salvador,feminino,75-79 anos,31115
+2024,2507507,João Pessoa,feminino,75-79 anos,10602
+2022,1100205,Porto Velho,feminino,75-79 anos,2640
+2024,2111300,São Luís,feminino,80-mais,12096
+2022,5300108,Brasília,feminino,80-mais,29833
+2022,2927408,Salvador,feminino,80-mais,38347
+2024,5002704,Campo Grande,feminino,80-mais,11949
+2024,2408102,Natal,feminino,80-mais,14140
+2022,3106200,Belo Horizonte,feminino,80-mais,51043
+2022,5208707,Goiânia,feminino,80-mais,18113
+2023,2704302,Maceió,masculino,0-4 anos,33386
+2024,3205309,Vitória,masculino,0-4 anos,9449
+2022,1501402,Belém,masculino,0-4 anos,39196
+2022,3550308,São Paulo,masculino,0-4 anos,353632
+2023,5103403,Cuiabá,masculino,0-4 anos,23257
+2024,2211001,Teresina,masculino,10-14 anos,30240
+2022,1600303,Macapá,masculino,10-14 anos,21322
+2023,2211001,Teresina,masculino,10-14 anos,30425
+2022,2507507,João Pessoa,masculino,10-14 anos,29605
+2022,4205407,Florianópolis,masculino,10-14 anos,15175
+2024,2611606,Recife,masculino,10-14 anos,50965
+2024,1400100,Boa Vista,masculino,10-14 anos,19349
+2024,2800308,Aracaju,masculino,10-14 anos,20594
+2024,1100205,Porto Velho,masculino,10-14 anos,20910
+2024,1302603,Manaus,masculino,10-14 anos,94199
+2023,5103403,Cuiabá,masculino,15-19 anos,24359
+2022,4106902,Curitiba,masculino,15-19 anos,59614
+2024,1501402,Belém,masculino,15-19 anos,51600
+2024,1600303,Macapá,masculino,15-19 anos,21307
+2024,1400100,Boa Vista,masculino,15-19 anos,19511
+2022,2800308,Aracaju,masculino,15-19 anos,21680
+2023,4205407,Florianópolis,masculino,15-19 anos,15836
+2024,2611606,Recife,masculino,15-19 anos,52689
+2023,2211001,Teresina,masculino,15-19 anos,33107
+2022,5103403,Cuiabá,masculino,15-19 anos,24204
+2024,2507507,João Pessoa,masculino,15-19 anos,30989
+2022,4314902,Porto Alegre,masculino,15-19 anos,43587
+2023,1600303,Macapá,masculino,15-19 anos,21455
+2022,2927408,Salvador,masculino,15-19 anos,82660
+2023,4106902,Curitiba,masculino,20-24 anos,68653
+2022,3550308,São Paulo,masculino,20-24 anos,447556
+2022,2507507,João Pessoa,masculino,20-24 anos,34274
+2022,2611606,Recife,masculino,20-24 anos,60144
+2024,4205407,Florianópolis,masculino,20-24 anos,20078
+2022,2704302,Maceió,masculino,25-29 anos,41330
+2024,2304400,Fortaleza,masculino,25-29 anos,104788
+2023,2927408,Salvador,masculino,25-29 anos,94443
+2024,2408102,Natal,masculino,25-29 anos,30478
+2024,5002704,Campo Grande,masculino,25-29 anos,37450
+2024,4314902,Porto Alegre,masculino,25-29 anos,51605
+2024,3205309,Vitória,masculino,30-34 anos,11842
+2023,1400100,Boa Vista,masculino,30-34 anos,20190
+2024,2211001,Teresina,masculino,30-34 anos,34445
+2023,5300108,Brasília,masculino,30-34 anos,113563
+2024,5300108,Brasília,masculino,30-34 anos,113656
+2022,4106902,Curitiba,masculino,30-34 anos,70740
+2022,4205407,Florianópolis,masculino,30-34 anos,25268
+2023,1501402,Belém,masculino,30-34 anos,50907
+2022,2111300,São Luís,masculino,30-34 anos,44977
+2022,1721000,Palmas,masculino,30-34 anos,13999
+2024,2927408,Salvador,masculino,35-39 anos,96974
+2024,2111300,São Luís,masculino,35-39 anos,43548
+2022,4314902,Porto Alegre,masculino,35-39 anos,51747
+2023,1400100,Boa Vista,masculino,35-39 anos,18771
+2023,1501402,Belém,masculino,35-39 anos,51639
+2024,4106902,Curitiba,masculino,35-39 anos,68626
+2024,5002704,Campo Grande,masculino,35-39 anos,36659
+2022,1501402,Belém,masculino,35-39 anos,52711
+2023,4106902,Curitiba,masculino,35-39 anos,70080
+2022,1400100,Boa Vista,masculino,35-39 anos,18085
+2022,1302603,Manaus,masculino,40-44 anos,84687
+2024,3205309,Vitória,masculino,40-44 anos,13060
+2022,5300108,Brasília,masculino,40-44 anos,118215
+2022,4314902,Porto Alegre,masculino,40-44 anos,50810
+2024,1600303,Macapá,masculino,40-44 anos,17247
+2023,2507507,João Pessoa,masculino,40-44 anos,32776
+2023,1200401,Rio Branco,masculino,40-44 anos,14211
+2023,5208707,Goiânia,masculino,40-44 anos,58284
+2024,5103403,Cuiabá,masculino,40-44 anos,27541
+2023,3550308,São Paulo,masculino,40-44 anos,453343
+2022,3205309,Vitória,masculino,45-49 anos,10601
+2023,4205407,Florianópolis,masculino,45-49 anos,19018
+2024,2211001,Teresina,masculino,45-49 anos,28502
+2022,4205407,Florianópolis,masculino,45-49 anos,18107
+2022,2408102,Natal,masculino,45-49 anos,23722
+2023,5103403,Cuiabá,masculino,45-49 anos,22730
+2024,1302603,Manaus,masculino,45-49 anos,74854
+2024,1600303,Macapá,masculino,45-49 anos,14746
+2023,5103403,Cuiabá,masculino,5-9 anos,24591
+2022,3106200,Belo Horizonte,masculino,5-9 anos,67834
+2022,4106902,Curitiba,masculino,5-9 anos,54711
+2023,2800308,Aracaju,masculino,5-9 anos,20583
+2023,4205407,Florianópolis,masculino,5-9 anos,16159
+2023,5208707,Goiânia,masculino,5-9 anos,47433
+2024,1100205,Porto Velho,masculino,5-9 anos,20348
+2023,5300108,Brasília,masculino,5-9 anos,104696
+2023,1721000,Palmas,masculino,50-54 anos,7896
+2024,1100205,Porto Velho,masculino,50-54 anos,13806
+2024,1600303,Macapá,masculino,50-54 anos,12093
+2024,4205407,Florianópolis,masculino,50-54 anos,16292
+2022,1400100,Boa Vista,masculino,50-54 anos,9712
+2023,5208707,Goiânia,masculino,50-54 anos,43483
+2024,5002704,Campo Grande,masculino,50-54 anos,26770
+2023,1200401,Rio Branco,masculino,50-54 anos,9466
+2023,2111300,São Luís,masculino,50-54 anos,28083
+2022,3205309,Vitória,masculino,55-59 anos,9316
+2022,5208707,Goiânia,masculino,55-59 anos,36843
+2023,5300108,Brasília,masculino,55-59 anos,71836
+2023,4106902,Curitiba,masculino,55-59 anos,51328
+2024,3550308,São Paulo,masculino,55-59 anos,314952
+2022,5103403,Cuiabá,masculino,55-59 anos,16023
+2023,1501402,Belém,masculino,60-64 anos,30685
+2023,1100205,Porto Velho,masculino,60-64 anos,9509
+2023,2800308,Aracaju,masculino,60-64 anos,12390
+2023,5208707,Goiânia,masculino,60-64 anos,31118
+2024,1721000,Palmas,masculino,60-64 anos,4698
+2023,1302603,Manaus,masculino,65-69 anos,25201
+2024,1400100,Boa Vista,masculino,65-69 anos,4595
+2024,2408102,Natal,masculino,65-69 anos,13690
+2023,3205309,Vitória,masculino,65-69 anos,7129
+2024,2927408,Salvador,masculino,65-69 anos,45707
+2022,3550308,São Paulo,masculino,65-69 anos,201871
+2022,5208707,Goiânia,masculino,65-69 anos,22762
+2023,3550308,São Paulo,masculino,65-69 anos,207723
+2024,3304557,Rio de Janeiro,masculino,65-69 anos,135251
+2023,2800308,Aracaju,masculino,65-69 anos,9426
+2023,2304400,Fortaleza,masculino,65-69 anos,37429
+2022,2611606,Recife,masculino,70-74 anos,18058
+2024,1100205,Porto Velho,masculino,70-74 anos,4375
+2022,1100205,Porto Velho,masculino,70-74 anos,3852
+2022,3205309,Vitória,masculino,70-74 anos,4802
+2023,1100205,Porto Velho,masculino,70-74 anos,4111
+2024,1302603,Manaus,masculino,70-74 anos,17094
+2024,3550308,São Paulo,masculino,70-74 anos,155034
+2024,2304400,Fortaleza,masculino,70-74 anos,27685
+2022,2408102,Natal,masculino,70-74 anos,9148
+2023,4314902,Porto Alegre,masculino,70-74 anos,22360
+2022,5300108,Brasília,masculino,70-74 anos,26853
+2022,3304557,Rio de Janeiro,masculino,70-74 anos,93496
+2024,3304557,Rio de Janeiro,masculino,70-74 anos,99778
+2024,2704302,Maceió,masculino,70-74 anos,10025
+2023,5208707,Goiânia,masculino,70-74 anos,16800
+2024,1100205,Porto Velho,masculino,75-79 anos,2592
+2023,3205309,Vitória,masculino,75-79 anos,3198
+2022,1721000,Palmas,masculino,75-79 anos,1253
+2024,2800308,Aracaju,masculino,75-79 anos,4660
+2022,5103403,Cuiabá,masculino,75-79 anos,4078
+2024,1400100,Boa Vista,masculino,75-79 anos,1837
+2024,3106200,Belo Horizonte,masculino,75-79 anos,25352
+2024,5300108,Brasília,masculino,75-79 anos,19157
+2022,1501402,Belém,masculino,75-79 anos,9791
+2022,2304400,Fortaleza,masculino,75-79 anos,16802
+2024,1721000,Palmas,masculino,80-mais,1365
+2024,1302603,Manaus,masculino,80-mais,8582
+2022,1200401,Rio Branco,masculino,80-mais,1792
+2022,4314902,Porto Alegre,masculino,80-mais,14847
+2024,2211001,Teresina,masculino,80-mais,5957
+2024,4106902,Curitiba,masculino,80-mais,16536
+2022,4205407,Florianópolis,masculino,80-mais,4350
+2024,1100205,Porto Velho,masculino,80-mais,2256
+2023,2927408,Salvador,masculino,80-mais,16802
+2023,2304400,Fortaleza,feminino,0-4 anos,71820
+2023,5208707,Goiânia,feminino,0-4 anos,41761
+2024,2408102,Natal,feminino,0-4 anos,20564
+2022,2408102,Natal,feminino,0-4 anos,22753
+2022,1302603,Manaus,feminino,0-4 anos,82120
+2024,1501402,Belém,feminino,0-4 anos,33784
+2024,5103403,Cuiabá,feminino,10-14 anos,23415
+2023,3304557,Rio de Janeiro,feminino,10-14 anos,193405
+2023,5002704,Campo Grande,feminino,10-14 anos,32723
+2024,2408102,Natal,feminino,10-14 anos,24168
+2022,1100205,Porto Velho,feminino,10-14 anos,19845
+2024,2211001,Teresina,feminino,10-14 anos,29000
+2023,2211001,Teresina,feminino,10-14 anos,29267
+2024,1501402,Belém,feminino,10-14 anos,42736
+2023,1501402,Belém,feminino,10-14 anos,43750
+2022,3106200,Belo Horizonte,feminino,10-14 anos,64477
+2023,1302603,Manaus,feminino,15-19 anos,90891
+2022,1600303,Macapá,feminino,15-19 anos,21089
+2022,1302603,Manaus,feminino,15-19 anos,90479
+2024,3304557,Rio de Janeiro,feminino,15-19 anos,198163
+2022,1200401,Rio Branco,feminino,15-19 anos,17241
+2024,1302603,Manaus,feminino,15-19 anos,91654
+2022,5103403,Cuiabá,feminino,15-19 anos,23531
+2022,4106902,Curitiba,feminino,15-19 anos,58417
+2023,5300108,Brasília,feminino,15-19 anos,105851
+2024,1100205,Porto Velho,feminino,20-24 anos,21612
+2024,4106902,Curitiba,feminino,20-24 anos,65865
+2023,2211001,Teresina,feminino,20-24 anos,37883
+2023,3106200,Belo Horizonte,feminino,20-24 anos,88504
+2022,5208707,Goiânia,feminino,20-24 anos,60125
+2023,2704302,Maceió,feminino,20-24 anos,40685
+2022,1501402,Belém,feminino,20-24 anos,58747
+2024,2507507,João Pessoa,feminino,20-24 anos,34445
+2023,1600303,Macapá,feminino,20-24 anos,22655
+2024,1600303,Macapá,feminino,20-24 anos,22165
+2024,2211001,Teresina,feminino,25-29 anos,37367
+2024,1200401,Rio Branco,feminino,25-29 anos,17851
+2022,1302603,Manaus,feminino,25-29 anos,102869
+2024,1400100,Boa Vista,feminino,25-29 anos,22771
+2023,2800308,Aracaju,feminino,25-29 anos,26369
+2022,4106902,Curitiba,feminino,25-29 anos,72744
+2023,3205309,Vitória,feminino,25-29 anos,13180
+2024,2704302,Maceió,feminino,25-29 anos,43509
+2024,1100205,Porto Velho,feminino,30-34 anos,21211
+2023,3205309,Vitória,feminino,30-34 anos,13041
+2022,1100205,Porto Velho,feminino,30-34 anos,21301
+2023,2111300,São Luís,feminino,30-34 anos,48682
+2024,4106902,Curitiba,feminino,30-34 anos,70757
+2023,5300108,Brasília,feminino,30-34 anos,119194
+2023,2704302,Maceió,feminino,30-34 anos,41317
+2022,3205309,Vitória,feminino,30-34 anos,13345
+2023,1100205,Porto Velho,feminino,30-34 anos,21262
+2022,3106200,Belo Horizonte,feminino,30-34 anos,96446
+2022,5103403,Cuiabá,feminino,35-39 anos,29249
+2024,1100205,Porto Velho,feminino,35-39 anos,21469
+2024,5103403,Cuiabá,feminino,35-39 anos,28963
+2024,2304400,Fortaleza,feminino,35-39 anos,111483
+2023,4106902,Curitiba,feminino,35-39 anos,73953
+2024,3304557,Rio de Janeiro,feminino,35-39 anos,265401
+2024,5300108,Brasília,feminino,35-39 anos,127790
+2022,1302603,Manaus,feminino,35-39 anos,96117
+2023,5103403,Cuiabá,feminino,35-39 anos,29112
+2022,4314902,Porto Alegre,feminino,35-39 anos,56348
+2023,5002704,Campo Grande,feminino,35-39 anos,37846
+2022,2927408,Salvador,feminino,35-39 anos,126614
+2023,4314902,Porto Alegre,feminino,35-39 anos,55240
+2024,1501402,Belém,feminino,35-39 anos,56567
+2024,3205309,Vitória,feminino,40-44 anos,14933
+2022,2111300,São Luís,feminino,40-44 anos,47334
+2022,5002704,Campo Grande,feminino,40-44 anos,37711
+2022,5300108,Brasília,feminino,40-44 anos,136998
+2024,1501402,Belém,feminino,40-44 anos,60174
+2022,1400100,Boa Vista,feminino,45-49 anos,12937
+2022,4314902,Porto Alegre,feminino,5-9 anos,40582
+2024,1302603,Manaus,feminino,5-9 anos,87969
+2022,1501402,Belém,feminino,5-9 anos,41712
+2023,4106902,Curitiba,feminino,5-9 anos,51970
+2023,1200401,Rio Branco,feminino,5-9 anos,14888
+2022,2800308,Aracaju,feminino,5-9 anos,19796
+2023,2408102,Natal,feminino,5-9 anos,24349
+2024,4205407,Florianópolis,feminino,5-9 anos,15329
+2023,3550308,São Paulo,feminino,5-9 anos,367650
+2022,2111300,São Luís,feminino,50-54 anos,35348
+2022,2507507,João Pessoa,feminino,50-54 anos,29095
+2023,2211001,Teresina,feminino,50-54 anos,29341
+2022,1721000,Palmas,feminino,50-54 anos,8085
+2023,2927408,Salvador,feminino,50-54 anos,97595
+2023,4205407,Florianópolis,feminino,50-54 anos,18099
+2022,1400100,Boa Vista,feminino,50-54 anos,10036
+2023,1501402,Belém,feminino,50-54 anos,50064
+2024,3106200,Belo Horizonte,feminino,50-54 anos,85621
+2022,5002704,Campo Grande,feminino,50-54 anos,29940
+2024,5002704,Campo Grande,feminino,50-54 anos,30634
+2024,1600303,Macapá,feminino,50-54 anos,13015
+2023,4106902,Curitiba,feminino,50-54 anos,65869
+2024,1100205,Porto Velho,feminino,50-54 anos,15132
+2023,2507507,João Pessoa,feminino,50-54 anos,29453
+2024,5103403,Cuiabá,feminino,50-54 anos,22127
+2023,1100205,Porto Velho,feminino,55-59 anos,12586
+2023,5208707,Goiânia,feminino,55-59 anos,45664
+2022,3550308,São Paulo,feminino,55-59 anos,382029
+2024,2408102,Natal,feminino,55-59 anos,27022
+2023,4205407,Florianópolis,feminino,55-59 anos,17688
+2022,1400100,Boa Vista,feminino,55-59 anos,8130
+2022,2408102,Natal,feminino,60-64 anos,22963
+2022,2800308,Aracaju,feminino,60-64 anos,16233
+2023,2800308,Aracaju,feminino,60-64 anos,16897
+2024,3205309,Vitória,feminino,60-64 anos,11190
+2024,1302603,Manaus,feminino,60-64 anos,42930
+2023,1302603,Manaus,feminino,60-64 anos,41403
+2024,5103403,Cuiabá,feminino,60-64 anos,16868
+2022,1302603,Manaus,feminino,60-64 anos,39841
+2024,2111300,São Luís,feminino,60-64 anos,27131
+2022,2211001,Teresina,feminino,60-64 anos,22168
+2024,1721000,Palmas,feminino,65-69 anos,3742
+2023,2304400,Fortaleza,feminino,65-69 anos,54435
+2024,3106200,Belo Horizonte,feminino,65-69 anos,67933
+2023,1721000,Palmas,feminino,65-69 anos,3555
+2024,5002704,Campo Grande,feminino,65-69 anos,20660
+2022,3550308,São Paulo,feminino,65-69 anos,281997
+2024,4314902,Porto Alegre,feminino,65-69 anos,43314
+2022,2927408,Salvador,feminino,65-69 anos,60960
+2024,1100205,Porto Velho,feminino,65-69 anos,7595
+2023,5002704,Campo Grande,feminino,65-69 anos,19836
+2024,4314902,Porto Alegre,feminino,70-74 anos,35637
+2024,3205309,Vitória,feminino,70-74 anos,7697
+2023,4106902,Curitiba,feminino,70-74 anos,36732
+2024,2927408,Salvador,feminino,70-74 anos,48195
+2023,2800308,Aracaju,feminino,70-74 anos,10457
+2023,2304400,Fortaleza,feminino,70-74 anos,42274
+2022,1600303,Macapá,feminino,70-74 anos,3466
+2023,2507507,João Pessoa,feminino,75-79 anos,10031
+2023,3550308,São Paulo,feminino,75-79 anos,158708
+2022,2927408,Salvador,feminino,75-79 anos,29603
+2023,1100205,Porto Velho,feminino,75-79 anos,2818
+2022,3550308,São Paulo,feminino,75-79 anos,151050
+2024,5002704,Campo Grande,feminino,75-79 anos,10222
+2022,2800308,Aracaju,feminino,75-79 anos,6760
+2023,1721000,Palmas,feminino,75-79 anos,1590
+2022,1501402,Belém,feminino,75-79 anos,15991
+2024,4106902,Curitiba,feminino,80-mais,31775
+2023,2704302,Maceió,feminino,80-mais,10756
+2022,2111300,São Luís,feminino,80-mais,11672
+2022,1302603,Manaus,feminino,80-mais,13891
+2023,4106902,Curitiba,feminino,80-mais,30414
+2022,2704302,Maceió,feminino,80-mais,10439
+2023,3106200,Belo Horizonte,feminino,80-mais,52483
+2022,4106902,Curitiba,feminino,80-mais,29333
+2022,1400100,Boa Vista,feminino,80-mais,1925
+2024,2800308,Aracaju,feminino,80-mais,9392
+2023,3205309,Vitória,masculino,0-4 anos,9736
+2023,1400100,Boa Vista,masculino,0-4 anos,21314
+2023,2211001,Teresina,masculino,0-4 anos,29114
+2023,1721000,Palmas,masculino,0-4 anos,12280
+2023,3550308,São Paulo,masculino,0-4 anos,338842
+2022,2507507,João Pessoa,masculino,0-4 anos,28515
+2024,2408102,Natal,masculino,0-4 anos,21649
+2024,1400100,Boa Vista,masculino,0-4 anos,20979
+2022,5208707,Goiânia,masculino,0-4 anos,44480
+2022,1600303,Macapá,masculino,0-4 anos,21515
+2022,4314902,Porto Alegre,masculino,0-4 anos,36086
+2022,5103403,Cuiabá,masculino,10-14 anos,23470
+2024,2111300,São Luís,masculino,10-14 anos,36761
+2022,1200401,Rio Branco,masculino,10-14 anos,15755
+2023,4106902,Curitiba,masculino,10-14 anos,54597
+2023,4314902,Porto Alegre,masculino,10-14 anos,40566
+2023,1100205,Porto Velho,masculino,10-14 anos,20844
+2023,1400100,Boa Vista,masculino,10-14 anos,18797
+2024,5002704,Campo Grande,masculino,15-19 anos,34542
+2023,1100205,Porto Velho,masculino,15-19 anos,20953
+2024,5208707,Goiânia,masculino,15-19 anos,48875
+2022,5002704,Campo Grande,masculino,15-19 anos,34738
+2023,2507507,João Pessoa,masculino,15-19 anos,31018
+2024,4106902,Curitiba,masculino,15-19 anos,57425
+2023,4314902,Porto Alegre,masculino,15-19 anos,42406
+2023,3106200,Belo Horizonte,masculino,20-24 anos,87861
+2023,3304557,Rio de Janeiro,masculino,20-24 anos,239146
+2024,5208707,Goiânia,masculino,20-24 anos,56799
+2022,2408102,Natal,masculino,20-24 anos,30990
+2024,2800308,Aracaju,masculino,20-24 anos,23074
+2023,2211001,Teresina,masculino,20-24 anos,36864
+2022,5103403,Cuiabá,masculino,20-24 anos,26062
+2022,1600303,Macapá,masculino,20-24 anos,22756
+2022,5208707,Goiânia,masculino,20-24 anos,58883
+2023,2507507,João Pessoa,masculino,20-24 anos,34329
+2022,3106200,Belo Horizonte,masculino,20-24 anos,89469
+2022,1400100,Boa Vista,masculino,25-29 anos,21233
+2024,1600303,Macapá,masculino,25-29 anos,21942
+2023,4106902,Curitiba,masculino,25-29 anos,72297
+2022,2211001,Teresina,masculino,25-29 anos,35455
+2024,1501402,Belém,masculino,25-29 anos,54764
+2022,2408102,Natal,masculino,25-29 anos,31410
+2023,2111300,São Luís,masculino,25-29 anos,46838
+2023,1200401,Rio Branco,masculino,25-29 anos,16885
+2024,2611606,Recife,masculino,25-29 anos,59795
+2022,1100205,Porto Velho,masculino,25-29 anos,21677
+2024,3550308,São Paulo,masculino,25-29 anos,455226
+2022,2927408,Salvador,masculino,25-29 anos,95016
+2023,1501402,Belém,masculino,25-29 anos,54919
+2023,5208707,Goiânia,masculino,25-29 anos,61995
+2024,1400100,Boa Vista,masculino,25-29 anos,22898
+2023,1200401,Rio Branco,masculino,30-34 anos,15424
+2022,2211001,Teresina,masculino,30-34 anos,35525
+2022,4314902,Porto Alegre,masculino,30-34 anos,50434
+2022,2927408,Salvador,masculino,30-34 anos,93048
+2024,4314902,Porto Alegre,masculino,30-34 anos,49223
+2023,5103403,Cuiabá,masculino,30-34 anos,27661
+2023,2111300,São Luís,masculino,30-34 anos,44532
+2023,4106902,Curitiba,masculino,30-34 anos,70298
+2024,2111300,São Luís,masculino,30-34 anos,44031
+2024,1400100,Boa Vista,masculino,30-34 anos,21120
+2023,3106200,Belo Horizonte,masculino,30-34 anos,90420
+2024,1302603,Manaus,masculino,30-34 anos,92716
+2024,2800308,Aracaju,masculino,30-34 anos,23572
+2022,2211001,Teresina,masculino,35-39 anos,36107
+2023,2507507,João Pessoa,masculino,35-39 anos,34969
+2024,2704302,Maceió,masculino,35-39 anos,36296
+2022,3304557,Rio de Janeiro,masculino,35-39 anos,252956
+2024,1200401,Rio Branco,masculino,35-39 anos,14839
+2022,1100205,Porto Velho,masculino,40-44 anos,19204
+2023,5002704,Campo Grande,masculino,40-44 anos,34554
+2023,5300108,Brasília,masculino,40-44 anos,119163
+2024,2408102,Natal,masculino,40-44 anos,28740
+2024,5002704,Campo Grande,masculino,40-44 anos,35008
+2023,2704302,Maceió,masculino,40-44 anos,36105
+2023,1100205,Porto Velho,masculino,40-44 anos,19696
+2022,2304400,Fortaleza,masculino,40-44 anos,91568
+2023,2927408,Salvador,masculino,40-44 anos,106590
+2024,1100205,Porto Velho,masculino,40-44 anos,20016
+2023,2211001,Teresina,masculino,40-44 anos,33594
+2022,5103403,Cuiabá,masculino,40-44 anos,26748
+2023,1721000,Palmas,masculino,40-44 anos,12502
+2023,2800308,Aracaju,masculino,45-49 anos,20066
+2023,3550308,São Paulo,masculino,45-49 anos,399237
+2024,4314902,Porto Alegre,masculino,45-49 anos,44894
+2023,3304557,Rio de Janeiro,masculino,45-49 anos,221128
+2022,1400100,Boa Vista,masculino,45-49 anos,12205
+2024,2611606,Recife,masculino,5-9 anos,50126
+2022,1400100,Boa Vista,masculino,5-9 anos,19462
+2023,2111300,São Luís,masculino,5-9 anos,36010
+2024,2408102,Natal,masculino,5-9 anos,25284
+2023,2611606,Recife,masculino,5-9 anos,51117
+2024,1200401,Rio Branco,masculino,5-9 anos,15514
+2023,1302603,Manaus,masculino,5-9 anos,94089
+2022,2408102,Natal,masculino,5-9 anos,25966
+2024,2111300,São Luís,masculino,5-9 anos,35666
+2022,4205407,Florianópolis,masculino,5-9 anos,15889
+2023,2304400,Fortaleza,masculino,50-54 anos,70585
+2024,1501402,Belém,masculino,50-54 anos,43067
+2024,3304557,Rio de Janeiro,masculino,50-54 anos,196259
+2022,5002704,Campo Grande,masculino,50-54 anos,26056
+2023,3550308,São Paulo,masculino,50-54 anos,352093
+2023,5002704,Campo Grande,masculino,50-54 anos,26381
+2024,2611606,Recife,masculino,55-59 anos,42174
+2022,2704302,Maceió,masculino,55-59 anos,22991
+2022,4314902,Porto Alegre,masculino,55-59 anos,37854
+2024,2111300,São Luís,masculino,55-59 anos,24178
+2022,1600303,Macapá,masculino,55-59 anos,8655
+2023,5002704,Campo Grande,masculino,55-59 anos,23360
+2022,2111300,São Luís,masculino,55-59 anos,23070
+2024,1302603,Manaus,masculino,55-59 anos,47359
+2022,5300108,Brasília,masculino,55-59 anos,69618
+2023,2304400,Fortaleza,masculino,60-64 anos,51864
+2023,2507507,João Pessoa,masculino,60-64 anos,17503
+2023,1400100,Boa Vista,masculino,60-64 anos,6111
+2022,1302603,Manaus,masculino,60-64 anos,34217
+2024,2611606,Recife,masculino,60-64 anos,36366
+2024,2211001,Teresina,masculino,60-64 anos,17296
+2022,1100205,Porto Velho,masculino,65-69 anos,6217
+2022,2704302,Maceió,masculino,65-69 anos,13414
+2023,1721000,Palmas,masculino,65-69 anos,3125
+2022,4314902,Porto Alegre,masculino,65-69 anos,29326
+2023,2611606,Recife,masculino,65-69 anos,26837
+2024,1501402,Belém,masculino,65-69 anos,24521
+2023,5300108,Brasília,masculino,65-69 anos,40074
+2024,4106902,Curitiba,masculino,65-69 anos,35257
+2024,3106200,Belo Horizonte,masculino,70-74 anos,36584
+2023,1501402,Belém,masculino,70-74 anos,16151
+2023,1400100,Boa Vista,masculino,70-74 anos,2923
+2023,2704302,Maceió,masculino,70-74 anos,9612
+2022,5208707,Goiânia,masculino,70-74 anos,16027
+2023,2611606,Recife,masculino,75-79 anos,12255
+2023,5208707,Goiânia,masculino,75-79 anos,11052
+2023,2704302,Maceió,masculino,75-79 anos,5956
+2023,5002704,Campo Grande,masculino,75-79 anos,6868
+2023,2408102,Natal,masculino,75-79 anos,6473
+2024,4106902,Curitiba,masculino,75-79 anos,17392
+2024,2408102,Natal,masculino,75-79 anos,6829
+2023,4314902,Porto Alegre,masculino,75-79 anos,14947
+2022,1100205,Porto Velho,masculino,75-79 anos,2298
+2024,2507507,João Pessoa,masculino,75-79 anos,6423
+2022,2408102,Natal,masculino,75-79 anos,6056
+2023,4106902,Curitiba,masculino,80-mais,15721
+2023,1302603,Manaus,masculino,80-mais,8079
+2023,3550308,São Paulo,masculino,80-mais,99998
+2024,2927408,Salvador,masculino,80-mais,17479
+2024,5300108,Brasília,masculino,80-mais,18673
+2022,2304400,Fortaleza,masculino,80-mais,16980
+2022,1100205,Porto Velho,masculino,80-mais,2038
+2022,5103403,Cuiabá,feminino,0-4 anos,22668
+2023,1100205,Porto Velho,feminino,0-4 anos,17752
+2024,5300108,Brasília,feminino,0-4 anos,88272
+2022,1100205,Porto Velho,feminino,0-4 anos,18191
+2022,3304557,Rio de Janeiro,feminino,0-4 anos,176684
+2023,2111300,São Luís,feminino,0-4 anos,31666
+2022,5300108,Brasília,feminino,0-4 anos,96500
+2023,3550308,São Paulo,feminino,10-14 anos,365044
+2023,2111300,São Luís,feminino,10-14 anos,36043
+2022,2927408,Salvador,feminino,10-14 anos,75231
+2023,1600303,Macapá,feminino,10-14 anos,20217
+2024,5208707,Goiânia,feminino,10-14 anos,44567
+2022,1501402,Belém,feminino,10-14 anos,45236
+2024,2304400,Fortaleza,feminino,10-14 anos,80582
+2023,2611606,Recife,feminino,10-14 anos,48203
+2023,2927408,Salvador,feminino,10-14 anos,73811
+2022,1400100,Boa Vista,feminino,10-14 anos,17738
+2022,2611606,Recife,feminino,10-14 anos,48366
+2022,4314902,Porto Alegre,feminino,10-14 anos,38452
+2022,3106200,Belo Horizonte,feminino,15-19 anos,73374
+2023,2507507,João Pessoa,feminino,15-19 anos,30327
+2023,3550308,São Paulo,feminino,15-19 anos,381932
+2024,4314902,Porto Alegre,feminino,15-19 anos,39690
+2024,2211001,Teresina,feminino,15-19 anos,32477
+2024,4205407,Florianópolis,feminino,15-19 anos,15493
+2023,2611606,Recife,feminino,20-24 anos,58112
+2022,2304400,Fortaleza,feminino,20-24 anos,103689
+2023,2111300,São Luís,feminino,20-24 anos,47961
+2022,5002704,Campo Grande,feminino,20-24 anos,35420
+2024,1501402,Belém,feminino,20-24 anos,55297
+2024,2304400,Fortaleza,feminino,20-24 anos,97397
+2024,2927408,Salvador,feminino,20-24 anos,92112
+2022,4106902,Curitiba,feminino,20-24 anos,69129
+2024,5002704,Campo Grande,feminino,25-29 anos,36774
+2022,1721000,Palmas,feminino,25-29 anos,15896
+2023,2507507,João Pessoa,feminino,25-29 anos,36521
+2022,2800308,Aracaju,feminino,25-29 anos,26494
+2024,5300108,Brasília,feminino,25-29 anos,119216
+2022,3106200,Belo Horizonte,feminino,25-29 anos,97041
+2023,2111300,São Luís,feminino,25-29 anos,50318
+2024,1721000,Palmas,feminino,25-29 anos,16181
+2022,2611606,Recife,feminino,25-29 anos,62602
+2024,3106200,Belo Horizonte,feminino,25-29 anos,94798
+2022,2507507,João Pessoa,feminino,30-34 anos,37321
+2023,2304400,Fortaleza,feminino,30-34 anos,112636
+2023,1400100,Boa Vista,feminino,30-34 anos,20224
+2023,2800308,Aracaju,feminino,30-34 anos,26467
+2024,1600303,Macapá,feminino,30-34 anos,20540
+2022,2800308,Aracaju,feminino,30-34 anos,26875
+2022,2927408,Salvador,feminino,30-34 anos,107029
+2022,1501402,Belém,feminino,30-34 anos,56716
+2022,2704302,Maceió,feminino,30-34 anos,41393
+2023,5103403,Cuiabá,feminino,30-34 anos,28048
+2022,2800308,Aracaju,feminino,35-39 anos,28663
+2024,5208707,Goiânia,feminino,35-39 anos,63031
+2024,3106200,Belo Horizonte,feminino,35-39 anos,98120
+2024,1400100,Boa Vista,feminino,35-39 anos,19395
+2022,4106902,Curitiba,feminino,40-44 anos,78365
+2022,2507507,João Pessoa,feminino,40-44 anos,37381
+2023,2927408,Salvador,feminino,40-44 anos,130072
+2024,2704302,Maceió,feminino,40-44 anos,42077
+2022,4314902,Porto Alegre,feminino,40-44 anos,57544
+2024,1721000,Palmas,feminino,40-44 anos,13873
+2023,5103403,Cuiabá,feminino,40-44 anos,28755
+2023,1721000,Palmas,feminino,40-44 anos,13637
+2022,2304400,Fortaleza,feminino,45-49 anos,94205
+2024,2408102,Natal,feminino,45-49 anos,29256
+2023,5208707,Goiânia,feminino,45-49 anos,57501
+2022,1721000,Palmas,feminino,45-49 anos,10675
+2022,2704302,Maceió,feminino,45-49 anos,37586
+2022,2211001,Teresina,feminino,45-49 anos,32593
+2024,2704302,Maceió,feminino,45-49 anos,38799
+2023,3304557,Rio de Janeiro,feminino,45-49 anos,257230
+2023,1200401,Rio Branco,feminino,45-49 anos,13147
+2023,1501402,Belém,feminino,45-49 anos,55987
+2024,2211001,Teresina,feminino,45-49 anos,34760
+2022,2704302,Maceió,feminino,5-9 anos,33121
+2023,3205309,Vitória,feminino,5-9 anos,9831
+2023,2304400,Fortaleza,feminino,5-9 anos,81102
+2022,2927408,Salvador,feminino,5-9 anos,73496
+2023,4314902,Porto Alegre,feminino,5-9 anos,40253
+2024,1100205,Porto Velho,feminino,5-9 anos,19530
+2024,1600303,Macapá,feminino,5-9 anos,21077
+2023,2704302,Maceió,feminino,50-54 anos,34511
+2024,5208707,Goiânia,feminino,50-54 anos,51356
+2024,2111300,São Luís,feminino,50-54 anos,35856
+2024,1302603,Manaus,feminino,50-54 anos,65802
+2024,2507507,João Pessoa,feminino,50-54 anos,29817
+2024,2704302,Maceió,feminino,50-54 anos,34789
+2023,2611606,Recife,feminino,50-54 anos,58276
+2022,2408102,Natal,feminino,50-54 anos,27710
+2023,1600303,Macapá,feminino,50-54 anos,12544
+2022,4314902,Porto Alegre,feminino,50-54 anos,46361
+2023,1400100,Boa Vista,feminino,55-59 anos,8525
+2023,2704302,Maceió,feminino,55-59 anos,30660
+2023,2408102,Natal,feminino,55-59 anos,27171
+2023,1302603,Manaus,feminino,55-59 anos,50990
+2024,1400100,Boa Vista,feminino,55-59 anos,8941
+2022,2704302,Maceió,feminino,55-59 anos,30068
+2023,3550308,São Paulo,feminino,55-59 anos,384285
+2024,3205309,Vitória,feminino,55-59 anos,11451
+2022,2800308,Aracaju,feminino,55-59 anos,19810
+2023,5002704,Campo Grande,feminino,55-59 anos,28205
+2022,5103403,Cuiabá,feminino,55-59 anos,18620
+2022,2304400,Fortaleza,feminino,60-64 anos,67620
+2024,5208707,Goiânia,feminino,60-64 anos,40977
+2023,4314902,Porto Alegre,feminino,60-64 anos,48157
+2022,4314902,Porto Alegre,feminino,60-64 anos,48163
+2023,1501402,Belém,feminino,60-64 anos,38613
+2024,3304557,Rio de Janeiro,feminino,60-64 anos,213578
+2022,2704302,Maceió,feminino,60-64 anos,24391
+2023,2211001,Teresina,feminino,60-64 anos,23101
+2024,1100205,Porto Velho,feminino,60-64 anos,10462
+2023,5103403,Cuiabá,feminino,60-64 anos,16366
+2024,1501402,Belém,feminino,60-64 anos,39525
+2023,3205309,Vitória,feminino,65-69 anos,9603
+2024,5208707,Goiânia,feminino,65-69 anos,33976
+2023,2111300,São Luís,feminino,65-69 anos,20143
+2022,5002704,Campo Grande,feminino,65-69 anos,19007
+2023,5300108,Brasília,feminino,65-69 anos,53402
+2024,2927408,Salvador,feminino,65-69 anos,65289
+2023,2611606,Recife,feminino,65-69 anos,40349
+2024,4106902,Curitiba,feminino,65-69 anos,48544
+2024,2800308,Aracaju,feminino,65-69 anos,13875
+2022,1302603,Manaus,feminino,65-69 anos,29496
+2022,1200401,Rio Branco,feminino,65-69 anos,5287
+2024,4205407,Florianópolis,feminino,70-74 anos,10827
+2023,2111300,São Luís,feminino,70-74 anos,14461
+2024,1600303,Macapá,feminino,70-74 anos,3992
+2024,1302603,Manaus,feminino,70-74 anos,23003
+2023,1721000,Palmas,feminino,70-74 anos,2377
+2023,3304557,Rio de Janeiro,feminino,70-74 anos,148736
+2023,2611606,Recife,feminino,70-74 anos,31412
+2024,2111300,São Luís,feminino,70-74 anos,15402
+2023,3550308,São Paulo,feminino,70-74 anos,224171
+2023,1400100,Boa Vista,feminino,70-74 anos,3243
+2023,5002704,Campo Grande,feminino,70-74 anos,14533
+2023,1200401,Rio Branco,feminino,70-74 anos,3823
+2022,1400100,Boa Vista,feminino,70-74 anos,2978
+2022,3106200,Belo Horizonte,feminino,70-74 anos,50187
+2024,2927408,Salvador,feminino,75-79 anos,32956
+2024,1302603,Manaus,feminino,75-79 anos,14398
+2023,3106200,Belo Horizonte,feminino,75-79 anos,38194
+2022,3106200,Belo Horizonte,feminino,75-79 anos,36580
+2024,5208707,Goiânia,feminino,75-79 anos,17720
+2024,1200401,Rio Branco,feminino,75-79 anos,2602
+2022,2507507,João Pessoa,feminino,80-mais,12304
+2022,2800308,Aracaju,feminino,80-mais,8578
+2023,1100205,Porto Velho,feminino,80-mais,3061
+2022,3205309,Vitória,feminino,80-mais,6679
+2023,2211001,Teresina,feminino,80-mais,11012
+2023,2408102,Natal,feminino,80-mais,13692
+2023,3304557,Rio de Janeiro,feminino,80-mais,140041
+2023,1200401,Rio Branco,feminino,80-mais,2709
+2022,2211001,Teresina,feminino,80-mais,10640
+2022,3550308,São Paulo,feminino,80-mais,199176
+2024,2611606,Recife,feminino,80-mais,30313
+2022,2304400,Fortaleza,feminino,80-mais,37764
+2024,2507507,João Pessoa,feminino,80-mais,13304
+2022,1400100,Boa Vista,masculino,0-4 anos,21233
+2024,2611606,Recife,masculino,0-4 anos,42344
+2023,2111300,São Luís,masculino,0-4 anos,32725
+2023,1600303,Macapá,masculino,0-4 anos,20765
+2024,3550308,São Paulo,masculino,0-4 anos,323832
+2024,3304557,Rio de Janeiro,masculino,0-4 anos,169345
+2024,1200401,Rio Branco,masculino,0-4 anos,13715
+2022,3550308,São Paulo,masculino,10-14 anos,381151
+2024,2304400,Fortaleza,masculino,10-14 anos,83803
+2023,2304400,Fortaleza,masculino,10-14 anos,84499
+2024,5208707,Goiânia,masculino,10-14 anos,46204
+2022,1400100,Boa Vista,masculino,10-14 anos,18306
+2022,2927408,Salvador,masculino,10-14 anos,78309
+2022,5208707,Goiânia,masculino,10-14 anos,45668
+2024,4106902,Curitiba,masculino,10-14 anos,54433
+2022,2704302,Maceió,masculino,15-19 anos,36408
+2024,3205309,Vitória,masculino,15-19 anos,10268
+2024,1100205,Porto Velho,masculino,15-19 anos,20764
+2022,4205407,Florianópolis,masculino,15-19 anos,15621
+2024,3304557,Rio de Janeiro,masculino,15-19 anos,204505
+2024,1200401,Rio Branco,masculino,15-19 anos,16639
+2024,4205407,Florianópolis,masculino,15-19 anos,16170
+2023,1200401,Rio Branco,masculino,15-19 anos,17020
+2023,4106902,Curitiba,masculino,15-19 anos,58579
+2022,1200401,Rio Branco,masculino,15-19 anos,17363
+2023,2408102,Natal,masculino,15-19 anos,26512
+2023,2927408,Salvador,masculino,15-19 anos,80566
+2022,5300108,Brasília,masculino,15-19 anos,108906
+2024,1100205,Porto Velho,masculino,20-24 anos,22328
+2022,2111300,São Luís,masculino,20-24 anos,46865
+2023,1721000,Palmas,masculino,20-24 anos,14912
+2024,3205309,Vitória,masculino,20-24 anos,11454
+2022,1200401,Rio Branco,masculino,20-24 anos,18026
+2024,1600303,Macapá,masculino,20-24 anos,22137
+2024,2304400,Fortaleza,masculino,20-24 anos,96884
+2024,2408102,Natal,masculino,20-24 anos,28928
+2024,2211001,Teresina,masculino,20-24 anos,36232
+2023,1400100,Boa Vista,masculino,20-24 anos,21778
+2024,1302603,Manaus,masculino,20-24 anos,98397
+2023,3205309,Vitória,masculino,25-29 anos,11956
+2023,5002704,Campo Grande,masculino,25-29 anos,37537
+2022,1501402,Belém,masculino,25-29 anos,55071
+2023,1721000,Palmas,masculino,25-29 anos,15734
+2023,4314902,Porto Alegre,masculino,25-29 anos,52388
+2024,4205407,Florianópolis,masculino,25-29 anos,24848
+2023,1400100,Boa Vista,masculino,25-29 anos,22090
+2023,2611606,Recife,masculino,25-29 anos,60008
+2023,1302603,Manaus,masculino,25-29 anos,100428
+2023,2507507,João Pessoa,masculino,25-29 anos,34720
+2022,3550308,São Paulo,masculino,30-34 anos,455766
+2024,3550308,São Paulo,masculino,30-34 anos,446244
+2023,4314902,Porto Alegre,masculino,30-34 anos,50051
+2022,3106200,Belo Horizonte,masculino,30-34 anos,91220
+2024,2704302,Maceió,masculino,30-34 anos,37921
+2024,3304557,Rio de Janeiro,masculino,30-34 anos,247826
+2023,3550308,São Paulo,masculino,30-34 anos,450422
+2024,1501402,Belém,masculino,30-34 anos,50280
+2022,3205309,Vitória,masculino,30-34 anos,12439
+2023,2408102,Natal,masculino,30-34 anos,29918
+2024,1501402,Belém,masculino,35-39 anos,50226
+2023,4314902,Porto Alegre,masculino,35-39 anos,51028
+2023,3304557,Rio de Janeiro,masculino,35-39 anos,249579
+2023,1100205,Porto Velho,masculino,35-39 anos,21639
+2024,1600303,Macapá,masculino,35-39 anos,18792
+2022,2408102,Natal,masculino,40-44 anos,28555
+2022,5208707,Goiânia,masculino,40-44 anos,57780
+2024,3550308,São Paulo,masculino,40-44 anos,453183
+2022,5002704,Campo Grande,masculino,40-44 anos,33887
+2023,3304557,Rio de Janeiro,masculino,40-44 anos,250026
+2024,5002704,Campo Grande,masculino,45-49 anos,30733
+2022,5103403,Cuiabá,masculino,45-49 anos,21918
+2022,3106200,Belo Horizonte,masculino,45-49 anos,79180
+2023,2704302,Maceió,masculino,5-9 anos,34741
+2022,2704302,Maceió,masculino,5-9 anos,34697
+2024,2800308,Aracaju,masculino,5-9 anos,20338
+2023,2611606,Recife,masculino,50-54 anos,46024
+2024,5208707,Goiânia,masculino,50-54 anos,44290
+2024,1302603,Manaus,masculino,50-54 anos,59372
+2022,3304557,Rio de Janeiro,masculino,50-54 anos,192682
+2024,2111300,São Luís,masculino,50-54 anos,28283
+2022,1600303,Macapá,masculino,50-54 anos,11292
+2024,2304400,Fortaleza,masculino,50-54 anos,70635
+2023,1400100,Boa Vista,masculino,55-59 anos,8110
+2023,1501402,Belém,masculino,55-59 anos,36714
+2023,3304557,Rio de Janeiro,masculino,55-59 anos,182118
+2023,2507507,João Pessoa,masculino,55-59 anos,21570
+2023,2927408,Salvador,masculino,55-59 anos,68727
+2022,3205309,Vitória,masculino,60-64 anos,8597
+2024,5002704,Campo Grande,masculino,60-64 anos,20108
+2023,1200401,Rio Branco,masculino,60-64 anos,6047
+2024,2507507,João Pessoa,masculino,60-64 anos,18272
+2024,1302603,Manaus,masculino,60-64 anos,37016
+2023,2611606,Recife,masculino,60-64 anos,35576
+2024,1721000,Palmas,masculino,65-69 anos,3281
+2023,3304557,Rio de Janeiro,masculino,65-69 anos,132275
+2024,2111300,São Luís,masculino,65-69 anos,15208
+2022,2611606,Recife,masculino,65-69 anos,25826
+2024,4314902,Porto Alegre,masculino,65-69 anos,30322
+2023,2111300,São Luís,masculino,65-69 anos,14703
+2022,1600303,Macapá,masculino,65-69 anos,4628
+2023,4205407,Florianópolis,masculino,65-69 anos,10344
+2022,5300108,Brasília,masculino,65-69 anos,38539
+2022,2408102,Natal,masculino,65-69 anos,12697
+2022,2927408,Salvador,masculino,65-69 anos,42393
+2024,1600303,Macapá,masculino,65-69 anos,5142
+2023,2507507,João Pessoa,masculino,65-69 anos,12886
+2024,4205407,Florianópolis,masculino,70-74 anos,8029
+2024,5300108,Brasília,masculino,70-74 anos,29947
+2023,3205309,Vitória,masculino,70-74 anos,5086
+2022,1721000,Palmas,masculino,70-74 anos,2093
+2022,2111300,São Luís,masculino,70-74 anos,9536
+2024,2800308,Aracaju,masculino,70-74 anos,7135
+2022,5103403,Cuiabá,masculino,70-74 anos,6630
+2023,2408102,Natal,masculino,70-74 anos,9463
+2024,5002704,Campo Grande,masculino,70-74 anos,11243
+2024,1400100,Boa Vista,masculino,70-74 anos,3135
+2024,4205407,Florianópolis,masculino,75-79 anos,5302
+2023,2800308,Aracaju,masculino,75-79 anos,4366
+2023,2304400,Fortaleza,masculino,75-79 anos,17724
+2022,4314902,Porto Alegre,masculino,75-79 anos,14133
+2022,5300108,Brasília,masculino,75-79 anos,16942
+2022,5208707,Goiânia,masculino,75-79 anos,10484
+2022,2111300,São Luís,masculino,75-79 anos,6111
+2023,3550308,São Paulo,masculino,75-79 anos,96931
+2024,5002704,Campo Grande,masculino,80-mais,7226
+2022,1302603,Manaus,masculino,80-mais,7653
+2022,2507507,João Pessoa,masculino,80-mais,5402
+2022,3205309,Vitória,masculino,80-mais,3207
+2022,2800308,Aracaju,masculino,80-mais,3686
+2023,5103403,Cuiabá,masculino,80-mais,3751
+2023,5300108,Brasília,masculino,80-mais,17770
+2022,1721000,Palmas,feminino,0-4 anos,11796
+2024,4314902,Porto Alegre,feminino,0-4 anos,31898
+2023,2927408,Salvador,feminino,0-4 anos,62528
+2022,2507507,João Pessoa,feminino,0-4 anos,27098
+2023,2704302,Maceió,feminino,0-4 anos,31919
+2023,2800308,Aracaju,feminino,0-4 anos,17538
+2023,5300108,Brasília,feminino,0-4 anos,92271
+2022,1400100,Boa Vista,feminino,0-4 anos,20101
+2022,3205309,Vitória,feminino,0-4 anos,9361
+2024,3304557,Rio de Janeiro,feminino,0-4 anos,162057
+2023,2408102,Natal,feminino,0-4 anos,21816
+2023,3550308,São Paulo,feminino,0-4 anos,323582
+2023,1200401,Rio Branco,feminino,10-14 anos,15073
+2022,2304400,Fortaleza,feminino,10-14 anos,82185
+2022,4205407,Florianópolis,feminino,10-14 anos,14287
+2024,5002704,Campo Grande,feminino,10-14 anos,33213
+2024,1721000,Palmas,feminino,15-19 anos,12542
+2022,2507507,João Pessoa,feminino,15-19 anos,30772
+2023,1200401,Rio Branco,feminino,15-19 anos,16914
+2023,5208707,Goiânia,feminino,15-19 anos,48788
+2023,2408102,Natal,feminino,15-19 anos,25969
+2023,2507507,João Pessoa,feminino,20-24 anos,34912
+2024,5103403,Cuiabá,feminino,20-24 anos,24890
+2022,2704302,Maceió,feminino,20-24 anos,42063
+2022,5300108,Brasília,feminino,20-24 anos,117712
+2024,1200401,Rio Branco,feminino,20-24 anos,18003
+2022,1400100,Boa Vista,feminino,20-24 anos,21177
+2024,4205407,Florianópolis,feminino,25-29 anos,25154
+2022,4205407,Florianópolis,feminino,25-29 anos,24975
+2022,1600303,Macapá,feminino,25-29 anos,22223
+2023,4106902,Curitiba,feminino,25-29 anos,72492
+2023,4314902,Porto Alegre,feminino,25-29 anos,54598
+2023,5300108,Brasília,feminino,25-29 anos,119480
+2022,3205309,Vitória,feminino,25-29 anos,13293
+2023,5208707,Goiânia,feminino,25-29 anos,63568
+2023,5002704,Campo Grande,feminino,25-29 anos,37104
+2024,2111300,São Luís,feminino,25-29 anos,49882
+2024,1302603,Manaus,feminino,25-29 anos,104652
+2022,5300108,Brasília,feminino,30-34 anos,120764
+2023,2927408,Salvador,feminino,30-34 anos,103925
+2022,4205407,Florianópolis,feminino,30-34 anos,25272
+2022,1200401,Rio Branco,feminino,30-34 anos,16394
+2023,1302603,Manaus,feminino,30-34 anos,95219
+2022,1600303,Macapá,feminino,30-34 anos,20262
+2022,1302603,Manaus,feminino,30-34 anos,94218
+2022,1721000,Palmas,feminino,30-34 anos,14640
+2024,5300108,Brasília,feminino,30-34 anos,118368
+2022,4106902,Curitiba,feminino,30-34 anos,72183
+2022,2611606,Recife,feminino,30-34 anos,63641
+2022,1400100,Boa Vista,feminino,35-39 anos,18338
+2024,4314902,Porto Alegre,feminino,35-39 anos,53323
+2022,2408102,Natal,feminino,35-39 anos,33923
+2022,2611606,Recife,feminino,35-39 anos,67068
+2022,2211001,Teresina,feminino,35-39 anos,41438
+2023,5300108,Brasília,feminino,35-39 anos,130908
+2024,3550308,São Paulo,feminino,35-39 anos,480923
+2022,1200401,Rio Branco,feminino,35-39 anos,16400
+2022,2704302,Maceió,feminino,35-39 anos,42771
+2023,3106200,Belo Horizonte,feminino,35-39 anos,101758
+2022,3205309,Vitória,feminino,35-39 anos,14745
+2024,2211001,Teresina,feminino,35-39 anos,40217
+2023,2927408,Salvador,feminino,35-39 anos,121679
+2022,3550308,São Paulo,feminino,40-44 anos,510108
+2022,4205407,Florianópolis,feminino,40-44 anos,24169
+2022,3304557,Rio de Janeiro,feminino,40-44 anos,278935
+2023,2507507,João Pessoa,feminino,40-44 anos,38156
+2024,2611606,Recife,feminino,40-44 anos,66816
+2024,4205407,Florianópolis,feminino,40-44 anos,25647
+2024,3550308,São Paulo,feminino,40-44 anos,506531
+2023,4314902,Porto Alegre,feminino,40-44 anos,57795
+2024,2611606,Recife,feminino,45-49 anos,63111
+2024,1600303,Macapá,feminino,45-49 anos,15999
+2023,1400100,Boa Vista,feminino,45-49 anos,13772
+2024,3205309,Vitória,feminino,45-49 anos,13536
+2024,2304400,Fortaleza,feminino,45-49 anos,97709
+2024,4205407,Florianópolis,feminino,45-49 anos,21854
+2022,1302603,Manaus,feminino,45-49 anos,76340
+2023,2800308,Aracaju,feminino,45-49 anos,24869
+2022,2800308,Aracaju,feminino,45-49 anos,24182
+2024,1100205,Porto Velho,feminino,45-49 anos,17897
+2023,4205407,Florianópolis,feminino,45-49 anos,20822
+2023,5103403,Cuiabá,feminino,45-49 anos,24742
+2024,3550308,São Paulo,feminino,45-49 anos,468782
+2022,5208707,Goiânia,feminino,45-49 anos,56043
+2024,1721000,Palmas,feminino,45-49 anos,11771
+2022,2927408,Salvador,feminino,45-49 anos,108758
+2023,2507507,João Pessoa,feminino,5-9 anos,28617
+2022,5002704,Campo Grande,feminino,5-9 anos,33649
+2024,5208707,Goiânia,feminino,5-9 anos,45366
+2022,4106902,Curitiba,feminino,5-9 anos,52496
+2024,3550308,São Paulo,feminino,5-9 anos,361764
+2024,3106200,Belo Horizonte,feminino,5-9 anos,62930
+2023,1400100,Boa Vista,feminino,5-9 anos,19565
+2023,2800308,Aracaju,feminino,5-9 anos,19745
+2023,4314902,Porto Alegre,feminino,50-54 anos,46117
+2023,1302603,Manaus,feminino,50-54 anos,63148
+2022,3550308,São Paulo,feminino,50-54 anos,412704
+2024,4205407,Florianópolis,feminino,50-54 anos,18532
+2024,3205309,Vitória,feminino,50-54 anos,11717
+2022,2211001,Teresina,feminino,50-54 anos,28938
+2022,1100205,Porto Velho,feminino,50-54 anos,14418
+2023,3205309,Vitória,feminino,50-54 anos,11601
+2023,1200401,Rio Branco,feminino,50-54 anos,10744
+2023,2304400,Fortaleza,feminino,50-54 anos,89733
+2024,3304557,Rio de Janeiro,feminino,50-54 anos,235180
+2022,4106902,Curitiba,feminino,55-59 anos,62789
+2022,1200401,Rio Branco,feminino,55-59 anos,8642
+2023,3304557,Rio de Janeiro,feminino,55-59 anos,224410
+2022,2507507,João Pessoa,feminino,55-59 anos,27352
+2024,4205407,Florianópolis,feminino,55-59 anos,17797
+2024,2507507,João Pessoa,feminino,55-59 anos,28117
+2024,1100205,Porto Velho,feminino,55-59 anos,12922
+2022,2927408,Salvador,feminino,55-59 anos,88881
+2022,5002704,Campo Grande,feminino,55-59 anos,27907
+2023,2611606,Recife,feminino,60-64 anos,49358
+2024,5300108,Brasília,feminino,60-64 anos,72755
+2023,4205407,Florianópolis,feminino,60-64 anos,16502
+2024,2704302,Maceió,feminino,60-64 anos,26122
+2023,1600303,Macapá,feminino,60-64 anos,7520
+2022,1100205,Porto Velho,feminino,60-64 anos,9536
+2022,5002704,Campo Grande,feminino,60-64 anos,24268
+2022,5208707,Goiânia,feminino,60-64 anos,39229
+2022,3106200,Belo Horizonte,feminino,65-69 anos,64331
+2022,4205407,Florianópolis,feminino,65-69 anos,13007
+2023,1200401,Rio Branco,feminino,65-69 anos,5515
+2022,4106902,Curitiba,feminino,65-69 anos,45769
+2023,1600303,Macapá,feminino,65-69 anos,5600
+2024,1302603,Manaus,feminino,65-69 anos,32881
+2023,2408102,Natal,feminino,65-69 anos,18607
+2024,2211001,Teresina,feminino,70-74 anos,13960
+2024,5208707,Goiânia,feminino,70-74 anos,25824
+2022,3304557,Rio de Janeiro,feminino,70-74 anos,143784
+2024,3106200,Belo Horizonte,feminino,70-74 anos,54167
+2023,5103403,Cuiabá,feminino,70-74 anos,9054
+2022,1721000,Palmas,feminino,70-74 anos,2145
+2023,2211001,Teresina,feminino,70-74 anos,13305
+2022,5002704,Campo Grande,feminino,70-74 anos,13772
+2023,2704302,Maceió,feminino,70-74 anos,14810
+2023,2927408,Salvador,feminino,70-74 anos,46024
+2022,2211001,Teresina,feminino,70-74 anos,12618
+2022,3205309,Vitória,feminino,70-74 anos,6890
+2022,1400100,Boa Vista,feminino,75-79 anos,1813
+2024,3205309,Vitória,feminino,75-79 anos,5237
+2022,2611606,Recife,feminino,75-79 anos,21681
+2024,2111300,São Luís,feminino,75-79 anos,10473
+2023,1302603,Manaus,feminino,75-79 anos,13515
+2023,5103403,Cuiabá,feminino,75-79 anos,5810
+2024,2211001,Teresina,feminino,75-79 anos,9481
+2022,1200401,Rio Branco,feminino,75-79 anos,2400
+2023,2611606,Recife,feminino,75-79 anos,22695
+2022,2408102,Natal,feminino,75-79 anos,10214
+2023,2800308,Aracaju,feminino,75-79 anos,7206
+2022,1600303,Macapá,feminino,75-79 anos,2399
+2023,1200401,Rio Branco,feminino,75-79 anos,2478
+2024,4205407,Florianópolis,feminino,75-79 anos,7532
+2024,2408102,Natal,feminino,75-79 anos,11461
+2022,4314902,Porto Alegre,feminino,80-mais,33413
+2024,4314902,Porto Alegre,feminino,80-mais,35022
+2023,1600303,Macapá,feminino,80-mais,2881
+2024,4205407,Florianópolis,feminino,80-mais,8996
+2023,5208707,Goiânia,feminino,80-mais,18972
+2023,1302603,Manaus,feminino,80-mais,14521
+2024,1100205,Porto Velho,feminino,80-mais,3239
+2024,1100205,Porto Velho,masculino,0-4 anos,18314
+2022,2111300,São Luís,masculino,0-4 anos,33844
+2023,1302603,Manaus,masculino,0-4 anos,84467
+2023,3304557,Rio de Janeiro,masculino,10-14 anos,201561
+2024,1501402,Belém,masculino,10-14 anos,45389
+2024,1600303,Macapá,masculino,10-14 anos,21239
+2023,3550308,São Paulo,masculino,10-14 anos,380536
+2022,2211001,Teresina,masculino,10-14 anos,30996
+2022,1100205,Porto Velho,masculino,10-14 anos,20613
+2023,5208707,Goiânia,masculino,10-14 anos,45930
+2024,4205407,Florianópolis,masculino,10-14 anos,16011
+2024,2408102,Natal,masculino,10-14 anos,25449
+2024,1200401,Rio Branco,masculino,10-14 anos,15255
+2024,2507507,João Pessoa,masculino,10-14 anos,29829
+2024,5103403,Cuiabá,masculino,10-14 anos,23981
+2022,5002704,Campo Grande,masculino,10-14 anos,33825
+2024,2927408,Salvador,masculino,15-19 anos,79121
+2024,2800308,Aracaju,masculino,15-19 anos,21595
+2022,3550308,São Paulo,masculino,15-19 anos,404798
+2024,3106200,Belo Horizonte,masculino,15-19 anos,71354
+2024,5300108,Brasília,masculino,15-19 anos,106108
+2024,3304557,Rio de Janeiro,masculino,20-24 anos,231712
+2023,2111300,São Luís,masculino,20-24 anos,45917
+2023,1600303,Macapá,masculino,20-24 anos,22467
+2024,5002704,Campo Grande,masculino,20-24 anos,36737
+2022,1400100,Boa Vista,masculino,20-24 anos,21478
+2023,4314902,Porto Alegre,masculino,20-24 anos,49987
+2022,1721000,Palmas,masculino,20-24 anos,15012
+2022,5002704,Campo Grande,masculino,20-24 anos,36688
+2024,1501402,Belém,masculino,20-24 anos,55858
+2024,3304557,Rio de Janeiro,masculino,25-29 anos,257291
+2022,5002704,Campo Grande,masculino,25-29 anos,37532
+2022,1600303,Macapá,masculino,25-29 anos,21711
+2024,5103403,Cuiabá,masculino,25-29 anos,27142
+2022,1721000,Palmas,masculino,25-29 anos,15376
+2024,1302603,Manaus,masculino,25-29 anos,101729
+2022,2304400,Fortaleza,masculino,25-29 anos,106647
+2024,4106902,Curitiba,masculino,25-29 anos,71558
+2023,4205407,Florianópolis,masculino,25-29 anos,24749
+2024,2927408,Salvador,masculino,25-29 anos,93679
+2022,5208707,Goiânia,masculino,30-34 anos,61134
+2022,2800308,Aracaju,masculino,30-34 anos,23967
+2022,1400100,Boa Vista,masculino,30-34 anos,19333
+2024,5103403,Cuiabá,masculino,30-34 anos,27547
+2023,5208707,Goiânia,masculino,30-34 anos,60903
+2022,3304557,Rio de Janeiro,masculino,30-34 anos,247180
+2024,3106200,Belo Horizonte,masculino,35-39 anos,89926
+2022,2704302,Maceió,masculino,35-39 anos,37132
+2022,3205309,Vitória,masculino,35-39 anos,13551
+2023,5002704,Campo Grande,masculino,35-39 anos,36670
+2023,2304400,Fortaleza,masculino,35-39 anos,101076
+2022,1200401,Rio Branco,masculino,35-39 anos,15228
+2023,1302603,Manaus,masculino,40-44 anos,86201
+2024,1302603,Manaus,masculino,40-44 anos,87251
+2024,5208707,Goiânia,masculino,40-44 anos,58607
+2022,2611606,Recife,masculino,40-44 anos,57457
+2024,2704302,Maceió,masculino,40-44 anos,36090
+2024,4205407,Florianópolis,masculino,40-44 anos,24287
+2022,1400100,Boa Vista,masculino,40-44 anos,15624
+2022,4106902,Curitiba,masculino,40-44 anos,70373
+2022,2111300,São Luís,masculino,40-44 anos,39969
+2023,1501402,Belém,masculino,40-44 anos,52828
+2023,2408102,Natal,masculino,40-44 anos,28852
+2023,3106200,Belo Horizonte,masculino,40-44 anos,93954
+2022,1501402,Belém,masculino,45-49 anos,47190
+2022,2507507,João Pessoa,masculino,45-49 anos,25877
+2023,2927408,Salvador,masculino,5-9 anos,76335
+2022,2111300,São Luís,masculino,5-9 anos,36155
+2024,2507507,João Pessoa,masculino,5-9 anos,30483
+2022,4314902,Porto Alegre,masculino,5-9 anos,41790
+2022,5300108,Brasília,masculino,5-9 anos,104831
+2023,2304400,Fortaleza,masculino,5-9 anos,84345
+2022,3550308,São Paulo,masculino,5-9 anos,387986
+2023,1100205,Porto Velho,masculino,50-54 anos,13530
+2024,2927408,Salvador,masculino,50-54 anos,78010
+2023,2211001,Teresina,masculino,50-54 anos,23255
+2023,4205407,Florianópolis,masculino,50-54 anos,15830
+2023,3106200,Belo Horizonte,masculino,50-54 anos,71562
+2023,3304557,Rio de Janeiro,masculino,50-54 anos,194092
+2024,1200401,Rio Branco,masculino,50-54 anos,9740
+2022,5208707,Goiânia,masculino,50-54 anos,42658
+2024,2408102,Natal,masculino,50-54 anos,21787
+2024,5103403,Cuiabá,masculino,50-54 anos,19650
+2023,1501402,Belém,masculino,50-54 anos,42536
+2022,3205309,Vitória,masculino,50-54 anos,9244
+2024,5300108,Brasília,masculino,50-54 anos,89554
+2022,2927408,Salvador,masculino,50-54 anos,77112
+2024,3205309,Vitória,masculino,55-59 anos,9053
+2024,4106902,Curitiba,masculino,55-59 anos,51815
+2023,2611606,Recife,masculino,55-59 anos,41981
+2023,5208707,Goiânia,masculino,55-59 anos,37515
+2024,3106200,Belo Horizonte,masculino,55-59 anos,66756
+2024,4314902,Porto Alegre,masculino,55-59 anos,36637
+2022,2507507,João Pessoa,masculino,55-59 anos,21151
+2024,1600303,Macapá,masculino,60-64 anos,7058
+2024,1100205,Porto Velho,masculino,60-64 anos,9849
+2024,5300108,Brasília,masculino,60-64 anos,57313
+2022,5002704,Campo Grande,masculino,60-64 anos,19040
+2024,2927408,Salvador,masculino,60-64 anos,58918
+2024,5103403,Cuiabá,masculino,65-69 anos,10778
+2023,1400100,Boa Vista,masculino,65-69 anos,4324
+2022,5002704,Campo Grande,masculino,65-69 anos,14523
+2024,4205407,Florianópolis,masculino,65-69 anos,10722
+2024,2507507,João Pessoa,masculino,65-69 anos,13341
+2023,4106902,Curitiba,masculino,65-69 anos,34320
+2023,3106200,Belo Horizonte,masculino,65-69 anos,47837
+2022,4205407,Florianópolis,masculino,65-69 anos,9900
+2022,2111300,São Luís,masculino,65-69 anos,14182
+2023,5103403,Cuiabá,masculino,65-69 anos,10372
+2024,5208707,Goiânia,masculino,70-74 anos,17480
+2024,4314902,Porto Alegre,masculino,70-74 anos,22869
+2024,1501402,Belém,masculino,70-74 anos,16973
+2023,2927408,Salvador,masculino,70-74 anos,29987
+2024,2211001,Teresina,masculino,70-74 anos,9534
+2023,5103403,Cuiabá,masculino,70-74 anos,7055
+2022,2611606,Recife,masculino,75-79 anos,11611
+2022,2507507,João Pessoa,masculino,75-79 anos,5704
+2024,2111300,São Luís,masculino,75-79 anos,6762
+2024,4314902,Porto Alegre,masculino,75-79 anos,15559
+2024,1200401,Rio Branco,masculino,75-79 anos,2039
+2023,2211001,Teresina,masculino,75-79 anos,5821
+2022,1200401,Rio Branco,masculino,75-79 anos,1830
+2023,1400100,Boa Vista,masculino,75-79 anos,1680
+2024,2800308,Aracaju,masculino,80-mais,4125
+2024,3106200,Belo Horizonte,masculino,80-mais,27910
+2022,4106902,Curitiba,masculino,80-mais,15085
+2024,5103403,Cuiabá,masculino,80-mais,3978
+2023,3106200,Belo Horizonte,masculino,80-mais,26849
+2022,5300108,Brasília,masculino,80-mais,17034
+2022,1721000,Palmas,masculino,80-mais,1228
+2022,2704302,Maceió,feminino,0-4 anos,32501
+2024,1200401,Rio Branco,feminino,0-4 anos,13027
+2024,1400100,Boa Vista,feminino,0-4 anos,19910
+2024,2507507,João Pessoa,feminino,0-4 anos,26180
+2024,2211001,Teresina,feminino,0-4 anos,26727
+2022,4314902,Porto Alegre,feminino,0-4 anos,34677
+2024,2111300,São Luís,feminino,0-4 anos,30225
+2022,5208707,Goiânia,feminino,10-14 anos,43864
+2024,1400100,Boa Vista,feminino,10-14 anos,18735
+2024,1302603,Manaus,feminino,10-14 anos,89774
+2022,2704302,Maceió,feminino,10-14 anos,33260
+2023,2800308,Aracaju,feminino,10-14 anos,20264
+2023,1400100,Boa Vista,feminino,10-14 anos,18195
+2022,3304557,Rio de Janeiro,feminino,10-14 anos,192808
+2024,1200401,Rio Branco,feminino,10-14 anos,14810
+2022,1721000,Palmas,feminino,10-14 anos,11467
+2023,5103403,Cuiabá,feminino,10-14 anos,23202
+2022,5208707,Goiânia,feminino,15-19 anos,49513
+2023,1600303,Macapá,feminino,15-19 anos,20668
+2023,2800308,Aracaju,feminino,15-19 anos,21413
+2023,3304557,Rio de Janeiro,feminino,15-19 anos,200355
+2024,2304400,Fortaleza,feminino,15-19 anos,87090
+2024,1100205,Porto Velho,feminino,15-19 anos,19706
+2024,4106902,Curitiba,feminino,15-19 anos,56388
+2023,2211001,Teresina,feminino,15-19 anos,32901
+2022,4205407,Florianópolis,feminino,15-19 anos,15088
+2024,1600303,Macapá,feminino,15-19 anos,20469
+2023,2111300,São Luís,feminino,15-19 anos,41026
+2024,5103403,Cuiabá,feminino,15-19 anos,23833
+2022,2800308,Aracaju,feminino,20-24 anos,25458
+2024,5208707,Goiânia,feminino,20-24 anos,57261
+2023,1721000,Palmas,feminino,20-24 anos,15042
+2024,2408102,Natal,feminino,20-24 anos,28675
+2023,5002704,Campo Grande,feminino,20-24 anos,35159
+2023,4106902,Curitiba,feminino,20-24 anos,67803
+2022,2611606,Recife,feminino,20-24 anos,59415
+2024,4314902,Porto Alegre,feminino,20-24 anos,47787
+2023,1200401,Rio Branco,feminino,25-29 anos,17823
+2024,2304400,Fortaleza,feminino,25-29 anos,109961
+2022,2304400,Fortaleza,feminino,25-29 anos,114053
+2024,5208707,Goiânia,feminino,25-29 anos,62767
+2023,2927408,Salvador,feminino,25-29 anos,103884
+2023,5103403,Cuiabá,feminino,25-29 anos,26866
+2023,2408102,Natal,feminino,25-29 anos,31743
+2022,5002704,Campo Grande,feminino,25-29 anos,37279
+2023,2211001,Teresina,feminino,25-29 anos,37555
+2024,5103403,Cuiabá,feminino,25-29 anos,26690
+2024,4106902,Curitiba,feminino,25-29 anos,71572
+2022,2111300,São Luís,feminino,25-29 anos,50572
+2024,4314902,Porto Alegre,feminino,25-29 anos,53514
+2024,2408102,Natal,feminino,30-34 anos,31023
+2022,4314902,Porto Alegre,feminino,30-34 anos,53396
+2023,2408102,Natal,feminino,30-34 anos,31916
+2023,5208707,Goiânia,feminino,30-34 anos,62462
+2024,5208707,Goiânia,feminino,30-34 anos,61827
+2023,2211001,Teresina,feminino,30-34 anos,38490
+2022,5103403,Cuiabá,feminino,30-34 anos,28207
+2024,1400100,Boa Vista,feminino,30-34 anos,21114
+2024,2211001,Teresina,feminino,30-34 anos,37507
+2023,1100205,Porto Velho,feminino,35-39 anos,21690
+2024,1302603,Manaus,feminino,35-39 anos,94717
+2024,1600303,Macapá,feminino,35-39 anos,19661
+2024,2704302,Maceió,feminino,35-39 anos,41408
+2022,5208707,Goiânia,feminino,35-39 anos,64939
+2024,5002704,Campo Grande,feminino,35-39 anos,37565
+2024,2304400,Fortaleza,feminino,40-44 anos,109339
+2022,2611606,Recife,feminino,40-44 anos,67292
+2024,1400100,Boa Vista,feminino,40-44 anos,17925
+2024,1200401,Rio Branco,feminino,40-44 anos,15747
+2023,2800308,Aracaju,feminino,40-44 anos,28478
+2022,1400100,Boa Vista,feminino,40-44 anos,16497
+2024,5002704,Campo Grande,feminino,40-44 anos,38313
+2023,2927408,Salvador,feminino,45-49 anos,111680
+2023,3106200,Belo Horizonte,feminino,45-49 anos,93892
+2024,5300108,Brasília,feminino,45-49 anos,125666
+2022,5103403,Cuiabá,feminino,45-49 anos,23887
+2022,3106200,Belo Horizonte,feminino,45-49 anos,91653
+2024,4314902,Porto Alegre,feminino,45-49 anos,52009
+2024,1501402,Belém,feminino,45-49 anos,56840
+2024,2111300,São Luís,feminino,45-49 anos,41313
+2023,1501402,Belém,feminino,5-9 anos,40951
+2023,5208707,Goiânia,feminino,5-9 anos,45769
+2023,2211001,Teresina,feminino,5-9 anos,29337
+2024,3205309,Vitória,feminino,5-9 anos,9747
+2024,2704302,Maceió,feminino,5-9 anos,33152
+2022,5300108,Brasília,feminino,5-9 anos,100143
+2023,2111300,São Luís,feminino,5-9 anos,34410
+2023,1100205,Porto Velho,feminino,5-9 anos,19766
+2024,2927408,Salvador,feminino,5-9 anos,71542
+2024,1200401,Rio Branco,feminino,5-9 anos,14659
+2023,1721000,Palmas,feminino,50-54 anos,8608
+2024,5300108,Brasília,feminino,50-54 anos,103470
+2023,3550308,São Paulo,feminino,50-54 anos,415182
+2022,1501402,Belém,feminino,50-54 anos,49417
+2024,2211001,Teresina,feminino,50-54 anos,29629
+2022,4205407,Florianópolis,feminino,50-54 anos,17771
+2022,1600303,Macapá,feminino,50-54 anos,12056
+2023,1501402,Belém,feminino,55-59 anos,44494
+2023,4314902,Porto Alegre,feminino,55-59 anos,47879
+2024,2211001,Teresina,feminino,55-59 anos,27528
+2024,3106200,Belo Horizonte,feminino,55-59 anos,83050
+2023,1200401,Rio Branco,feminino,55-59 anos,8906
+2024,2927408,Salvador,feminino,55-59 anos,89888
+2022,1721000,Palmas,feminino,55-59 anos,6237
+2023,2611606,Recife,feminino,55-59 anos,54990
+2024,1600303,Macapá,feminino,55-59 anos,10196
+2024,2611606,Recife,feminino,60-64 anos,50391
+2023,2408102,Natal,feminino,60-64 anos,23748
+2022,1400100,Boa Vista,feminino,60-64 anos,6283
+2022,1501402,Belém,feminino,60-64 anos,37688
+2022,3550308,São Paulo,feminino,60-64 anos,340973
+2024,3550308,São Paulo,feminino,60-64 anos,349800
+2024,2304400,Fortaleza,feminino,60-64 anos,73598
+2023,5208707,Goiânia,feminino,60-64 anos,40195
+2023,3304557,Rio de Janeiro,feminino,65-69 anos,187200
+2024,3550308,São Paulo,feminino,65-69 anos,298346
+2023,4314902,Porto Alegre,feminino,65-69 anos,42840
+2024,5300108,Brasília,feminino,65-69 anos,55619
+2024,5103403,Cuiabá,feminino,65-69 anos,13365
+2023,1302603,Manaus,feminino,65-69 anos,31201
+2024,4205407,Florianópolis,feminino,65-69 anos,14102
+2024,1200401,Rio Branco,feminino,65-69 anos,5731
+2024,2507507,João Pessoa,feminino,65-69 anos,18853
+2022,2304400,Fortaleza,feminino,70-74 anos,40675
+2022,2800308,Aracaju,feminino,70-74 anos,9968
+2023,1100205,Porto Velho,feminino,70-74 anos,4704
+2022,2704302,Maceió,feminino,70-74 anos,14126
+2024,1721000,Palmas,feminino,70-74 anos,2516
+2024,1501402,Belém,feminino,70-74 anos,24898
+2022,1302603,Manaus,feminino,70-74 anos,20193
+2024,4106902,Curitiba,feminino,70-74 anos,38268
+2022,1501402,Belém,feminino,70-74 anos,22749
+2022,1100205,Porto Velho,feminino,70-74 anos,4342
+2023,4205407,Florianópolis,feminino,70-74 anos,10299
+2023,2211001,Teresina,feminino,75-79 anos,8906
+2022,1302603,Manaus,feminino,75-79 anos,12740
+2023,2111300,São Luís,feminino,75-79 anos,9927
+2022,3205309,Vitória,feminino,75-79 anos,4700
+2024,1721000,Palmas,feminino,75-79 anos,1673
+2023,5208707,Goiânia,feminino,75-79 anos,16733
+2022,4106902,Curitiba,feminino,75-79 anos,24167
+2023,1400100,Boa Vista,feminino,75-79 anos,1968
+2022,5208707,Goiânia,feminino,75-79 anos,15778
+2023,1600303,Macapá,feminino,75-79 anos,2480
+2024,3550308,São Paulo,feminino,80-mais,208621
+2024,5300108,Brasília,feminino,80-mais,33813
+2022,4205407,Florianópolis,feminino,80-mais,8227
+2024,2927408,Salvador,feminino,80-mais,40544
+2023,1400100,Boa Vista,feminino,80-mais,2041
+2023,2507507,João Pessoa,feminino,80-mais,12733
+2024,1400100,Boa Vista,feminino,80-mais,2171
+2023,1501402,Belém,feminino,80-mais,20408
+2022,5103403,Cuiabá,feminino,80-mais,5953
+2022,2611606,Recife,feminino,80-mais,28677
+2024,2211001,Teresina,feminino,80-mais,11482
+2024,3304557,Rio de Janeiro,feminino,80-mais,142679
+2023,2408102,Natal,masculino,0-4 anos,22947
+2023,5300108,Brasília,masculino,0-4 anos,96258
+2024,4205407,Florianópolis,masculino,0-4 anos,14611
+2022,1721000,Palmas,masculino,0-4 anos,12247
+2022,2211001,Teresina,masculino,0-4 anos,29818
+2024,1501402,Belém,masculino,0-4 anos,35395
+2024,1600303,Macapá,masculino,0-4 anos,19961
+2022,4205407,Florianópolis,masculino,0-4 anos,14544
+2023,4106902,Curitiba,masculino,0-4 anos,45563
+2024,3106200,Belo Horizonte,masculino,0-4 anos,57155
+2024,2927408,Salvador,masculino,0-4 anos,61610
+2022,2304400,Fortaleza,masculino,10-14 anos,85586
+2022,4314902,Porto Alegre,masculino,10-14 anos,40386
+2023,2111300,São Luís,masculino,10-14 anos,37181
+2022,3304557,Rio de Janeiro,masculino,10-14 anos,200788
+2024,1721000,Palmas,masculino,10-14 anos,11980
+2023,3106200,Belo Horizonte,masculino,10-14 anos,66797
+2022,2704302,Maceió,masculino,10-14 anos,34811
+2022,1501402,Belém,masculino,10-14 anos,48165
+2024,2927408,Salvador,masculino,10-14 anos,76060
+2023,3205309,Vitória,masculino,10-14 anos,10204
+2022,5300108,Brasília,masculino,10-14 anos,101236
+2022,1721000,Palmas,masculino,10-14 anos,11736
+2024,3550308,São Paulo,masculino,10-14 anos,379282
+2023,1302603,Manaus,masculino,15-19 anos,93438
+2022,3106200,Belo Horizonte,masculino,15-19 anos,75497
+2024,2704302,Maceió,masculino,15-19 anos,35460
+2022,1721000,Palmas,masculino,15-19 anos,12351
+2023,3106200,Belo Horizonte,masculino,15-19 anos,73219
+2022,3205309,Vitória,masculino,15-19 anos,10592
+2022,2927408,Salvador,masculino,20-24 anos,95088
+2023,2927408,Salvador,masculino,20-24 anos,92172
+2024,5103403,Cuiabá,masculino,20-24 anos,25554
+2024,2111300,São Luís,masculino,20-24 anos,44966
+2024,5300108,Brasília,masculino,20-24 anos,116343
+2022,1100205,Porto Velho,masculino,20-24 anos,22459
+2023,5208707,Goiânia,masculino,20-24 anos,58007
+2022,3205309,Vitória,masculino,20-24 anos,11974
+2022,2704302,Maceió,masculino,20-24 anos,41311
+2023,2408102,Natal,masculino,20-24 anos,30063
+2023,1501402,Belém,masculino,20-24 anos,56981
+2024,2611606,Recife,masculino,20-24 anos,57963
+2023,5300108,Brasília,masculino,20-24 anos,117753
+2023,5002704,Campo Grande,masculino,20-24 anos,36727
+2024,5300108,Brasília,masculino,25-29 anos,118586
+2022,2800308,Aracaju,masculino,25-29 anos,24597
+2022,1200401,Rio Branco,masculino,25-29 anos,16709
+2022,5300108,Brasília,masculino,25-29 anos,118141
+2024,2111300,São Luís,masculino,25-29 anos,46823
+2024,1721000,Palmas,masculino,25-29 anos,15843
+2022,3106200,Belo Horizonte,masculino,25-29 anos,92838
+2023,2800308,Aracaju,masculino,25-29 anos,24526
+2022,4205407,Florianópolis,masculino,25-29 anos,24621
+2023,2611606,Recife,masculino,30-34 anos,57715
+2023,2800308,Aracaju,masculino,30-34 anos,23750
+2024,2408102,Natal,masculino,30-34 anos,29276
+2022,5002704,Campo Grande,masculino,30-34 anos,37257
+2023,2704302,Maceió,masculino,30-34 anos,37591
+2022,1200401,Rio Branco,masculino,30-34 anos,15453
+2022,2408102,Natal,masculino,30-34 anos,30372
+2022,5103403,Cuiabá,masculino,30-34 anos,27720
+2024,2927408,Salvador,masculino,30-34 anos,88892
+2024,4106902,Curitiba,masculino,30-34 anos,69576
+2023,1302603,Manaus,masculino,30-34 anos,91211
+2022,2507507,João Pessoa,masculino,35-39 anos,34777
+2022,3550308,São Paulo,masculino,35-39 anos,470693
+2024,5103403,Cuiabá,masculino,35-39 anos,27772
+2022,4205407,Florianópolis,masculino,35-39 anos,25082
+2023,2800308,Aracaju,masculino,35-39 anos,24126
+2023,4205407,Florianópolis,masculino,35-39 anos,25427
+2022,1721000,Palmas,masculino,35-39 anos,13288
+2023,1302603,Manaus,masculino,35-39 anos,89758
+2024,4205407,Florianópolis,masculino,35-39 anos,25665
+2024,2408102,Natal,masculino,35-39 anos,29179
+2022,4106902,Curitiba,masculino,35-39 anos,70865
+2023,1721000,Palmas,masculino,35-39 anos,13510
+2022,5103403,Cuiabá,masculino,35-39 anos,27809
+2024,3304557,Rio de Janeiro,masculino,35-39 anos,245789
+2022,1721000,Palmas,masculino,40-44 anos,12077
+2024,1501402,Belém,masculino,40-44 anos,52235
+2022,2927408,Salvador,masculino,40-44 anos,106635
+2022,1600303,Macapá,masculino,40-44 anos,16597
+2024,1400100,Boa Vista,masculino,40-44 anos,17281
+2022,2211001,Teresina,masculino,40-44 anos,32851
+2024,1100205,Porto Velho,masculino,45-49 anos,16764
+2023,2927408,Salvador,masculino,45-49 anos,90454
+2024,2111300,São Luís,masculino,45-49 anos,33733
+2024,4106902,Curitiba,masculino,45-49 anos,63337
+2024,2507507,João Pessoa,masculino,45-49 anos,27834
+2024,3205309,Vitória,masculino,45-49 anos,11283
+2023,2704302,Maceió,masculino,45-49 anos,31197
+2024,3106200,Belo Horizonte,masculino,45-49 anos,83038
+2023,1302603,Manaus,masculino,45-49 anos,71933
+2023,4314902,Porto Alegre,masculino,45-49 anos,44100
+2022,1100205,Porto Velho,masculino,45-49 anos,15667
+2023,2211001,Teresina,masculino,5-9 anos,30935
+2022,2507507,João Pessoa,masculino,5-9 anos,29529
+2024,5002704,Campo Grande,masculino,5-9 anos,35106
+2024,1721000,Palmas,masculino,5-9 anos,12691
+2022,2800308,Aracaju,masculino,5-9 anos,20589
+2024,2211001,Teresina,masculino,5-9 anos,30994
+2024,3304557,Rio de Janeiro,masculino,5-9 anos,203566
+2024,3205309,Vitória,masculino,5-9 anos,10441
+2024,4314902,Porto Alegre,masculino,5-9 anos,39907
+2022,2304400,Fortaleza,masculino,5-9 anos,84571
+2022,1200401,Rio Branco,masculino,5-9 anos,15876
+2022,2211001,Teresina,masculino,5-9 anos,30471
+2022,5002704,Campo Grande,masculino,5-9 anos,34851
+2022,5208707,Goiânia,masculino,5-9 anos,47144
+2022,5103403,Cuiabá,masculino,5-9 anos,24286
+2023,4314902,Porto Alegre,masculino,50-54 anos,38210
+2022,4205407,Florianópolis,masculino,50-54 anos,15462
+2022,5103403,Cuiabá,masculino,50-54 anos,18751
+2023,1400100,Boa Vista,masculino,50-54 anos,10211
+2023,1302603,Manaus,masculino,50-54 anos,57190
+2024,4106902,Curitiba,masculino,50-54 anos,56831
+2022,2304400,Fortaleza,masculino,50-54 anos,70830
+2022,2800308,Aracaju,masculino,50-54 anos,17060
+2024,5103403,Cuiabá,masculino,55-59 anos,16796
+2023,1200401,Rio Branco,masculino,55-59 anos,7734
+2024,5002704,Campo Grande,masculino,55-59 anos,23762
+2024,3304557,Rio de Janeiro,masculino,55-59 anos,181637
+2023,1600303,Macapá,masculino,55-59 anos,9048
+2023,1721000,Palmas,masculino,55-59 anos,6158
+2022,2211001,Teresina,masculino,55-59 anos,20294
+2022,3550308,São Paulo,masculino,55-59 anos,309114
+2024,1600303,Macapá,masculino,55-59 anos,9445
+2023,2704302,Maceió,masculino,55-59 anos,23469
+2022,3304557,Rio de Janeiro,masculino,55-59 anos,182533
+2023,4314902,Porto Alegre,masculino,55-59 anos,37396
+2022,1400100,Boa Vista,masculino,55-59 anos,7728
+2024,5208707,Goiânia,masculino,60-64 anos,31887
+2023,1721000,Palmas,masculino,60-64 anos,4468
+2023,1302603,Manaus,masculino,60-64 anos,35598
+2022,2704302,Maceió,masculino,60-64 anos,18246
+2022,4314902,Porto Alegre,masculino,60-64 anos,35613
+2022,2927408,Salvador,masculino,60-64 anos,56864
+2024,1200401,Rio Branco,masculino,60-64 anos,6247
+2023,2408102,Natal,masculino,60-64 anos,17766
+2022,2111300,São Luís,masculino,60-64 anos,18691
+2023,4106902,Curitiba,masculino,60-64 anos,43513
+2023,1501402,Belém,masculino,65-69 anos,23539
+2024,1100205,Porto Velho,masculino,65-69 anos,6971
+2023,1100205,Porto Velho,masculino,65-69 anos,6605
+2023,2211001,Teresina,masculino,65-69 anos,12804
+2023,5208707,Goiânia,masculino,65-69 anos,23741
+2022,3106200,Belo Horizonte,masculino,65-69 anos,46293
+2022,3205309,Vitória,masculino,65-69 anos,6908
+2022,4205407,Florianópolis,masculino,70-74 anos,7334
+2023,3106200,Belo Horizonte,masculino,70-74 anos,35286
+2022,1501402,Belém,masculino,70-74 anos,15383
+2022,2304400,Fortaleza,masculino,70-74 anos,25749
+2022,5002704,Campo Grande,masculino,70-74 anos,10231
+2023,2304400,Fortaleza,masculino,70-74 anos,26683
+2022,3106200,Belo Horizonte,masculino,70-74 anos,33902
+2023,2611606,Recife,masculino,70-74 anos,18693
+2023,5300108,Brasília,masculino,75-79 anos,18024
+2022,1302603,Manaus,masculino,75-79 anos,8739
+2023,1501402,Belém,masculino,75-79 anos,10260
+2023,2111300,São Luís,masculino,75-79 anos,6426
+2024,1302603,Manaus,masculino,75-79 anos,9793
+2023,1100205,Porto Velho,masculino,75-79 anos,2438
+2024,5103403,Cuiabá,masculino,75-79 anos,4564
+2023,1302603,Manaus,masculino,75-79 anos,9247
+2024,1721000,Palmas,masculino,75-79 anos,1467
+2023,3106200,Belo Horizonte,masculino,75-79 anos,24364
+2023,2927408,Salvador,masculino,75-79 anos,18368
+2022,3304557,Rio de Janeiro,masculino,75-79 anos,59500
+2023,3304557,Rio de Janeiro,masculino,75-79 anos,62550
+2024,2211001,Teresina,masculino,75-79 anos,6172
+2022,1600303,Macapá,masculino,75-79 anos,1843
+2024,3304557,Rio de Janeiro,masculino,75-79 anos,65709
+2022,2408102,Natal,masculino,80-mais,6298
+2022,3550308,São Paulo,masculino,80-mais,98135
+2023,1100205,Porto Velho,masculino,80-mais,2134
+2022,5103403,Cuiabá,masculino,80-mais,3561
+2023,5208707,Goiânia,masculino,80-mais,10960
+2024,4205407,Florianópolis,masculino,80-mais,4891
+2022,2927408,Salvador,masculino,80-mais,16307
+2024,2704302,Maceió,masculino,80-mais,5468
+2023,2304400,Fortaleza,masculino,80-mais,17527

@@ -234,11 +234,17 @@ Nomes dos serviços no Docker Compose:
 * Indicadores de IDHM
 * Índice de risco
 
+Observação metodológica sobre o IDHM:
+
+O IDHM utilizado tem referência em 2010, por ausência de atualização municipal anual compatível. Assim, ele deve ser interpretado como indicador estrutural, e não como medida anual do período analisado.
+
 ---
 
 ### 4. Machine Learning
 
-O objetivo da etapa de Machine Learning é prever a taxa de crimes por 100 mil habitantes nas capitais brasileiras.
+O objetivo da etapa de Machine Learning é prever a taxa de mortes violentas intencionais por 100 mil habitantes nas capitais brasileiras.
+
+Essa variável foi escolhida como alvo principal porque possui cobertura completa no período atual `2016-2024`. A taxa total de crimes continua disponível para análise exploratória e dashboards quando todos os componentes necessários existem, mas não é usada como alvo principal porque alguns indicadores pós-pandemia não estão disponíveis em nível de capital.
 
 A fonte oficial para modelagem é:
 
@@ -257,14 +263,14 @@ risco_indice_lag1
 Target do modelo:
 
 ```text
-target_taxa_crimes_100k
+target_taxa_mortes_violentas_100k
 ```
 
 Serão comparados dois modelos de regressão:
 
 | Modelo | Finalidade | Variáveis principais |
 | --- | --- | --- |
-| Modelo A - Baseline sem educação | Medir o desempenho mínimo usando histórico criminal, população e IDHM. | População, crescimento populacional, IDHM e variáveis criminais defasadas. |
+| Modelo A - Baseline sem educação | Medir o desempenho mínimo usando histórico criminal, população e IDHM. | População, crescimento populacional, IDHM e variáveis criminais defasadas disponíveis em todo o período. |
 | Modelo B - Principal com educação | Representar o objetivo completo do projeto, incluindo indicadores educacionais. | Variáveis do Modelo A + IDEB, fluxo, aprendizado, nota de matemática e nota de língua portuguesa. |
 
 Como o IDEB não é divulgado todos os anos, será aplicada a propagação do último valor conhecido por UF, também chamada de `forward fill`. Essa decisão é defensável porque indicadores educacionais representam condições estruturais e tendem a mudar de forma mais lenta.
@@ -273,11 +279,13 @@ Divisão temporal planejada:
 
 ```text
 Treino: 2017, 2018 e 2019
-Teste: 2023, 2024 e 2025
+Teste: 2023 e 2024
 Período excluído: 2020, 2021 e 2022
 ```
 
 Essa divisão evita que o período da pandemia distorça o treinamento e a avaliação do modelo.
+
+Quando dados de 2025 estiverem disponíveis e padronizados, o período de teste pode ser expandido para incluir esse ano.
 
 Métricas de avaliação:
 
@@ -353,6 +361,7 @@ Cada integrante do grupo é responsável por uma área específica:
 
 * Variáveis socioeconômicas ainda limitadas
 * Possíveis inconsistências entre fontes de dados
+* IDHM municipal utilizado como referência estrutural de 2010, não como série anual
 * Premissas do modelo linear
 * Correlação ≠ causalidade
 

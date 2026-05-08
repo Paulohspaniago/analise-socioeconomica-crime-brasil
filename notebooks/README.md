@@ -31,4 +31,6 @@ Modelos previstos:
 
 Observação:
 
-O notebook usa split temporal. Quando os dados de 2023 a 2025 estiverem carregados, o plano oficial será treinar com 2017-2019 e testar com 2023-2025, evitando o período de pandemia.
+O notebook usa split temporal. Com a base atual carregada até 2024, o plano oficial é treinar com 2017-2019 e testar com 2023-2024, evitando o período de pandemia.
+
+O alvo principal do modelo é `target_taxa_mortes_violentas_100k`, pois esse indicador possui cobertura completa para as capitais no período atual. A taxa total de crimes permanece disponível para análise, mas não é usada como alvo principal enquanto houver indicadores pós-pandemia ausentes em nível de capital.

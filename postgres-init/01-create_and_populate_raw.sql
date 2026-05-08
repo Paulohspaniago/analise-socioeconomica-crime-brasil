@@ -75,11 +75,23 @@ DELIMITER ','
 CSV HEADER
 ENCODING 'UTF8';
 
+COPY raw.dataset_crimes
+FROM '/datasets/crimes/2022-2024.csv'
+DELIMITER ','
+CSV HEADER
+ENCODING 'UTF8';
+
 SELECT COUNT(*) AS total_dataset_crimes
 FROM raw.dataset_crimes;
 
 COPY raw.dataset_populacao
 FROM '/datasets/populacao/2016-2021.csv'
+DELIMITER ','
+CSV HEADER
+ENCODING 'UTF8';
+
+COPY raw.dataset_populacao
+FROM '/datasets/populacao/2022-2024.csv'
 DELIMITER ','
 CSV HEADER
 ENCODING 'UTF8';
@@ -98,6 +110,12 @@ FROM raw.dataset_idhm;
 
 COPY raw.dataset_educacao
 FROM '/datasets/educacao/2017-2021idep.csv'
+DELIMITER ';'
+CSV HEADER
+ENCODING 'UTF8';
+
+COPY raw.dataset_educacao
+FROM '/datasets/educacao/idep2023.csv'
 DELIMITER ';'
 CSV HEADER
 ENCODING 'UTF8';

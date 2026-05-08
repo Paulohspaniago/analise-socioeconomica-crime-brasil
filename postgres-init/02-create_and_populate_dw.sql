@@ -98,7 +98,7 @@ SELECT DISTINCT
     (CAST(ano AS INTEGER) / 10) * 10 AS decada,
     CASE
         WHEN CAST(ano AS INTEGER) = 2010 THEN 'Referencia socioeconomica'
-        WHEN CAST(ano AS INTEGER) BETWEEN 2016 AND 2021 THEN 'Periodo de analise'
+        WHEN CAST(ano AS INTEGER) BETWEEN 2016 AND 2024 THEN 'Periodo de analise'
         ELSE 'Outro periodo'
     END AS periodo_analise
 FROM (
@@ -392,13 +392,13 @@ crimes AS (
     SELECT
         CAST(id_municipio AS INTEGER) AS codigo_municipio,
         CAST(ano AS INTEGER) AS ano,
-        COALESCE(NULLIF(REPLACE(quantidade_mortes_violentas_intencionais, ',', '.'), '')::NUMERIC, 0) AS mortes_violentas_intencionais,
-        COALESCE(NULLIF(REPLACE(quantidade_homicidio_doloso, ',', '.'), '')::NUMERIC, 0) AS homicidios_dolosos,
-        COALESCE(NULLIF(REPLACE(quantidade_feminicidio, ',', '.'), '')::NUMERIC, 0) AS feminicidios,
-        COALESCE(NULLIF(REPLACE(quantidade_estupro, ',', '.'), '')::NUMERIC, 0) AS estupros,
-        COALESCE(NULLIF(REPLACE(quantidade_furto_veiculos, ',', '.'), '')::NUMERIC, 0) AS furto_veiculos,
-        COALESCE(NULLIF(REPLACE(quantidade_roubo_veiculos, ',', '.'), '')::NUMERIC, 0) AS roubo_veiculos,
-        COALESCE(NULLIF(REPLACE(quantidade_latrocinio, ',', '.'), '')::NUMERIC, 0) AS latrocinios
+        NULLIF(REPLACE(quantidade_mortes_violentas_intencionais, ',', '.'), '')::NUMERIC AS mortes_violentas_intencionais,
+        NULLIF(REPLACE(quantidade_homicidio_doloso, ',', '.'), '')::NUMERIC AS homicidios_dolosos,
+        NULLIF(REPLACE(quantidade_feminicidio, ',', '.'), '')::NUMERIC AS feminicidios,
+        NULLIF(REPLACE(quantidade_estupro, ',', '.'), '')::NUMERIC AS estupros,
+        NULLIF(REPLACE(quantidade_furto_veiculos, ',', '.'), '')::NUMERIC AS furto_veiculos,
+        NULLIF(REPLACE(quantidade_roubo_veiculos, ',', '.'), '')::NUMERIC AS roubo_veiculos,
+        NULLIF(REPLACE(quantidade_latrocinio, ',', '.'), '')::NUMERIC AS latrocinios
     FROM raw.dataset_crimes
 ),
 crimes_final AS (
@@ -510,7 +510,13 @@ base_risco AS (
             + COALESCE(taxa_homicidios_100k / NULLIF(MAX(taxa_homicidios_100k) OVER (), 0), 0)
             + COALESCE(taxa_feminicidios_100k / NULLIF(MAX(taxa_feminicidios_100k) OVER (), 0), 0)
             + COALESCE(taxa_estupros_100k / NULLIF(MAX(taxa_estupros_100k) OVER (), 0), 0)
-        ) / 4 AS risco_indice
+        ) / NULLIF(
+            (CASE WHEN taxa_mortes_violentas_100k IS NULL THEN 0 ELSE 1 END)
+            + (CASE WHEN taxa_homicidios_100k IS NULL THEN 0 ELSE 1 END)
+            + (CASE WHEN taxa_feminicidios_100k IS NULL THEN 0 ELSE 1 END)
+            + (CASE WHEN taxa_estupros_100k IS NULL THEN 0 ELSE 1 END),
+            0
+        ) AS risco_indice
     FROM base
 )
 SELECT
@@ -579,7 +585,7 @@ CREATE TABLE dw.fato_crime_municipio_ano_indicador (
     id_indicador_crime_dw INTEGER NOT NULL,
     codigo_municipio INTEGER NOT NULL,
     ano INTEGER NOT NULL,
-    quantidade NUMERIC(18, 2) NOT NULL,
+    quantidade NUMERIC(18, 2),
     populacao_total NUMERIC(18, 2),
     taxa_100k NUMERIC(18, 6),
     CONSTRAINT fk_fato_crime_tempo
@@ -614,16 +620,16 @@ WITH crimes_long AS (
     FROM raw.dataset_crimes AS crime
     CROSS JOIN LATERAL (
         VALUES
-            ('quantidade_homicidio_doloso', COALESCE(NULLIF(REPLACE(crime.quantidade_homicidio_doloso, ',', '.'), '')::NUMERIC, 0)),
-            ('quantidade_feminicidio', COALESCE(NULLIF(REPLACE(crime.quantidade_feminicidio, ',', '.'), '')::NUMERIC, 0)),
-            ('quantidade_mortes_violentas_intencionais', COALESCE(NULLIF(REPLACE(crime.quantidade_mortes_violentas_intencionais, ',', '.'), '')::NUMERIC, 0)),
-            ('quantidade_estupro', COALESCE(NULLIF(REPLACE(crime.quantidade_estupro, ',', '.'), '')::NUMERIC, 0)),
-            ('quantidade_furto_veiculos', COALESCE(NULLIF(REPLACE(crime.quantidade_furto_veiculos, ',', '.'), '')::NUMERIC, 0)),
-            ('quantidade_roubo_veiculos', COALESCE(NULLIF(REPLACE(crime.quantidade_roubo_veiculos, ',', '.'), '')::NUMERIC, 0)),
-            ('quantidade_latrocinio', COALESCE(NULLIF(REPLACE(crime.quantidade_latrocinio, ',', '.'), '')::NUMERIC, 0)),
-            ('quantidade_trafico_entorpecente', COALESCE(NULLIF(REPLACE(crime.quantidade_trafico_entorpecente, ',', '.'), '')::NUMERIC, 0)),
-            ('quantidade_posse_uso_entorpecente', COALESCE(NULLIF(REPLACE(crime.quantidade_posse_uso_entorpecente, ',', '.'), '')::NUMERIC, 0)),
-            ('quantidade_porte_ilegal_arma_de_fogo', COALESCE(NULLIF(REPLACE(crime.quantidade_porte_ilegal_arma_de_fogo, ',', '.'), '')::NUMERIC, 0))
+            ('quantidade_homicidio_doloso', NULLIF(REPLACE(crime.quantidade_homicidio_doloso, ',', '.'), '')::NUMERIC),
+            ('quantidade_feminicidio', NULLIF(REPLACE(crime.quantidade_feminicidio, ',', '.'), '')::NUMERIC),
+            ('quantidade_mortes_violentas_intencionais', NULLIF(REPLACE(crime.quantidade_mortes_violentas_intencionais, ',', '.'), '')::NUMERIC),
+            ('quantidade_estupro', NULLIF(REPLACE(crime.quantidade_estupro, ',', '.'), '')::NUMERIC),
+            ('quantidade_furto_veiculos', NULLIF(REPLACE(crime.quantidade_furto_veiculos, ',', '.'), '')::NUMERIC),
+            ('quantidade_roubo_veiculos', NULLIF(REPLACE(crime.quantidade_roubo_veiculos, ',', '.'), '')::NUMERIC),
+            ('quantidade_latrocinio', NULLIF(REPLACE(crime.quantidade_latrocinio, ',', '.'), '')::NUMERIC),
+            ('quantidade_trafico_entorpecente', NULLIF(REPLACE(crime.quantidade_trafico_entorpecente, ',', '.'), '')::NUMERIC),
+            ('quantidade_posse_uso_entorpecente', NULLIF(REPLACE(crime.quantidade_posse_uso_entorpecente, ',', '.'), '')::NUMERIC),
+            ('quantidade_porte_ilegal_arma_de_fogo', NULLIF(REPLACE(crime.quantidade_porte_ilegal_arma_de_fogo, ',', '.'), '')::NUMERIC)
     ) AS indicador(nome_indicador, quantidade)
 )
 SELECT

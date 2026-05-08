@@ -9,6 +9,10 @@ O objetivo do Data Warehouse e apoiar analises sobre seguranca publica no Brasil
 - IDHM
 - educacao (IDEB)
 
+Observacao metodologica:
+
+O IDHM utilizado tem referencia em 2010, por ausencia de atualizacao municipal anual compativel. Assim, ele deve ser interpretado como indicador estrutural, e nao como medida anual do periodo analisado.
+
 ## 1. Desenho Geral
 
 O modelo segue uma arquitetura estrela com snowflake parcial.
@@ -156,7 +160,9 @@ periodo_analise
 
 Observacao:
 
-O ano `2010` representa a referencia socioeconomica do IDHM. Os anos `2016` a `2021` representam o periodo principal de analise.
+O ano `2010` representa a referencia socioeconomica do IDHM. Os demais anos representam o periodo analitico carregado nas fontes de crimes, populacao e educacao.
+
+Com os datasets atuais, crimes e populacao cobrem `2016` a `2024`, enquanto educacao possui anos pontuais conforme divulgacao do IDEB.
 
 Validacao:
 
@@ -361,10 +367,14 @@ Papel de cada etapa:
 - `populacao_final`: calcula crescimento populacional percentual
 - `crimes`: converte os campos criminais da raw para numerico
 - `crimes_final`: calcula total agregado de indicadores criminais
-- `idhm`: relaciona IDHM 2010 com a capital correspondente
+- `idhm`: relaciona o IDHM 2010 com a capital correspondente, tratando-o como indicador estrutural do municipio
 - `educacao`: filtra IDEB de Ensino Medio e dependencia Total
 - `base`: junta dimensoes e medidas
 - `base_risco`: calcula um indice simples de risco
+
+Observacao sobre nulos:
+
+Nos dados pos-pandemia, alguns indicadores criminais nao estao disponiveis em nivel de capital. Esses valores sao mantidos como `NULL` no DW, e nao convertidos para zero, para preservar a diferenca entre ausencia de dado e ausencia de ocorrencia.
 
 ## 7. Validacoes Da Fato
 
@@ -438,7 +448,7 @@ Finalidade:
 Resultado esperado:
 
 ```text
-1620 linhas = 27 capitais x 6 anos x 10 indicadores
+2430 linhas = 27 capitais x 9 anos x 10 indicadores
 ```
 
 ### 8.2 `dw.fato_populacao_municipio_ano_demografia`
@@ -458,7 +468,7 @@ Finalidade:
 Resultado esperado:
 
 ```text
-5508 linhas
+8262 linhas
 ```
 
 ### 8.3 `dw.fato_educacao_uf_ano`
@@ -478,7 +488,7 @@ Finalidade:
 Resultado esperado:
 
 ```text
-243 linhas
+321 linhas
 ```
 
 ## 9. Data Mart
@@ -503,7 +513,7 @@ Papel de cada view:
 - `vw_tendencia_criminalidade`: compara taxa atual com ano anterior e classifica tendencia.
 - `vw_ranking_risco_capitais`: ranking anual de risco por capital.
 - `vw_educacao_criminalidade`: relacao entre indicadores educacionais e criminalidade.
-- `vw_base_modelagem_ml`: base preparada para regressao, usando lags e evitando vazamento de informacao.
+- `vw_base_modelagem_ml`: base preparada para regressao, usando lags e evitando vazamento de informacao. O alvo principal recomendado e `target_taxa_mortes_violentas_100k`, por possuir cobertura completa no periodo atual.
 
 ## 10. Scripts Oficiais
 

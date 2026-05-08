@@ -45,9 +45,16 @@ Finalidade:
 Arquivos CSV carregados:
 
 - `/datasets/crimes/2016-2021.csv`
+- `/datasets/crimes/2022-2024.csv`
 - `/datasets/populacao/2016-2021.csv`
+- `/datasets/populacao/2022-2024.csv`
 - `/datasets/idh/data_idhm_2010.csv`
 - `/datasets/educacao/2017-2021idep.csv`
+- `/datasets/educacao/idep2023.csv`
+
+Observação sobre o IDHM:
+
+O arquivo de IDHM tem referência em 2010, por ausência de atualização municipal anual compatível. No DW, esse indicador é usado como característica estrutural do município, e não como medida anual do período analisado.
 
 ### `02-create_and_populate_dw.sql`
 
@@ -86,6 +93,10 @@ O script também realiza transformações como:
 - inclusão dos indicadores de IDEB;
 - cálculo das taxas de criminalidade por 100 mil habitantes;
 - cálculo do índice de risco.
+
+Observação sobre crimes pós-pandemia:
+
+Alguns indicadores não estão disponíveis em nível de capital nos anuários mais recentes, como estupro e roubo/furto de veículos. Esses campos são preservados como `NULL`, e não como zero, para evitar interpretação incorreta de ausência de dado como ausência de ocorrência.
 
 ### `03-create_datamart.sql`
 

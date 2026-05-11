@@ -242,40 +242,38 @@ O IDHM utilizado tem referência em 2010, por ausência de atualização municip
 
 ### 4. Machine Learning
 
-O objetivo da etapa de Machine Learning é prever a taxa de mortes violentas intencionais por 100 mil habitantes nas capitais brasileiras.
-
-Essa variável foi escolhida como alvo principal porque possui cobertura completa no período atual `2016-2024`. A taxa total de crimes continua disponível para análise exploratória e dashboards quando todos os componentes necessários existem, mas não é usada como alvo principal porque alguns indicadores pós-pandemia não estão disponíveis em nível de capital.
+O objetivo da etapa de Machine Learning é prever taxas criminais por 100 mil habitantes nas capitais brasileiras, considerando tanto a taxa geral quanto categorias específicas.
 
 A fonte oficial para modelagem é:
 
 ```text
-datamart.vw_base_modelagem_ml
+datamart.vw_indicadores_municipio_ano
 ```
 
-Essa view foi criada para evitar vazamento de informação. Por isso, variáveis criminais do próprio ano não são usadas como entrada do modelo. Quando usamos histórico criminal, utilizamos variáveis defasadas, como:
+O notebook cria variáveis defasadas (`lag1`) por município para evitar vazamento de informação. Assim, o histórico criminal usado como entrada sempre representa o ano anterior, e não o próprio ano previsto.
+
+Targets modelados:
 
 ```text
-taxa_crimes_100k_lag1
-taxa_mortes_violentas_100k_lag1
-risco_indice_lag1
+taxa_crimes_100k
+taxa_mortes_violentas_100k
+taxa_homicidios_100k
+taxa_feminicidios_100k
+taxa_estupros_100k
+taxa_furto_veiculos_100k
+taxa_roubo_veiculos_100k
 ```
 
-Target do modelo:
-
-```text
-target_taxa_mortes_violentas_100k
-```
+Cada categoria é treinada separadamente, pois os crimes possuem escalas, padrões e coberturas históricas diferentes.
 
 Estratégia de modelagem:
 
 | Modelo | Papel no projeto | Justificativa |
 | --- | --- | --- |
 | Linear Regression | Baseline simples | Serve como ponto de partida interpretável e ajuda a demonstrar as limitações de um modelo linear puro. |
-| Ridge Regression | Baseline linear regularizado | Reduz exageros nos coeficientes e tende a ser mais estável que a regressão linear simples. |
-| Ridge com target logarítmico | Baseline linear ajustado | Ajuda a evitar previsões negativas e estabiliza a escala da taxa prevista. |
 | Random Forest Regressor | Candidato principal | Captura relações não lineares e interações entre população, IDHM, educação e histórico criminal. |
 
-A regressão linear não será descartada. Ela será mantida como baseline comparativo, enquanto modelos mais robustos serão avaliados como candidatos ao modelo final.
+A regressão linear será mantida como baseline comparativo, enquanto o Random Forest será avaliado como modelo principal candidato para cada categoria criminal.
 
 Como o IDEB não é divulgado todos os anos, será aplicada a propagação do último valor conhecido por UF, também chamada de `forward fill`. Essa decisão é defensável porque indicadores educacionais representam condições estruturais e tendem a mudar de forma mais lenta.
 
@@ -289,18 +287,19 @@ Período excluído: 2020, 2021 e 2022
 
 Essa divisão evita que o período da pandemia distorça o treinamento e a avaliação do modelo.
 
-Quando dados de 2025 estiverem disponíveis e padronizados, o período de teste pode ser expandido para incluir esse ano.
+Quando uma categoria não possui dados suficientes para o split planejado, o notebook usa uma estratégia temporal alternativa ou marca a categoria como insuficiente.
 
 Métricas de avaliação:
 
 * MAE
 * RMSE
 * R²
+* Quantidade de previsões negativas
 
 Equação conceitual da previsão:
 
 $$
-taxa\_mortes\_violentas = f(IDHM, População, Educação, Histórico Criminal)
+taxa\_criminal\_categoria = f(IDHM, População, Educação, Histórico Criminal)
 $$
 
 ---

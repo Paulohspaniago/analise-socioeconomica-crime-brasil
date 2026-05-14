@@ -164,6 +164,24 @@ O ano `2010` representa a referencia socioeconomica do IDHM. Os demais anos repr
 
 Com os datasets atuais, crimes e populacao cobrem `2016` a `2024`, enquanto educacao possui anos pontuais conforme divulgacao do IDEB.
 
+Melhoria futura:
+
+Atualmente a granularidade temporal do projeto e anual. Por isso, a `dim_tempo` nao inclui mes, dia da semana ou indicador de final de semana. Caso sejam incorporadas bases criminais mensais ou diarias, esta dimensao podera ser expandida com campos como:
+
+```text
+mes
+nome_mes
+trimestre
+semestre
+data
+dia
+dia_semana
+nome_dia_semana
+fim_de_semana
+```
+
+Essa expansao so deve ser feita quando a tabela fato tambem possuir granularidade mensal ou diaria, evitando criar atributos temporais que os dados atuais nao conseguem sustentar.
+
 Validacao:
 
 ```sql

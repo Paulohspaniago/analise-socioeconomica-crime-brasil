@@ -373,6 +373,7 @@ Cada integrante do grupo é responsável por uma área específica:
 ## 🚀 Melhorias Futuras
 
 * Adicionar novas variáveis, como renda e desemprego
+* Expandir a `dim_tempo` para mês, trimestre, dia da semana e final de semana caso sejam incorporados dados mensais ou diários
 * Comparar modelos não lineares, como Random Forest e Gradient Boosting
 * Testar modelos temporais, como ARIMA ou Prophet, quando houver série histórica maior
 * Criar scripts de produção para treinamento e versionamento de modelos

@@ -19,6 +19,7 @@ Execute os scripts nesta ordem:
 1. `01-create_and_populate_raw.sql`
 2. `02-create_and_populate_dw.sql`
 3. `03-create_datamart.sql`
+4. `04-create_ml_datamart.sql`
 
 O prefixo numérico é intencional. Ele facilita o entendimento do pipeline e deixa a ordem de execução explícita.
 
@@ -119,6 +120,22 @@ Finalidade:
 - expor rankings e classificação de risco por ano;
 - preparar uma base controlada para Machine Learning, evitando vazamento de informação.
 
+### `04-create_ml_datamart.sql`
+
+Cria views no schema `ml` para disponibilizar os resultados do notebook de Machine Learning no Metabase.
+
+Pré-requisito:
+
+- executar o notebook `notebooks/01_machine_learning_baseline.ipynb`, pois ele exporta as tabelas `ml.metricas_modelos`, `ml.previsoes_modelos`, `ml.importancia_variaveis`, `ml.splits_modelagem` e `ml.melhores_modelos`.
+
+Views criadas:
+
+- `ml.vw_resumo_metricas_modelos`
+- `ml.vw_melhor_modelo_por_categoria`
+- `ml.vw_maiores_erros_modelo`
+- `ml.vw_importancia_variaveis_rf`
+- `ml.vw_splits_modelagem`
+
 ## Como Executar
 
 ### Opção 1: Inicialização pelo Docker
@@ -134,6 +151,8 @@ Abra o pgAdmin e execute:
 1. todo o conteúdo de `01-create_and_populate_raw.sql`;
 2. todo o conteúdo de `02-create_and_populate_dw.sql`;
 3. todo o conteúdo de `03-create_datamart.sql`.
+4. execute o notebook de Machine Learning;
+5. todo o conteúdo de `04-create_ml_datamart.sql`.
 
 Esta é a opção mais simples durante o desenvolvimento.
 
@@ -145,6 +164,7 @@ De dentro do container do PostgreSQL:
 psql -U postgres -d seguranca_publica -f /docker-entrypoint-initdb.d/01-create_and_populate_raw.sql
 psql -U postgres -d seguranca_publica -f /docker-entrypoint-initdb.d/02-create_and_populate_dw.sql
 psql -U postgres -d seguranca_publica -f /docker-entrypoint-initdb.d/03-create_datamart.sql
+psql -U postgres -d seguranca_publica -f /docker-entrypoint-initdb.d/04-create_ml_datamart.sql
 ```
 
 ## Observações Importantes

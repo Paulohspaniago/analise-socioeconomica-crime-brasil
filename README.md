@@ -150,6 +150,7 @@ flowchart LR
 │   ├── 01-create_and_populate_raw.sql
 │   ├── 02-create_and_populate_dw.sql
 │   ├── 03-create_datamart.sql
+│   ├── 04-create_ml_datamart.sql
 │   └── README.md
 ├── metabase-data/
 │   └── README.md
@@ -327,6 +328,14 @@ Views principais no `datamart`:
 * `datamart.vw_ranking_risco_capitais`: ranking anual de risco
 * `datamart.vw_educacao_criminalidade`: relação entre educação e criminalidade
 * `datamart.vw_base_modelagem_ml`: base oficial para Machine Learning
+
+Resultados do Machine Learning no schema `ml`:
+
+* `ml.vw_resumo_metricas_modelos`: comparação de métricas por modelo e categoria
+* `ml.vw_melhor_modelo_por_categoria`: melhor modelo por categoria criminal
+* `ml.vw_maiores_erros_modelo`: ranking dos maiores erros de previsão
+* `ml.vw_importancia_variaveis_rf`: importância das variáveis no Random Forest
+* `ml.vw_splits_modelagem`: estratégia de treino e teste usada por categoria
 
 ---
 

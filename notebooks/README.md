@@ -11,7 +11,7 @@ Objetivo:
 - comparar a Regressão Linear com o Random Forest Regressor para cada target
 - avaliar métricas como MAE, RMSE, R² e previsões negativas
 - gerar gráficos de avaliação: real vs previsto, resíduos, comparação de RMSE, maiores erros e importância das variáveis
-- futuramente salvar previsões/resultados para consumo no BI
+- salvar previsões/resultados no schema `ml` para consumo no Metabase
 
 Decisão de arquitetura:
 
@@ -47,3 +47,11 @@ Observação:
 O notebook usa split temporal. Com a base atual carregada até 2024, o plano oficial é treinar com 2017-2019 e testar com 2023-2024, evitando o período de pandemia.
 
 Algumas categorias pós-pandemia podem ter cobertura limitada em nível de capital. Por isso, a análise de cobertura por target é parte obrigatória do notebook.
+
+Saídas exportadas para PostgreSQL:
+
+- `ml.metricas_modelos`
+- `ml.previsoes_modelos`
+- `ml.importancia_variaveis`
+- `ml.splits_modelagem`
+- `ml.melhores_modelos`

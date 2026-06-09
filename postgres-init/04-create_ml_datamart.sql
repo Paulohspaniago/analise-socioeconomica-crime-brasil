@@ -5,6 +5,8 @@ DROP VIEW IF EXISTS ml.vw_melhor_modelo_por_categoria;
 DROP VIEW IF EXISTS ml.vw_maiores_erros_modelo;
 DROP VIEW IF EXISTS ml.vw_importancia_variaveis_rf;
 DROP VIEW IF EXISTS ml.vw_splits_modelagem;
+DROP VIEW IF EXISTS ml.vw_eixo_b_socioeconomico;
+DROP VIEW IF EXISTS ml.vw_correlacao_socioeconomica;
 
 CREATE VIEW ml.vw_resumo_metricas_modelos AS
 SELECT
@@ -12,7 +14,13 @@ SELECT
     modelo,
     ROUND(mae::NUMERIC, 4) AS mae,
     ROUND(rmse::NUMERIC, 4) AS rmse,
+    ROUND(rmse_baseline::NUMERIC, 4) AS rmse_baseline,
+    ROUND(ganho_rmse_vs_baseline_pct::NUMERIC, 2) AS ganho_rmse_vs_baseline_pct,
     ROUND(r2::NUMERIC, 4) AS r2,
+    ROUND(r2_medio_cv::NUMERIC, 4) AS r2_medio_cv,
+    ROUND(r2_desvio_cv::NUMERIC, 4) AS r2_desvio_cv,
+    comparavel_entre_categorias,
+    status_categoria,
     previsoes_negativas,
     linhas_treino,
     linhas_teste
@@ -73,6 +81,23 @@ SELECT
     linhas_treino,
     linhas_teste
 FROM ml.splits_modelagem;
+
+CREATE VIEW ml.vw_eixo_b_socioeconomico AS
+SELECT
+    target,
+    modelo,
+    ROUND(rmse::NUMERIC, 4) AS rmse,
+    ROUND(rmse_baseline::NUMERIC, 4) AS rmse_baseline,
+    ROUND(ganho_rmse_vs_baseline_pct::NUMERIC, 2) AS ganho_rmse_vs_baseline_pct,
+    ROUND(r2::NUMERIC, 4) AS r2
+FROM ml.eixo_b_socioeconomico;
+
+CREATE VIEW ml.vw_correlacao_socioeconomica AS
+SELECT
+    fator_socioeconomico,
+    taxa_alvo,
+    ROUND(correlacao::NUMERIC, 3) AS correlacao
+FROM ml.correlacao_socioeconomica;
 
 SELECT COUNT(*) AS total_metricas_modelos
 FROM ml.metricas_modelos;

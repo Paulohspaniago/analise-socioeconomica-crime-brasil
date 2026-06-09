@@ -1,10 +1,48 @@
-# 🇧🇷 Fatores Socioeconômicos da Criminalidade no Brasil
+<div align="center">
+
+<h1>Fatores Socioeconômicos da Criminalidade no Brasil</h1>
+
+> Projeto acadêmico de **Ciência de Dados** — análise e modelagem da segurança pública nas capitais brasileiras a partir de indicadores socioeconômicos.
+
+
+Pipeline completo: Data Warehouse dimensional, 30 KPIs, dashboards no Metabase e modelagem preditiva em dois eixos (previsão temporal + exploração socioeconômica).
+
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Metabase](https://img.shields.io/badge/Metabase-BI-509EE3?logo=metabase&logoColor=white)](https://www.metabase.com/)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
+
+</div>
+
+---
+
+## 📖 Índice
+
+- [Visão Geral](#-visão-geral)
+- [Objetivos](#-objetivos)
+- [KPIs do Projeto](#-kpis-do-projeto)
+- [Arquitetura](#️-arquitetura)
+- [Stack Tecnológica](#-stack-tecnológica)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Fontes de Dados](#-fontes-de-dados)
+- [Configuração (Docker)](#️-configuração-docker)
+- [Metodologia](#-metodologia)
+- [Limitações](#️-limitações)
+- [Melhorias Futuras](#-melhorias-futuras)
+- [Autores](#-autores)
+
+---
 
 ## 📊 Visão Geral
 
 Este projeto tem como objetivo analisar e prever incidentes de segurança pública no Brasil combinando indicadores socioeconômicos como **Índice de Desenvolvimento Humano Municipal (IDHM)**, **crescimento populacional** e **níveis de educação**.
 
 O objetivo é entender como essas variáveis influenciam as taxas de criminalidade e apoiar a **tomada de decisão orientada por dados** para governos e organizações.
+
+A camada de Machine Learning é organizada em **dois eixos**: **previsão** das taxas criminais (com baseline de persistência e validação cruzada temporal) e **exploração socioeconômica** (relação entre IDHM/educação e criminalidade). O projeto assume e documenta suas limitações de dados — privilegiando conclusões honestas sobre métricas infladas.
 
 ---
 
@@ -179,8 +217,8 @@ flowchart LR
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Paulohspaniago/analise-socioeconomica-crime-brasil.git
+cd analise-socioeconomica-crime-brasil
 ```
 
 ### 2. Subir os containers
@@ -189,23 +227,17 @@ cd your-repo
 docker compose up -d --build
 ```
 
----
+### 3. Acessar os serviços
 
-## 🔗 Serviços
+| Serviço | URL | Descrição |
+|---------|-----|-----------|
+| 📓 **Jupyter Notebook** | [localhost:8888](http://localhost:8888) | Machine Learning e análise de KPIs (token: `crime123`) |
+| 📊 **Metabase** | [localhost:3000](http://localhost:3000) | Dashboards e BI |
+| 🗄️ **PostgreSQL** | `localhost:5432` | DW dimensional (banco `seguranca_publica`) |
+| 🔧 **pgAdmin** | [localhost:8081](http://localhost:8081) | Administração do banco |
 
-| Serviço          | URL                   |
-| ---------------- | --------------------- |
-| Jupyter Notebook | http://localhost:8888 |
-| PostgreSQL       | localhost:5432        |
-| pgAdmin          | http://localhost:8081 |
-| Metabase         | http://localhost:3000 |
-
-Nomes dos serviços no Docker Compose:
-
-* `postgres-service`
-* `pgadmin-service`
-* `jupyter-service`
-* `metabase-service`
+Nomes dos serviços no Docker Compose: `postgres-service`, `pgadmin-service`,
+`jupyter-service`, `metabase-service`.
 
 ---
 

@@ -19,6 +19,8 @@ SELECT
     ROUND(r2::NUMERIC, 4) AS r2,
     ROUND(r2_medio_cv::NUMERIC, 4) AS r2_medio_cv,
     ROUND(r2_desvio_cv::NUMERIC, 4) AS r2_desvio_cv,
+    ROUND(r2_baseline_cv::NUMERIC, 4) AS r2_baseline_cv,
+    ROUND(ganho_r2_vs_baseline_cv::NUMERIC, 4) AS ganho_r2_vs_baseline_cv,
     comparavel_entre_categorias,
     status_categoria,
     previsoes_negativas,

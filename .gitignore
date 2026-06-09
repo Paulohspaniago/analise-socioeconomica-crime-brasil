@@ -1,2 +1,10 @@
 .DS_Store
 **/.ipynb_checkpoints/
+
+# Estado do Metabase (banco local com conta admin e configuração) — não versionar
+metabase-data/metabase.db/
+metabase-data/metabase.db.mv.db
+metabase-data/metabase.db.trace.db
+
+# Saída gerada em runtime pelos notebooks (CSVs e PNGs)
+dados_saida/

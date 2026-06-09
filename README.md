@@ -145,7 +145,9 @@ flowchart LR
 ├── README.md
 ├── datasets/
 ├── notebooks/
-│   └── 01_machine_learning_baseline.ipynb
+│   ├── 01_machine_learning_baseline.ipynb   # ML em dois eixos (previsão + exploração socioeconômica)
+│   └── 02_kpis_correlacoes.ipynb            # processamento dos 30 KPIs e correlações
+├── dados_saida/                             # saída gerada pelo notebook 02 (CSVs + PNGs); criada em runtime, não versionada
 ├── postgres-init/
 │   ├── 01-create_and_populate_raw.sql
 │   ├── 02-create_and_populate_dw.sql

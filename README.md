@@ -267,14 +267,17 @@ taxa_roubo_veiculos_100k
 
 Cada categoria é treinada separadamente, pois os crimes possuem escalas, padrões e coberturas históricas diferentes.
 
-Estratégia de modelagem:
+Estratégia de modelagem (dois eixos):
 
-| Modelo | Papel no projeto | Justificativa |
-| --- | --- | --- |
-| Linear Regression | Baseline simples | Serve como ponto de partida interpretável e ajuda a demonstrar as limitações de um modelo linear puro. |
-| Random Forest Regressor | Candidato principal | Captura relações não lineares e interações entre população, IDHM, educação e histórico criminal. |
+| Eixo | Objetivo | Modelos | Régua |
+| --- | --- | --- | --- |
+| A — Previsão | Prever a taxa do ano seguinte (assume inércia temporal via lag1) | Random Forest, Regressão Linear | Ganho relativo vs. **baseline de persistência** + R² médio ± desvio (TimeSeriesSplit) |
+| B — Exploração socioeconômica | Medir o sinal de IDHM/educação SEM lag1 | RF sem lag1 + correlações | Comparação ao baseline; tratado como **exploratório** |
 
-A regressão linear será mantida como baseline comparativo, enquanto o Random Forest será avaliado como modelo principal candidato para cada categoria criminal.
+O Random Forest é o candidato do Eixo A. A Regressão Linear é baseline interpretável.
+Boosting (XGBoost) é opcional e tende a NÃO mudar o resultado: o teto é do dataset, não
+do algoritmo. Categorias com R² ≤ 0 (ex.: feminicídios) são marcadas como não modeláveis
+com os dados atuais. R² de categorias em splits diferentes não é comparável entre si.
 
 Como o IDEB não é divulgado todos os anos, será aplicada a propagação do último valor conhecido por UF, também chamada de `forward fill`. Essa decisão é defensável porque indicadores educacionais representam condições estruturais e tendem a mudar de forma mais lenta.
 
@@ -371,11 +374,13 @@ Cada integrante do grupo é responsável por uma área específica:
 
 ## ⚠️ Limitações
 
-* Variáveis socioeconômicas ainda limitadas
-* Possíveis inconsistências entre fontes de dados
-* IDHM municipal utilizado como referência estrutural de 2010, não como série anual
-* Regressão linear simples pode gerar previsões negativas para taxas criminais
-* Correlação ≠ causalidade
+* **Volume pequeno (~243 linhas):** os modelos são análise preditiva inicial, não solução de produção.
+* **IDHM fixo em 2010:** indicador estrutural, não série anual — limita o poder explicativo socioeconômico.
+* **Educação esparsa:** IDEB só em 2017/2019/2021/2023, propagado por forward-fill (condição estrutural).
+* **Cobertura irregular pós-pandemia:** estupro, furto/roubo de veículos têm lacunas por capital em anos recentes; NULL = dado ausente na fonte, não ausência de crime.
+* **Comparabilidade:** R²/RMSE de categorias em splits temporais diferentes não são comparáveis.
+* **Inércia vs. explicação:** a previsão funciona majoritariamente por histórico (lag1); o sinal socioeconômico é exploratório.
+* **Correlação ≠ causalidade.**
 
 ---
 
@@ -383,7 +388,7 @@ Cada integrante do grupo é responsável por uma área específica:
 
 * Adicionar novas variáveis, como renda e desemprego
 * Expandir a `dim_tempo` para mês, trimestre, dia da semana e final de semana caso sejam incorporados dados mensais ou diários
-* Comparar modelos não lineares, como Random Forest e Gradient Boosting
+* Avaliar boosting (XGBoost/LightGBM) — **com a ressalva de que o ganho tende a ser marginal**: o teto preditivo deste dataset é limitado pelo volume (~243 linhas) e pela qualidade das fontes (IDHM 2010, educação esparsa), não pelo algoritmo. Trocar de modelo não muda a tese do projeto.
 * Testar modelos temporais, como ARIMA ou Prophet, quando houver série histórica maior
 * Criar scripts de produção para treinamento e versionamento de modelos
 * Criar uma API para disponibilizar previsões

@@ -33,10 +33,13 @@ Targets modelados:
 - furto de veículos
 - roubo de veículos
 
-Modelos previstos:
+Estrutura em dois eixos:
 
-- Linear Regression: baseline simples e interpretável
-- Random Forest Regressor: candidato principal por capturar relações não lineares
+- Eixo A (Previsão): Regressão Linear, Random Forest e **baseline de persistência** (lag1),
+  avaliados por ganho relativo e R² médio ± desvio (TimeSeriesSplit). Categorias com
+  R² ≤ 0 são marcadas como não modeláveis.
+- Eixo B (Exploração socioeconômica): Random Forest **sem lag1** + correlações, tratado
+  como análise exploratória do sinal de IDHM/educação.
 
 Decisão metodológica:
 

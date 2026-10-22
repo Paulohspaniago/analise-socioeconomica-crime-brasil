@@ -441,7 +441,11 @@ Este projeto permite:
 
 ## 📄 Licença
 
-Este projeto é destinado a fins educacionais e de pesquisa.
+O código e a documentação original deste projeto estão disponíveis sob a [Licença MIT](LICENSE).
+
+Os datasets de terceiros não estão cobertos por esta licença. Seu uso e sua redistribuição devem respeitar os termos e a atribuição exigidos pelas respectivas fontes, listadas na seção de Fontes de Dados.
+
+O projeto foi desenvolvido para fins educacionais e de pesquisa.
 
 ---
 
